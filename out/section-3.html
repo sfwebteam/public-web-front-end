@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FRBSF.org Pattern Library</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="public/kss.css">
+    <link type="text/css" rel="stylesheet" href="public/prettify.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Droid+Sans|Merriweather|Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic|Roboto+Slab:700|Roboto+Slab:300|Roboto+Condensed:400' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/css/style.css">
+
+    <link type="text/css" rel="stylesheet" href="public/bootstrap-minimal.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+  </head>
+  <body data-spy="scroll" data-target="#sidebar" class="m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12">
+
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header m-all t-6of12 d-4of12 t-o-1of12 d-o-1of12">
+          <h1><a class="navbar-brand" href="index.html"><img style="display:inline-block" src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/logo-org.png">
+FRBSF.org Pattern Library</a></h1>
+        </div>
+        <div class="m-o-1of12 mobile-menu">
+          <span style="color:#fff; margin: 35px 0 10px 0; display: inline-block; border: 1px #777 solid; padding: 5px;">MENU</span>
+      </div>
+        <div class="collapse navbar-collapse navbar-styleguide-collapse m-all t-5of12 d-6of12 t-o-3of12">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="padding-bottom-none">
+                <a href="section-1.html"><!--1.0: -->CSS</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-2.html"><!--2.0: -->Components</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-3.html"><!--3.0: -->JavaScript</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-4.html"><!--4.0: -->Templates</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-5.html"><!--5.0: -->Appendix</a>
+              </li>
+        </div>
+    </nav>
+
+
+
+
+    <div class="">
+      <div class="">
+          <div class="m-all t-10of12 d-2of12" id="sidebar">
+            <div class="list-group m-all t-10of12 d-2of12 desktop" data-spy="affix">
+                  <!--<li><a href="#" class="list-group-item disabled">
+                    <h4 class="list-group-item-heading">JavaScript</h4>
+                  </a></li>-->
+                  <a class="list-group-item" href="#3-1"><!--<span class="kss-ref badge" >3-1</span> -->Collapse</a>
+                  <a class="list-group-item" href="#3-2"><!--<span class="kss-ref badge" >3-2</span> -->Gallery</a>
+                  <a class="list-group-item" href="#3-3"><!--<span class="kss-ref badge" >3-3</span> -->Dropdowns</a>
+            </div>
+          </div>
+          <article class="m-all t-all d-8of12 d-o-3of12">
+
+              <section class="kss-depth-1 jumbotron">
+                <h1 class="kss-title" id="3">JavaScript</h1>
+
+                <p>Behavior of interface components that require script.</p>
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="3-1">
+                  <span class="kss-ref badge pull-right">3-1</span> Collapse
+                </h2>
+
+                <p>Scripts for collapsible items, such as archived publications and abstracts.</p>
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="3-1.1">
+                  <span class="kss-ref badge pull-right">3-1.1</span> Collapsible header
+                </h3>
+
+                <div class="kss-box"><p>Collapsible header for pages such as ER Publications to hide and show information. Change icon image to plus or minus, as appropriate.</p>
+</div>
+
+              <div class="kss-example"><section class="show-section cf">
+  <header class="category">
+    <div class="m-9of12 t-10of12 d-10of12 m-o-1of12 t-o-1of12 d-o-1of12 aligncenter">
+      <h6 class="section-title-assets">Header (Opened)</h6>
+    </div>
+    <div class="d-1of12 alignright">
+      <img src="../files/images/icon-minus.png" class="icon hideshow" width="30" height="30" alt="Hide this section">
+    </div>
+  </header>
+  <article style="display: block">
+    <div>
+      <h5><a class="ti" href="/economic-research/publications/working-papers/2015/wp2015-15.pdf">Title of publication</a></h5>
+        <p>Some text here</p>
+    </div>
+  </article>
+</section>
+<hr>
+<section class="hide-section cf">
+  <header class="category">
+    <div class="m-9of12 t-10of12 d-10of12 m-o-1of12 t-o-1of12 d-o-1of12 aligncenter">
+      <h6 class="section-title-assets">Header (Closed)</h6>
+    </div>
+    <div class="d-1of12 alignright">
+      <img src="../files/images/icon-plus.png" class="icon hideshow" width="30" height="30" alt="Hide this section">
+    </div>
+  </header>
+  <article style="display:none;">
+    <div>
+      <h5><a class="ti" href="/economic-research/publications/working-papers/2015/wp2015-15.pdf">Title of publication</a></h5>
+        <p>Some text here</p>
+    </div>
+  </article>
+</section></div>
+              <pre class="prettyprint lang-html">&lt;section class&#x3D;&quot;show-section cf&quot;&gt;
+  &lt;header class&#x3D;&quot;category&quot;&gt;
+    &lt;div class&#x3D;&quot;m-9of12 t-10of12 d-10of12 m-o-1of12 t-o-1of12 d-o-1of12 aligncenter&quot;&gt;
+      &lt;h6 class&#x3D;&quot;section-title-assets&quot;&gt;Header (Opened)&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;d-1of12 alignright&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/icon-minus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Hide this section&quot;&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;article style&#x3D;&quot;display: block&quot;&gt;
+    &lt;div&gt;
+      &lt;h5&gt;&lt;a class&#x3D;&quot;ti&quot; href&#x3D;&quot;/economic-research/publications/working-papers/2015/wp2015-15.pdf&quot;&gt;Title of publication&lt;/a&gt;&lt;/h5&gt;
+        &lt;p&gt;Some text here&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section class&#x3D;&quot;hide-section cf&quot;&gt;
+  &lt;header class&#x3D;&quot;category&quot;&gt;
+    &lt;div class&#x3D;&quot;m-9of12 t-10of12 d-10of12 m-o-1of12 t-o-1of12 d-o-1of12 aligncenter&quot;&gt;
+      &lt;h6 class&#x3D;&quot;section-title-assets&quot;&gt;Header (Closed)&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;d-1of12 alignright&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/icon-plus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Hide this section&quot;&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;article style&#x3D;&quot;display:none;&quot;&gt;
+    &lt;div&gt;
+      &lt;h5&gt;&lt;a class&#x3D;&quot;ti&quot; href&#x3D;&quot;/economic-research/publications/working-papers/2015/wp2015-15.pdf&quot;&gt;Title of publication&lt;/a&gt;&lt;/h5&gt;
+        &lt;p&gt;Some text here&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="3-1.2">
+                  <span class="kss-ref badge pull-right">3-1.2</span> Abstract
+                </h3>
+
+                <div class="kss-box"><p>Abstracts for papers can be shown and hidden.</p>
+</div>
+
+              <div class="kss-example"><div class="info"><a class="tog" href="#"><span>+</span> abstract</a>
+<div class="collapsible" style="display: none;">Working paper abstract.</div></div></div>
+              <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;info&quot;&gt;&lt;a class&#x3D;&quot;tog&quot; href&#x3D;&quot;#&quot;&gt;&lt;span&gt;+&lt;/span&gt; abstract&lt;/a&gt;
+&lt;div class&#x3D;&quot;collapsible&quot; style&#x3D;&quot;display: none;&quot;&gt;Working paper abstract.&lt;/div&gt;&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="3-1.3">
+                  <span class="kss-ref badge pull-right">3-1.3</span> Trancript or Request
+                </h3>
+
+                <div class="kss-box"><p>Collapsible style for transcript and in-person tour requests.</p>
+</div>
+
+              <div class="kss-example"><div id="inner-content">
+  <main id="main" class="m-all t-all d-all cf">
+  <article class="m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12">
+    <section class="hide-section cf" id="transcript">
+    <header class="category">
+      <div class="m-8of12 t-10of12 d-10of12 m-o-2of12 t-o-1of12 d-o-1of12 aligncenter">
+          <h3 class="section-title-assets">Transcript</h3>
+      </div>
+      <div class="m-2of12 t-1of12 d-1of12 alignright">
+          <img src="../files/images/icon-plus.png" class="icon hideshow" width="30" height="30" alt="Show this section" style="cursor: pointer;">
+      </div>
+    </header>
+    <article class="cf">
+      <div class="m-all t-3of12 d-2of12">
+        <p>Quoted Person:</p>
+      </div>
+      <div class="m-all t-9of12 d-10of12">
+        <p>The quick brown fox jumps over the lazy dog.</p>
+      </div>
+    </article>
+    </section>
+    <section class="hide-section cf" id="transcript">
+    <header class="category">
+        <div class="m-8of12 t-10of12 d-10of12 m-o-2of12 t-o-1of12 d-o-1of12 aligncenter">
+            <h3 class="section-title-assets">Request a City Tour</h3>
+        </div>
+        <div class="m-2of12 t-1of12 d-1of12 alignright">
+            <img src="../files/images/icon-plus.png" class="icon hideshow" width="30" height="30" alt="Show this section" style="cursor: pointer;">
+        </div>
+    </header>
+    <article class="cf">
+      <div class="m-all t-all d-all">
+        <p>Explore the Fed Center with a tour.</p>
+      </div>
+    </article>
+    </section>
+  </article>
+  </main>
+</div>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;inner-content&quot;&gt;
+  &lt;main id&#x3D;&quot;main&quot; class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+  &lt;article class&#x3D;&quot;m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12&quot;&gt;
+    &lt;section class&#x3D;&quot;hide-section cf&quot; id&#x3D;&quot;transcript&quot;&gt;
+    &lt;header class&#x3D;&quot;category&quot;&gt;
+      &lt;div class&#x3D;&quot;m-8of12 t-10of12 d-10of12 m-o-2of12 t-o-1of12 d-o-1of12 aligncenter&quot;&gt;
+          &lt;h3 class&#x3D;&quot;section-title-assets&quot;&gt;Transcript&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;m-2of12 t-1of12 d-1of12 alignright&quot;&gt;
+          &lt;img src&#x3D;&quot;../files/images/icon-plus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Show this section&quot; style&#x3D;&quot;cursor: pointer;&quot;&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;article class&#x3D;&quot;cf&quot;&gt;
+      &lt;div class&#x3D;&quot;m-all t-3of12 d-2of12&quot;&gt;
+        &lt;p&gt;Quoted Person:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;m-all t-9of12 d-10of12&quot;&gt;
+        &lt;p&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;section class&#x3D;&quot;hide-section cf&quot; id&#x3D;&quot;transcript&quot;&gt;
+    &lt;header class&#x3D;&quot;category&quot;&gt;
+        &lt;div class&#x3D;&quot;m-8of12 t-10of12 d-10of12 m-o-2of12 t-o-1of12 d-o-1of12 aligncenter&quot;&gt;
+            &lt;h3 class&#x3D;&quot;section-title-assets&quot;&gt;Request a City Tour&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;m-2of12 t-1of12 d-1of12 alignright&quot;&gt;
+            &lt;img src&#x3D;&quot;../files/images/icon-plus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Show this section&quot; style&#x3D;&quot;cursor: pointer;&quot;&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;article class&#x3D;&quot;cf&quot;&gt;
+      &lt;div class&#x3D;&quot;m-all t-all d-all&quot;&gt;
+        &lt;p&gt;Explore the Fed Center with a tour.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/article&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="3-1.4">
+                  <span class="kss-ref badge pull-right">3-1.4</span> Economist abstract or supplement
+                </h3>
+
+                <div class="kss-box"><p>Collapsible style for economist biography page.</p>
+</div>
+
+              <div class="kss-example"><div class="economic-research page-template-page-er-economist-php">
+<div id="bio-container-bottom">
+<a class="tog abs" href="#">abstract <span>(+)</span></a>
+<div class="collapsible abs" style="display: none;">Abstract</div>
+<p></p>
+<a class="tog abs" href="#">supplement <span>(+)</span></a>
+<div class="collapsible abs" style="display: none;">Supplement</div>
+<p></p>
+<a class="tog abs" href="#">abstract <span>(-)</span></a>
+<div class="collapsible abs" style="display: block;">Abstract</div>
+<p></p>
+<a class="tog abs" href="#">supplement <span>(-)</span></a>
+<div class="collapsible abs" style="display: block;">Supplement</div>
+</div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;economic-research page-template-page-er-economist-php&quot;&gt;
+&lt;div id&#x3D;&quot;bio-container-bottom&quot;&gt;
+&lt;a class&#x3D;&quot;tog abs&quot; href&#x3D;&quot;#&quot;&gt;abstract &lt;span&gt;(+)&lt;/span&gt;&lt;/a&gt;
+&lt;div class&#x3D;&quot;collapsible abs&quot; style&#x3D;&quot;display: none;&quot;&gt;Abstract&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;a class&#x3D;&quot;tog abs&quot; href&#x3D;&quot;#&quot;&gt;supplement &lt;span&gt;(+)&lt;/span&gt;&lt;/a&gt;
+&lt;div class&#x3D;&quot;collapsible abs&quot; style&#x3D;&quot;display: none;&quot;&gt;Supplement&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;a class&#x3D;&quot;tog abs&quot; href&#x3D;&quot;#&quot;&gt;abstract &lt;span&gt;(-)&lt;/span&gt;&lt;/a&gt;
+&lt;div class&#x3D;&quot;collapsible abs&quot; style&#x3D;&quot;display: block;&quot;&gt;Abstract&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;a class&#x3D;&quot;tog abs&quot; href&#x3D;&quot;#&quot;&gt;supplement &lt;span&gt;(-)&lt;/span&gt;&lt;/a&gt;
+&lt;div class&#x3D;&quot;collapsible abs&quot; style&#x3D;&quot;display: block;&quot;&gt;Supplement&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="3-2">
+                  <span class="kss-ref badge pull-right">3-2</span> Gallery
+                </h2>
+
+                <div class="kss-box"><p>Gallery or slideshow function to cycle through elements.</p>
+</div>
+
+              <div class="kss-example"><div class="page-currency">
+  <div class="slideshow_large">
+    <div class="slide_large" id="slide_large1">
+      <img src="../files/images/1_1963-Present_face_Web.jpg" alt="$1 Note" class="m-all">
+      <p><strong>Ad vivendo</strong></p>
+      <p>Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.</p>
+    </div>
+    <div class="slide_large" id="slide_large2">
+      <img src="../files/images/2_1976-Present_face_Web.jpg" alt="$2 Note" class="m-all">
+      <p><strong>Usu ut augue</strong></p>
+      <p>Quo velit cetero menandri no, agam disputando eos ex. Ea quidam labitur habemus mei, ius ea quis duis legendos, in vim nominavi disputando efficiantur. Et justo everti comprehensam has, tale tota pertinacia pro an.</p>
+    </div>
+    <div class="slide_large" id="slide_large3">
+      <img src="../files/images/5_2008-Present_face_Web.jpg" alt="$5 Note" class="m-all">
+      <p><strong>Ad vivendo</strong></p>
+      <p>Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.</p>
+    </div>
+    <div class="slide_large" id="slide_large4">
+      <img src="../files/images/10_2006-Present_face_Web.jpg" alt="$10 Note" class="m-all">
+      <p><strong>Ad vivendo</strong></p>
+      <p>Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.</p>
+    </div>
+    <div class="slide_large" id="slide_large5">
+      <img src="../files/images/20_2003-Present_face_Web.jpg" alt="$20 Note" class="m-all">
+      <p><strong>Ad vivendo</strong></p>
+      <p>Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.</p>
+    </div>
+    <div class="slide_large" id="slide_large6">
+      <img src="../files/images/50_2004-Present_face_Web.jpg" alt="$50 Note" class="m-all">
+      <p><strong>Ad vivendo</strong></p>
+      <p>Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.</p>
+    </div>
+    <div class="slide_large" id="slide_large8">
+      <img src="../files/images/100_NYI_face_Web.jpg" alt="$100 Note" class="m-all">
+      <p><strong>Ad vivendo</strong></p>
+      <p>Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.</p>
+    </div>
+  </div>
+  <div class="slideshow_thumb desktop">
+    <span class="slide_thumb" id="slide1_thumb">
+      <a href="#"><img src="../files/images/1_1963-Present_face_Web-200x200.jpg" alt="$1 Note"></a>
+    </span>
+    <span class="slide_thumb" id="slide2_thumb">
+      <a href="#"><img src="../files/images/2_1976-Present_face_Web-200x200.jpg" alt="$2 Note"></a>
+    </span>
+    <span class="slide_thumb" id="slide3_thumb">
+      <a href="#"><img src="../files/images/5_2008-Present_face_Web-200x200.jpg" alt="$5 Note"></a>
+    </span>
+    <span class="slide_thumb" id="slide4_thumb">
+      <a href="#"><img src="../files/images/10_2006-Present_face_Web-200x200.jpg" alt="$10 Note"></a>
+    </span>
+    <span class="slide_thumb" id="slide5_thumb">
+      <a href="#"><img src="../files/images/20_2003-Present_face_Web-200x200.jpg" alt="$20 Note"></a>
+    </span>
+    <span class="slide_thumb" id="slide6_thumb">
+      <a href="#"><img src="../files/images/50_2004-Present_face_Web-200x200.jpg" alt="$50 Note"></a>
+    </span>
+    <span class="slide_thumb" id="slide8_thumb">
+      <a href="#"><img src="../files/images/100_NYI_face_Web-200x200.jpg" alt="$100 Note (redesigned)"></a>
+    </span>
+  </div>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;page-currency&quot;&gt;
+  &lt;div class&#x3D;&quot;slideshow_large&quot;&gt;
+    &lt;div class&#x3D;&quot;slide_large&quot; id&#x3D;&quot;slide_large1&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/1_1963-Present_face_Web.jpg&quot; alt&#x3D;&quot;$1 Note&quot; class&#x3D;&quot;m-all&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Ad vivendo&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;slide_large&quot; id&#x3D;&quot;slide_large2&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/2_1976-Present_face_Web.jpg&quot; alt&#x3D;&quot;$2 Note&quot; class&#x3D;&quot;m-all&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Usu ut augue&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Quo velit cetero menandri no, agam disputando eos ex. Ea quidam labitur habemus mei, ius ea quis duis legendos, in vim nominavi disputando efficiantur. Et justo everti comprehensam has, tale tota pertinacia pro an.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;slide_large&quot; id&#x3D;&quot;slide_large3&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/5_2008-Present_face_Web.jpg&quot; alt&#x3D;&quot;$5 Note&quot; class&#x3D;&quot;m-all&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Ad vivendo&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;slide_large&quot; id&#x3D;&quot;slide_large4&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/10_2006-Present_face_Web.jpg&quot; alt&#x3D;&quot;$10 Note&quot; class&#x3D;&quot;m-all&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Ad vivendo&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;slide_large&quot; id&#x3D;&quot;slide_large5&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/20_2003-Present_face_Web.jpg&quot; alt&#x3D;&quot;$20 Note&quot; class&#x3D;&quot;m-all&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Ad vivendo&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;slide_large&quot; id&#x3D;&quot;slide_large6&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/50_2004-Present_face_Web.jpg&quot; alt&#x3D;&quot;$50 Note&quot; class&#x3D;&quot;m-all&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Ad vivendo&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;slide_large&quot; id&#x3D;&quot;slide_large8&quot;&gt;
+      &lt;img src&#x3D;&quot;../files/images/100_NYI_face_Web.jpg&quot; alt&#x3D;&quot;$100 Note&quot; class&#x3D;&quot;m-all&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Ad vivendo&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Has ne cetero persius vocibus. Nam minim civibus moderatius te. Nullam accusamus sadipscing ad duo, vim ad choro homero, ius ut aperiam adolescens. Eum cu delectus consulatu.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;slideshow_thumb desktop&quot;&gt;
+    &lt;span class&#x3D;&quot;slide_thumb&quot; id&#x3D;&quot;slide1_thumb&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/1_1963-Present_face_Web-200x200.jpg&quot; alt&#x3D;&quot;$1 Note&quot;&gt;&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;slide_thumb&quot; id&#x3D;&quot;slide2_thumb&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/2_1976-Present_face_Web-200x200.jpg&quot; alt&#x3D;&quot;$2 Note&quot;&gt;&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;slide_thumb&quot; id&#x3D;&quot;slide3_thumb&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/5_2008-Present_face_Web-200x200.jpg&quot; alt&#x3D;&quot;$5 Note&quot;&gt;&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;slide_thumb&quot; id&#x3D;&quot;slide4_thumb&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/10_2006-Present_face_Web-200x200.jpg&quot; alt&#x3D;&quot;$10 Note&quot;&gt;&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;slide_thumb&quot; id&#x3D;&quot;slide5_thumb&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/20_2003-Present_face_Web-200x200.jpg&quot; alt&#x3D;&quot;$20 Note&quot;&gt;&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;slide_thumb&quot; id&#x3D;&quot;slide6_thumb&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/50_2004-Present_face_Web-200x200.jpg&quot; alt&#x3D;&quot;$50 Note&quot;&gt;&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;slide_thumb&quot; id&#x3D;&quot;slide8_thumb&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/100_NYI_face_Web-200x200.jpg&quot; alt&#x3D;&quot;$100 Note (redesigned)&quot;&gt;&lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="3-3">
+                  <span class="kss-ref badge pull-right">3-3</span> Dropdowns
+                </h2>
+
+                <div class="kss-box"><p>Main menu navigation.</p>
+</div>
+
+              <div class="kss-example"><header class="header" role="banner">
+  <div class="header-img">
+    <div class="inner-header-wrap wrap">
+      <div id="inner-header" class="wrap cf">
+        <div class="desktop">
+          <div id="nav-btn" class="m-all t-3of12 d-3of12">
+            <span id="nav-btn-show" tabindex="0"><img src="../files/images/icon-menu.png" width="27" height="23" alt="Show Menu"> Menu</span>
+            <nav id="nav-menu">
+              <span id="nav-btn-hide"><img src="../files/images/icon-menu.png" width="27" height="23" alt="Hide Menu"> Menu</span>
+              <p><strong><a id="nav-menu-home-desktop" href="/?utm_source=frbsf-nav-menu&amp;utm_medium=frbsf&amp;utm_campaign=rebrand">Home</a></strong></p>
+              <p><strong><a id="nav-menu-er-home-desktop" href="/economic-research/">Research</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-er-economists-desktop" href="/economic-research/economists/">Our Economists</a></p>
+                <p><a id="nav-menu-er-publications-desktop" href="/economic-research/publications/">Publications</a></p>
+                <p><a id="nav-menu-er-indicators-desktop" href="/economic-research/indicators-data/">Indicators and Data</a></p>
+                <p><a id="nav-menu-er-cpbs-desktop" href="/economic-research/center-pacific-basin-studies/">Center for Pacific Basin Studies</a></p>
+                <p><a id="nav-menu-er-events-desktop" href="/economic-research/events/">Past Conferences</a></p>
+                <p><a id="nav-menu-er-about-desktop" href="/economic-research/management/">About Us</a></p>
+              </div>
+              <p><strong><a id="nav-menu-bsr-home-desktop" href="/banking/">Banking</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-bsr-supervision-desktop" href="/banking/regulation/">Supervision and Regulation</a></p>
+                <p><a id="nav-menu-bsr-discount-desktop" href="/banking/discount-window/">Discount Window</a></p>
+                <p><a id="nav-menu-bsr-data-desktop" href="/banking/data/">Data</a></p>
+                <p><a id="nav-menu-bsr-publications-desktop" href="/banking/publications/">Publications</a></p>
+                <p><a id="nav-menu-bsr-programs-desktop" href="/banking/programs/">Programs</a></p>
+                <p><a id="nav-menu-bsr-about-desktop" href="/banking/about/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-ed-home-desktop" href="/education/">Education</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-ed-teacher-desktop" href="/education/teacher-resources/">Teacher Resources</a></p>
+                <p><a id="nav-menu-ed-activities-desktop" href="/education/activities/">Activities</a></p>
+                <p><a id="nav-menu-ed-events-desktop" href="/education/events/">Events</a></p>
+                <p><a id="nav-menu-ed-about-desktop" href="/education/about/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-cd-home-desktop" href="/community-development/">Community Development</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-cd-publications-desktop" href="/community-development/publications/">Publications</a></p>
+                <p><a id="nav-menu-cd-data-desktop" href="/community-development/data/">Data</a></p>
+                <p><a id="nav-menu-cd-events-desktop" href="/community-development/events/">Events</a></p>
+                <p><a id="nav-menu-cd-initiatives-desktop" href="/community-development/initiatives/">Initiatives</a></p>
+                <p><a id="nav-menu-cd-blog-desktop" href="/community-development/blog/">Blog</a></p>
+                <p><a id="nav-menu-cd-about-desktop" href="/community-development/about/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-cash-home-desktop" href="/cash/">Cash</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-cash-use-desktop" href="/cash/cash-how-we-use-it/">Cash and How We Use It</a></p>
+                <p><a id="nav-menu-cash-lifecycle-desktop" href="/cash/cash-lifecycle/">The Cash Lifecycle</a></p>
+                <p><a id="nav-menu-cash-publications-desktop" href="/cash/publications/">Publications</a></p>
+                <p><a id="nav-menu-cash-about-desktop" href="/cash/federal-reserve-role-cash-distribution/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-ourdistrict-home-desktop" href="/our-district/">Our District</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-ourdistrict-about-desktop" href="/our-district/about/">About</a></p>
+                <p><a id="nav-menu-ourdistrict-leadership-desktop" href="/our-district/leadership/">Leadership</a></p>
+                <p><a id="nav-menu-ourdistrict-careers-desktop" href="/our-district/careers/">Careers</a></p>
+                <p><a id="nav-menu-ourdistrict-press-desktop" href="/our-district/press/">Press</a></p>
+                <p><a id="nav-menu-ourdistrict-unreserved-desktop" href="/our-district/about/unreserved/">#unreserved</a></p>
+                <p><a id="nav-menu-ourdistrict-subscriptions-desktop" href="/our-district/subscriptions/">Subscriptions</a></p>
+              </div>
+              <p><strong>The Fed System</strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-fedsystem-board-desktop" href="http://www.federalreserve.gov/" class="offsite-icon-img-nav" target="_blank">Board of Governors</a></p>
+                <p><a id="nav-menu-fedsystem-atlanta-desktop" href="http://www.frbatlanta.org/" class="offsite-icon-img-nav" target="_blank">Atlanta</a></p>
+                <p><a id="nav-menu-fedsystem-boston-desktop" href="http://www.bos.frb.org/" class="offsite-icon-img-nav" target="_blank">Boston</a></p>
+                <p><a id="nav-menu-fedsystem-chicago-desktop" href="http://www.chicagofed.org/" class="offsite-icon-img-nav" target="_blank">Chicago</a></p>
+                <p><a id="nav-menu-fedsystem-cleveland-desktop" href="http://www.clevelandfed.org/" class="offsite-icon-img-nav" target="_blank">Cleveland</a></p>
+                <p><a id="nav-menu-fedsystem-dallas-desktop" href="http://www.dallasfed.org/" class="offsite-icon-img-nav" target="_blank">Dallas</a></p>
+                <p><a id="nav-menu-fedsystem-kansascity-desktop" href="http://www.kansascityfed.org/" class="offsite-icon-img-nav" target="_blank">Kansas City</a></p>
+                <p><a id="nav-menu-fedsystem-minneapolis-desktop" href="http://www.minneapolisfed.org/" class="offsite-icon-img-nav" target="_blank">Minneapolis</a></p>
+                <p><a id="nav-menu-fedsystem-newyork-desktop" href="http://www.newyorkfed.org/" class="offsite-icon-img-nav" target="_blank">New York</a></p>
+                <p><a id="nav-menu-fedsystem-philadelphia-desktop" href="http://www.philadelphiafed.org/" class="offsite-icon-img-nav" target="_blank">Philadelphia</a></p>
+                <p><a id="nav-menu-fedsystem-richmond-desktop" href="http://www.richmondfed.org/" class="offsite-icon-img-nav" target="_blank">Richmond</a></p>
+                <p><a id="nav-menu-fedsystem-stlouis-desktop" href="http://www.stlouisfed.org/" class="offsite-icon-img-nav" target="_blank">St. Louis</a></p>
+              </div>
+            </nav>
+          </div>
+          <div id="logo-org" class="m-all t-6of12 d-6of12">
+            <a id="logo-home-desktop" href="/?utm_source=frbsf-logo&amp;utm_medium=frbsf&amp;utm_campaign=rebrand">
+              <img src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/logo-org.png" width="83" height="57" alt="SF Fed">
+              <br>
+              <span>Federal Reserve Bank of San Francisco</span>
+            </a>
+          </div>
+          <div id="search-site" class="m-all t-3of12 d-3of12">
+            <img src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/search-icon.png" alt="Search SF Fed">
+            <form class="search-form" action="/search/" id="search" method="get">
+              <input type="text" placeholder="Search SF Fed" id="s" name="q" class="field" value=">
+            </form>
+          </div>
+        </div>
+        <div class="mobile">
+          <div id="logo-org" class="m-all t-8of12 d-8of12 t-o-2of12 d-o-2of12">
+            <a id="logo-home-mobile" href="/">
+              <img src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/logo-org.png" width="83" height="57" alt="SF Fed">
+              <br>
+              <span>Federal Reserve Bank of San Francisco</span>
+            </a>
+          </div>
+          <div id="nav-btn" class="m-all t-2of12 d-2of12">
+            <span id="nav-btn-show" tabindex="0"><img src="../files/images/icon-menu.png" width="27" height="23" alt="Show Menu"> Menu</span>
+            <nav id="nav-menu">
+              <span id="nav-btn-hide"><img src="../files/images/icon-menu.png" width="27" height="23" alt="Hide Menu"> Menu</span>
+              <p><strong><a id="nav-menu-home-mobile" href="/?utm_source=frbsf-nav-menu&amp;utm_medium=frbsf&amp;utm_campaign=rebrand">Home</a></strong></p>
+              <p><strong><a id="nav-menu-er-home-mobile" href="/economic-research/">Research</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-er-economists-mobile" href="/economic-research/economists/">Our Economists</a></p>
+                <p><a id="nav-menu-er-publications-mobile" href="/economic-research/publications/">Publications</a></p>
+                <p><a id="nav-menu-er-indicators-mobile" href="/economic-research/indicators-data/">Indicators and Data</a></p>
+                <p><a id="nav-menu-er-cpbs-mobile" href="/economic-research/center-pacific-basin-studies/">Center for Pacific Basin Studies</a></p>
+                <p><a id="nav-menu-er-events-mobile" href="/economic-research/events/">Past Conferences</a></p>
+                <p><a id="nav-menu-er-about-mobile" href="/economic-research/management/">About Us</a></p>
+              </div>
+              <p><strong><a id="nav-menu-bsr-home-mobile" href="/banking/">Banking</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-bsr-supervision-mobile" href="/banking/regulation/">Supervision and Regulation</a></p>
+                <p><a id="nav-menu-bsr-discount-mobile" href="/banking/discount-window/">Discount Window</a></p>
+                <p><a id="nav-menu-bsr-data-mobile" href="/banking/data/">Data</a></p>
+                <p><a id="nav-menu-bsr-publications-mobile" href="/banking/publications/">Publications</a></p>
+                <p><a id="nav-menu-bsr-programs-mobile" href="/banking/programs/">Programs</a></p>
+                <p><a id="nav-menu-bsr-about-mobile" href="/banking/about/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-ed-home-mobile" href="/education/">Education</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-ed-teacher-mobile" href="/education/teacher-resources/">Teacher Resources</a></p>
+                <p><a id="nav-menu-ed-activities-mobile" href="/education/activities/">Activities</a></p>
+                <p><a id="nav-menu-ed-events-mobile" href="/education/events/">Events</a></p>
+                <p><a id="nav-menu-ed-about-mobile" href="/education/about/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-cd-home-mobile" href="/community-development/">Community Development</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-cd-publications-mobile" href="/community-development/publications/">Publications</a></p>
+                <p><a id="nav-menu-cd-data-mobile" href="/community-development/data/">Data</a></p>
+                <p><a id="nav-menu-cd-events-mobile" href="/community-development/events/">Events</a></p>
+                <p><a id="nav-menu-cd-initiatives-mobile" href="/community-development/initiatives/">Initiatives</a></p>
+                <p><a id="nav-menu-cd-blog-mobile" href="/community-development/blog/">Blog</a></p>
+                <p><a id="nav-menu-cd-about-mobile" href="/community-development/about/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-cash-home-mobile" href="/cash/">Cash</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-cash-use-mobile" href="/cash/cash-how-we-use-it/">Cash and How We Use It</a></p>
+                <p><a id="nav-menu-cash-lifecycle-mobile" href="/cash/cash-lifecycle/">The Cash Lifecycle</a></p>
+                <p><a id="nav-menu-cash-publications-mobile" href="/cash/publications/">Publications</a></p>
+                <p><a id="nav-menu-cash-about-mobile" href="/cash/federal-reserve-role-cash-distribution/">About</a></p>
+              </div>
+              <p><strong><a id="nav-menu-ourdistrict-home-mobile" href="/our-district/">Our District</a></strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-ourdistrict-about-mobile" href="/our-district/about/">About</a></p>
+                <p><a id="nav-menu-ourdistrict-leadership-mobile" href="/our-district/leadership/">Leadership</a></p>
+                <p><a id="nav-menu-ourdistrict-careers-mobile" href="/our-district/careers/">Careers</a></p>
+                <p><a id="nav-menu-ourdistrict-press-mobile" href="/our-district/press/">Press</a></p>
+                <p><a id="nav-menu-ourdistrict-unreserved-mobile" href="/our-district/about/unreserved/">#unreserved</a></p>
+                <p><a id="nav-menu-ourdistrict-subscriptions-mobile" href="/our-district/subscriptions/">Subscriptions</a></p>
+              </div>
+              <p><strong>The Fed System</strong> <a href="#" class="hideshow_link"><span>+</span></a></p>
+              <div class="hideshow_subnav hide" style="padding-left:1em">
+                <p><a id="nav-menu-fedsystem-board-mobile" href="http://www.federalreserve.gov/" class="offsite-icon-img-nav" target="_blank">Board of Governors</a></p>
+                <p><a id="nav-menu-fedsystem-atlanta-mobile" href="http://www.frbatlanta.org/" class="offsite-icon-img-nav" target="_blank">Atlanta</a></p>
+                <p><a id="nav-menu-fedsystem-boston-mobile" href="http://www.bos.frb.org/" class="offsite-icon-img-nav" target="_blank">Boston</a></p>
+                <p><a id="nav-menu-fedsystem-chicago-mobile" href="http://www.chicagofed.org/" class="offsite-icon-img-nav" target="_blank">Chicago</a></p>
+                <p><a id="nav-menu-fedsystem-cleveland-mobile" href="http://www.clevelandfed.org/" class="offsite-icon-img-nav" target="_blank">Cleveland</a></p>
+                <p><a id="nav-menu-fedsystem-dallas-mobile" href="http://www.dallasfed.org/" class="offsite-icon-img-nav" target="_blank">Dallas</a></p>
+                <p><a id="nav-menu-fedsystem-kansascity-mobile" href="http://www.kansascityfed.org/" class="offsite-icon-img-nav" target="_blank">Kansas City</a></p>
+                <p><a id="nav-menu-fedsystem-minneapolis-mobile" href="http://www.minneapolisfed.org/" class="offsite-icon-img-nav" target="_blank">Minneapolis</a></p>
+                <p><a id="nav-menu-fedsystem-newyork-mobile" href="http://www.newyorkfed.org/" class="offsite-icon-img-nav" target="_blank">New York</a></p>
+                <p><a id="nav-menu-fedsystem-philadelphia-mobile" href="http://www.philadelphiafed.org/" class="offsite-icon-img-nav" target="_blank">Philadelphia</a></p>
+                <p><a id="nav-menu-fedsystem-richmond-mobile" href="http://www.richmondfed.org/" class="offsite-icon-img-nav" target="_blank">Richmond</a></p>
+                <p><a id="nav-menu-fedsystem-stlouis-mobile" href="http://www.stlouisfed.org/" class="offsite-icon-img-nav" target="_blank">St. Louis</a></p>
+              </div>
+            </nav>
+          </div>
+          <div id="search-site-mobile">
+            <img src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/search-icon.png">
+            <form class="search-form" action="/search/" id="search" method="get">
+              <input type="text" placeholder="Search SF Fed" id="s" name="q" class="field">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header></div>
+              <pre class="prettyprint lang-html">&lt;header class&#x3D;&quot;header&quot; role&#x3D;&quot;banner&quot;&gt;
+  &lt;div class&#x3D;&quot;header-img&quot;&gt;
+    &lt;div class&#x3D;&quot;inner-header-wrap wrap&quot;&gt;
+      &lt;div id&#x3D;&quot;inner-header&quot; class&#x3D;&quot;wrap cf&quot;&gt;
+        &lt;div class&#x3D;&quot;desktop&quot;&gt;
+          &lt;div id&#x3D;&quot;nav-btn&quot; class&#x3D;&quot;m-all t-3of12 d-3of12&quot;&gt;
+            &lt;span id&#x3D;&quot;nav-btn-show&quot; tabindex&#x3D;&quot;0&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; Menu&lt;/span&gt;
+            &lt;nav id&#x3D;&quot;nav-menu&quot;&gt;
+              &lt;span id&#x3D;&quot;nav-btn-hide&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Hide Menu&quot;&gt; Menu&lt;/span&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-home-desktop&quot; href&#x3D;&quot;/?utm_source&#x3D;frbsf-nav-menu&amp;amp;utm_medium&#x3D;frbsf&amp;amp;utm_campaign&#x3D;rebrand&quot;&gt;Home&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-er-home-desktop&quot; href&#x3D;&quot;/economic-research/&quot;&gt;Research&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-economists-desktop&quot; href&#x3D;&quot;/economic-research/economists/&quot;&gt;Our Economists&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-publications-desktop&quot; href&#x3D;&quot;/economic-research/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-indicators-desktop&quot; href&#x3D;&quot;/economic-research/indicators-data/&quot;&gt;Indicators and Data&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-cpbs-desktop&quot; href&#x3D;&quot;/economic-research/center-pacific-basin-studies/&quot;&gt;Center for Pacific Basin Studies&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-events-desktop&quot; href&#x3D;&quot;/economic-research/events/&quot;&gt;Past Conferences&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-about-desktop&quot; href&#x3D;&quot;/economic-research/management/&quot;&gt;About Us&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-home-desktop&quot; href&#x3D;&quot;/banking/&quot;&gt;Banking&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-supervision-desktop&quot; href&#x3D;&quot;/banking/regulation/&quot;&gt;Supervision and Regulation&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-discount-desktop&quot; href&#x3D;&quot;/banking/discount-window/&quot;&gt;Discount Window&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-data-desktop&quot; href&#x3D;&quot;/banking/data/&quot;&gt;Data&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-publications-desktop&quot; href&#x3D;&quot;/banking/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-programs-desktop&quot; href&#x3D;&quot;/banking/programs/&quot;&gt;Programs&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-about-desktop&quot; href&#x3D;&quot;/banking/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-ed-home-desktop&quot; href&#x3D;&quot;/education/&quot;&gt;Education&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-teacher-desktop&quot; href&#x3D;&quot;/education/teacher-resources/&quot;&gt;Teacher Resources&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-activities-desktop&quot; href&#x3D;&quot;/education/activities/&quot;&gt;Activities&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-events-desktop&quot; href&#x3D;&quot;/education/events/&quot;&gt;Events&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-about-desktop&quot; href&#x3D;&quot;/education/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-cd-home-desktop&quot; href&#x3D;&quot;/community-development/&quot;&gt;Community Development&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-publications-desktop&quot; href&#x3D;&quot;/community-development/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-data-desktop&quot; href&#x3D;&quot;/community-development/data/&quot;&gt;Data&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-events-desktop&quot; href&#x3D;&quot;/community-development/events/&quot;&gt;Events&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-initiatives-desktop&quot; href&#x3D;&quot;/community-development/initiatives/&quot;&gt;Initiatives&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-blog-desktop&quot; href&#x3D;&quot;/community-development/blog/&quot;&gt;Blog&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-about-desktop&quot; href&#x3D;&quot;/community-development/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-cash-home-desktop&quot; href&#x3D;&quot;/cash/&quot;&gt;Cash&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-use-desktop&quot; href&#x3D;&quot;/cash/cash-how-we-use-it/&quot;&gt;Cash and How We Use It&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-lifecycle-desktop&quot; href&#x3D;&quot;/cash/cash-lifecycle/&quot;&gt;The Cash Lifecycle&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-publications-desktop&quot; href&#x3D;&quot;/cash/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-about-desktop&quot; href&#x3D;&quot;/cash/federal-reserve-role-cash-distribution/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-home-desktop&quot; href&#x3D;&quot;/our-district/&quot;&gt;Our District&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-about-desktop&quot; href&#x3D;&quot;/our-district/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-leadership-desktop&quot; href&#x3D;&quot;/our-district/leadership/&quot;&gt;Leadership&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-careers-desktop&quot; href&#x3D;&quot;/our-district/careers/&quot;&gt;Careers&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-press-desktop&quot; href&#x3D;&quot;/our-district/press/&quot;&gt;Press&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-unreserved-desktop&quot; href&#x3D;&quot;/our-district/about/unreserved/&quot;&gt;#unreserved&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-subscriptions-desktop&quot; href&#x3D;&quot;/our-district/subscriptions/&quot;&gt;Subscriptions&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;The Fed System&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-board-desktop&quot; href&#x3D;&quot;http://www.federalreserve.gov/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Board of Governors&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-atlanta-desktop&quot; href&#x3D;&quot;http://www.frbatlanta.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Atlanta&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-boston-desktop&quot; href&#x3D;&quot;http://www.bos.frb.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Boston&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-chicago-desktop&quot; href&#x3D;&quot;http://www.chicagofed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Chicago&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-cleveland-desktop&quot; href&#x3D;&quot;http://www.clevelandfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Cleveland&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-dallas-desktop&quot; href&#x3D;&quot;http://www.dallasfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Dallas&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-kansascity-desktop&quot; href&#x3D;&quot;http://www.kansascityfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Kansas City&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-minneapolis-desktop&quot; href&#x3D;&quot;http://www.minneapolisfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Minneapolis&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-newyork-desktop&quot; href&#x3D;&quot;http://www.newyorkfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;New York&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-philadelphia-desktop&quot; href&#x3D;&quot;http://www.philadelphiafed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Philadelphia&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-richmond-desktop&quot; href&#x3D;&quot;http://www.richmondfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Richmond&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-stlouis-desktop&quot; href&#x3D;&quot;http://www.stlouisfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;St. Louis&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+          &lt;/div&gt;
+          &lt;div id&#x3D;&quot;logo-org&quot; class&#x3D;&quot;m-all t-6of12 d-6of12&quot;&gt;
+            &lt;a id&#x3D;&quot;logo-home-desktop&quot; href&#x3D;&quot;/?utm_source&#x3D;frbsf-logo&amp;amp;utm_medium&#x3D;frbsf&amp;amp;utm_campaign&#x3D;rebrand&quot;&gt;
+              &lt;img src&#x3D;&quot;http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/logo-org.png&quot; width&#x3D;&quot;83&quot; height&#x3D;&quot;57&quot; alt&#x3D;&quot;SF Fed&quot;&gt;
+              &lt;br&gt;
+              &lt;span&gt;Federal Reserve Bank of San Francisco&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div id&#x3D;&quot;search-site&quot; class&#x3D;&quot;m-all t-3of12 d-3of12&quot;&gt;
+            &lt;img src&#x3D;&quot;http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot;&gt;
+            &lt;form class&#x3D;&quot;search-form&quot; action&#x3D;&quot;/search/&quot; id&#x3D;&quot;search&quot; method&#x3D;&quot;get&quot;&gt;
+              &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search SF Fed&quot; id&#x3D;&quot;s&quot; name&#x3D;&quot;q&quot; class&#x3D;&quot;field&quot; value&#x3D;&quot;&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;mobile&quot;&gt;
+          &lt;div id&#x3D;&quot;logo-org&quot; class&#x3D;&quot;m-all t-8of12 d-8of12 t-o-2of12 d-o-2of12&quot;&gt;
+            &lt;a id&#x3D;&quot;logo-home-mobile&quot; href&#x3D;&quot;/&quot;&gt;
+              &lt;img src&#x3D;&quot;http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/logo-org.png&quot; width&#x3D;&quot;83&quot; height&#x3D;&quot;57&quot; alt&#x3D;&quot;SF Fed&quot;&gt;
+              &lt;br&gt;
+              &lt;span&gt;Federal Reserve Bank of San Francisco&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div id&#x3D;&quot;nav-btn&quot; class&#x3D;&quot;m-all t-2of12 d-2of12&quot;&gt;
+            &lt;span id&#x3D;&quot;nav-btn-show&quot; tabindex&#x3D;&quot;0&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; Menu&lt;/span&gt;
+            &lt;nav id&#x3D;&quot;nav-menu&quot;&gt;
+              &lt;span id&#x3D;&quot;nav-btn-hide&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Hide Menu&quot;&gt; Menu&lt;/span&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-home-mobile&quot; href&#x3D;&quot;/?utm_source&#x3D;frbsf-nav-menu&amp;amp;utm_medium&#x3D;frbsf&amp;amp;utm_campaign&#x3D;rebrand&quot;&gt;Home&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-er-home-mobile&quot; href&#x3D;&quot;/economic-research/&quot;&gt;Research&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-economists-mobile&quot; href&#x3D;&quot;/economic-research/economists/&quot;&gt;Our Economists&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-publications-mobile&quot; href&#x3D;&quot;/economic-research/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-indicators-mobile&quot; href&#x3D;&quot;/economic-research/indicators-data/&quot;&gt;Indicators and Data&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-cpbs-mobile&quot; href&#x3D;&quot;/economic-research/center-pacific-basin-studies/&quot;&gt;Center for Pacific Basin Studies&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-events-mobile&quot; href&#x3D;&quot;/economic-research/events/&quot;&gt;Past Conferences&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-er-about-mobile&quot; href&#x3D;&quot;/economic-research/management/&quot;&gt;About Us&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-home-mobile&quot; href&#x3D;&quot;/banking/&quot;&gt;Banking&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-supervision-mobile&quot; href&#x3D;&quot;/banking/regulation/&quot;&gt;Supervision and Regulation&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-discount-mobile&quot; href&#x3D;&quot;/banking/discount-window/&quot;&gt;Discount Window&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-data-mobile&quot; href&#x3D;&quot;/banking/data/&quot;&gt;Data&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-publications-mobile&quot; href&#x3D;&quot;/banking/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-programs-mobile&quot; href&#x3D;&quot;/banking/programs/&quot;&gt;Programs&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-bsr-about-mobile&quot; href&#x3D;&quot;/banking/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-ed-home-mobile&quot; href&#x3D;&quot;/education/&quot;&gt;Education&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-teacher-mobile&quot; href&#x3D;&quot;/education/teacher-resources/&quot;&gt;Teacher Resources&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-activities-mobile&quot; href&#x3D;&quot;/education/activities/&quot;&gt;Activities&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-events-mobile&quot; href&#x3D;&quot;/education/events/&quot;&gt;Events&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ed-about-mobile&quot; href&#x3D;&quot;/education/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-cd-home-mobile&quot; href&#x3D;&quot;/community-development/&quot;&gt;Community Development&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-publications-mobile&quot; href&#x3D;&quot;/community-development/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-data-mobile&quot; href&#x3D;&quot;/community-development/data/&quot;&gt;Data&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-events-mobile&quot; href&#x3D;&quot;/community-development/events/&quot;&gt;Events&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-initiatives-mobile&quot; href&#x3D;&quot;/community-development/initiatives/&quot;&gt;Initiatives&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-blog-mobile&quot; href&#x3D;&quot;/community-development/blog/&quot;&gt;Blog&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cd-about-mobile&quot; href&#x3D;&quot;/community-development/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-cash-home-mobile&quot; href&#x3D;&quot;/cash/&quot;&gt;Cash&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-use-mobile&quot; href&#x3D;&quot;/cash/cash-how-we-use-it/&quot;&gt;Cash and How We Use It&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-lifecycle-mobile&quot; href&#x3D;&quot;/cash/cash-lifecycle/&quot;&gt;The Cash Lifecycle&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-publications-mobile&quot; href&#x3D;&quot;/cash/publications/&quot;&gt;Publications&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-cash-about-mobile&quot; href&#x3D;&quot;/cash/federal-reserve-role-cash-distribution/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-home-mobile&quot; href&#x3D;&quot;/our-district/&quot;&gt;Our District&lt;/a&gt;&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-about-mobile&quot; href&#x3D;&quot;/our-district/about/&quot;&gt;About&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-leadership-mobile&quot; href&#x3D;&quot;/our-district/leadership/&quot;&gt;Leadership&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-careers-mobile&quot; href&#x3D;&quot;/our-district/careers/&quot;&gt;Careers&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-press-mobile&quot; href&#x3D;&quot;/our-district/press/&quot;&gt;Press&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-unreserved-mobile&quot; href&#x3D;&quot;/our-district/about/unreserved/&quot;&gt;#unreserved&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-ourdistrict-subscriptions-mobile&quot; href&#x3D;&quot;/our-district/subscriptions/&quot;&gt;Subscriptions&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;strong&gt;The Fed System&lt;/strong&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;hideshow_link&quot;&gt;&lt;span&gt;+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+              &lt;div class&#x3D;&quot;hideshow_subnav hide&quot; style&#x3D;&quot;padding-left:1em&quot;&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-board-mobile&quot; href&#x3D;&quot;http://www.federalreserve.gov/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Board of Governors&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-atlanta-mobile&quot; href&#x3D;&quot;http://www.frbatlanta.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Atlanta&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-boston-mobile&quot; href&#x3D;&quot;http://www.bos.frb.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Boston&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-chicago-mobile&quot; href&#x3D;&quot;http://www.chicagofed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Chicago&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-cleveland-mobile&quot; href&#x3D;&quot;http://www.clevelandfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Cleveland&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-dallas-mobile&quot; href&#x3D;&quot;http://www.dallasfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Dallas&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-kansascity-mobile&quot; href&#x3D;&quot;http://www.kansascityfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Kansas City&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-minneapolis-mobile&quot; href&#x3D;&quot;http://www.minneapolisfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Minneapolis&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-newyork-mobile&quot; href&#x3D;&quot;http://www.newyorkfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;New York&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-philadelphia-mobile&quot; href&#x3D;&quot;http://www.philadelphiafed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Philadelphia&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-richmond-mobile&quot; href&#x3D;&quot;http://www.richmondfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;Richmond&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a id&#x3D;&quot;nav-menu-fedsystem-stlouis-mobile&quot; href&#x3D;&quot;http://www.stlouisfed.org/&quot; class&#x3D;&quot;offsite-icon-img-nav&quot; target&#x3D;&quot;_blank&quot;&gt;St. Louis&lt;/a&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+          &lt;/div&gt;
+          &lt;div id&#x3D;&quot;search-site-mobile&quot;&gt;
+            &lt;img src&#x3D;&quot;http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/images/search-icon.png&quot;&gt;
+            &lt;form class&#x3D;&quot;search-form&quot; action&#x3D;&quot;/search/&quot; id&#x3D;&quot;search&quot; method&#x3D;&quot;get&quot;&gt;
+              &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search SF Fed&quot; id&#x3D;&quot;s&quot; name&#x3D;&quot;q&quot; class&#x3D;&quot;field&quot;&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</pre>
+
+
+              <hr />
+
+            </section>
+        </article>
+      </div>
+    </div>
+
+
+    <!-- <script src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/prettify.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        // Ensure code blocks are highlighted properly...
+        jQuery('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+        // Set the navigation to be the correct width.
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
+      });
+
+      // Gallery slideshow kss-example
+      function updateCashSlideshow() {
+          // Cache a reference to the wrappers
+          var slideshow_large = $('.slideshow_large');
+          var slide_large = slideshow_large.find('.slide_large');
+          var slideshow_thumb = $('.slideshow_thumb');
+          var slide_thumb = slideshow_thumb.find('.slide_thumb a');
+
+          function initSlides() {
+              slide_large.hide();
+              $(slide_large[0]).show();
+          }
+
+          initSlides();
+
+          function goToSlide(slideIndex) {
+              slide_large.hide();
+              $(slide_large[slideIndex]).show();
+              //remove active from slide large and add active to current slide large
+              $(slide_large).removeClass('active');
+              $(slide_large[slideIndex]).addClass('active');
+          }
+
+          // Listen for events in the slideshow
+          $(slide_thumb).on('click', function(e) {
+              e.preventDefault();
+              thumbIndex = $(this).parent().index();
+              goToSlide(thumbIndex);
+          });
+      }
+
+
+      updateCashSlideshow();
+
+    $("img.hideshow").click(function() {
+      $(this).parent().parent().siblings("article").slideToggle("fast");
+
+      // toggle plus and minus category icons
+      var src = $("img.hideshow").attr("src");
+
+      if ($(this).attr("src").match(/\-minus/)) {
+        $(this).attr("src", src.replace(/\-minus/, "-plus"));
+      } else {
+        $(this).attr("src", src.replace(/\-plus/, "-minus"));
+      }
+    });
+
+
+    $('.info a.tog').next('.collapsible').hide();
+
+    $('.info a.tog').click(function(e) {
+        e.preventDefault(); // prevent adding "#" to URL
+
+        var plus_minus_text = $(this).children('span');
+
+        switch (plus_minus_text.text()) {
+            case '–': // emdash
+                plus_minus_text.text('+');
+                break;
+
+            case '-': // dash
+                plus_minus_text.text('+');
+                break;
+
+            case '- ': // dash with space
+                plus_minus_text.text('+ ');
+                break;
+
+            case '+': // plus
+                plus_minus_text.text('-');
+                break;
+
+            case '+ ': // plus with space
+                plus_minus_text.text('- ');
+                break;
+        }
+
+        $(this).next('.collapsible').toggle('fast');
+    });
+
+    </script>
+        <script src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/scripts.js"></script>
+
+
+    
+    <script>
+    $('.mobile-menu').click(function() {
+      $('.collapse').toggle();
+    });
+
+
+    </script>
+  </body>
+</html>
