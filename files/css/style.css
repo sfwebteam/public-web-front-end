@@ -2527,6 +2527,19 @@ header.banner-image h1 {
       padding-bottom: 0; }
       .page-template-home .stories_container_outer .stories_pullquote p.related a {
         color: #0256a5; }
+.page-template-home .annual_report_title {
+  width: 160px;
+  text-align: center;
+  margin: .5em auto 3rem auto;
+  padding: 4px 0;
+  border-top: solid 1px #6c441c;
+  border-bottom: solid 1px #6c441c;
+  color: #6c441c;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300; }
+  .page-template-home .annual_report_title a {
+    color: #6c441c; }
 .page-template-home .work_container_outer {
   margin: 0 auto;
   padding: 2em 0 0 0;
@@ -3022,23 +3035,23 @@ p {
 
 a.offsite-icon-img {
   padding-right: 22px;
-  background: url("../images/icon-offsite.png") center right no-repeat;
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-offsite.png") center right no-repeat;
   width: 100%;
   height: 100%; }
 
 a.offsite-icon-img-nav {
   padding-right: 26px;
-  background: url("../images/icon-offsite-nav.png") center right no-repeat;
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-offsite-nav.png") center right no-repeat;
   width: 100%;
   height: 100%; }
 
 a.video-icon {
   padding-right: 25px;
-  background: url("../images/video-icon-20x20.png") center right no-repeat; }
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/video-icon-20x20.png") center right no-repeat; }
 
 a.audio-icon {
   padding-right: 30px;
-  background: url("../images/audio-icon-25x18px.png") center right no-repeat; }
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/audio-icon-25x18px.png") center right no-repeat; }
 
 /* inner content */
 #inner-content #main article header > img {
@@ -5472,6 +5485,36 @@ FOOTER STYLES
   position: absolute;
   right: 2em; }
 
+/*CD Mega Map Vantag Point*/
+#map-cd-vantage-point {
+  height: 725px;
+  width: 100%; }
+
+#areaInfo {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  left: 0;
+  display: none;
+  padding: 0 20px 20px 20px;
+  border: 3px #efefef solid; }
+
+.map-cd-container {
+  position: absolute;
+  left: 0;
+  width: 100%; }
+
+@media (min-width: 401px) {
+  #areaInfo {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 725px; }
+
+  .map-cd-container {
+    position: relative; } }
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
