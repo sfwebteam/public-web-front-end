@@ -267,14 +267,6 @@ jQuery(function($) {
 
   });
 
-  /*
-  hide / show caption for galleria.io
-  */
-
-  jQuery('.plusminus').click(function() {
-    jQuery('.gallery-caption p').slideToggle();
-  });
-
   /**
    * Cash diary quiz
    */
@@ -478,5 +470,4 @@ jQuery(function($) {
     offsetAnchor();
   }, 1);
 
-});
-/* end of as page load scripts */
+}); /* end of as page load scripts */

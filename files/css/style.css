@@ -2403,7 +2403,7 @@ header.banner-image h1 {
     min-width: 320px;
     height: 600px;
     margin: 0 auto;
-    background: url(/wp-content/themes/sf_fed_rebrand_2015/library/images/home-loggia.jpg) center no-repeat;
+    background: url(../images/home-loggia.jpg) center no-repeat;
     background-size: cover;
     text-align: center; }
     .page-template-home #sf-fed-mission article h1 {
@@ -2469,7 +2469,7 @@ header.banner-image h1 {
   .page-template-home .blog_container_outer .blog_container_inner .blog_container_inner_text .blog-related-tags {
     text-align: center; }
 .page-template-home .el_container_outer {
-  background: url(/wp-content/themes/sf_fed_rebrand_2015/library/images/economic_letter_bg.jpg) center no-repeat;
+  background: url(../images/economic_letter_bg.jpg) center no-repeat;
   background-size: cover; }
   .page-template-home .el_container_outer .el_container_inner .el_container_inner_text {
     background: #fff;
@@ -2488,7 +2488,7 @@ header.banner-image h1 {
   margin: 0 auto;
   padding: 2em 0 0 0;
   text-align: center;
-  background: url(/wp-content/themes/sf_fed_rebrand_2015/library/images/unreserved-bkgd.png) center no-repeat;
+  background: url(../images/unreserved-bkgd.png) center no-repeat;
   background-size: cover; }
   .page-template-home .stories_container_outer .stories_container_inner .stories_container_inner_text {
     max-width: 1200px;
@@ -2544,7 +2544,7 @@ header.banner-image h1 {
   margin: 0 auto;
   padding: 2em 0 0 0;
   text-align: center;
-  background: url(/wp-content/themes/sf_fed_rebrand_2015/library/images/work_bg.jpg) center no-repeat;
+  background: url(../images/work_bg.jpg) center no-repeat;
   background-size: cover; }
   .page-template-home .work_container_outer .work_container_inner .work_container_inner_text {
     max-width: 1200px;
@@ -3035,23 +3035,23 @@ p {
 
 a.offsite-icon-img {
   padding-right: 22px;
-  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-offsite.png") center right no-repeat;
+  background: url("../images/icons/icon-offsite.png") center right no-repeat;
   width: 100%;
   height: 100%; }
 
 a.offsite-icon-img-nav {
   padding-right: 26px;
-  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-offsite-nav.png") center right no-repeat;
+  background: url("../images/icons/icon-offsite-nav.png") center right no-repeat;
   width: 100%;
   height: 100%; }
 
 a.video-icon {
   padding-right: 25px;
-  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/video-icon-20x20.png") center right no-repeat; }
+  background: url("../images/icons/video-icon-20x20.png") center right no-repeat; }
 
 a.audio-icon {
   padding-right: 30px;
-  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/audio-icon-25x18px.png") center right no-repeat; }
+  background: url("../images/icons/audio-icon-25x18px.png") center right no-repeat; }
 
 /* inner content */
 #inner-content #main article header > img {
@@ -4848,7 +4848,7 @@ p.frbsf_widget_video {
 
 /* Chair the Fed Game */
 .page-chair-federal-reserve-economy-simulation-game .chair-the-fed-banner {
-  background: #e5eaed url("/wp-content/themes/sf_fed_rebrand_2015/library/images/chair-the-fed-game/bg_hero.png") no-repeat center top;
+  background: #e5eaed url("../images/chair-the-fed-game/bg_hero.png") no-repeat center top;
   width: 100%; }
   .page-chair-federal-reserve-economy-simulation-game .chair-the-fed-banner .chair-the-fed-hero-container {
     margin: 2rem;
@@ -5031,7 +5031,7 @@ p.frbsf_widget_video {
 TODO: what to call this? PDF, IMAGE STYLES
 ******************************************************************/
 p#cv {
-  background: #efefef url("/wp-content/themes/sf_fed_rebrand_2015/library/images/cv-pdf-download.png") no-repeat right bottom;
+  background: #efefef url("../images/cv-pdf-download.png") no-repeat right bottom;
   cursor: pointer;
   width: 140px;
   height: 40px;
@@ -5042,7 +5042,7 @@ p#cv {
     height: 40px; }
 
 p#presidentcv {
-  background: #efefef url("/wp-content/themes/sf_fed_rebrand_2015/library/images/cv-pdf-download.png") no-repeat right bottom;
+  background: #efefef url("../images/cv-pdf-download.png") no-repeat right bottom;
   width: 210px;
   height: 40px;
   padding-left: 6px;
@@ -7477,5 +7477,25 @@ CASH INFOGRAPHIC STYLESHEETS
     text-align: center; }
   .cash-operation-infographic .fed-districts div div {
     padding: 0.5rem; }
+
+/*# sourceMappingURL=style.css.map */
+idth: 1240px) {
+    .cash-shopping-trends-impact-infographic .quadrant {
+      padding: 6rem 0 0 0; } }
+  .cash-shopping-trends-impact-infographic .quadrant h1, .cash-shopping-trends-impact-infographic .quadrant h2, .cash-shopping-trends-impact-infographic .quadrant p {
+    margin: 0; }
+  .cash-shopping-trends-impact-infographic .quadrant h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: none;
+    margin-bottom: 1rem; }
+  .cash-shopping-trends-impact-infographic .quadrant h2 {
+    font-size: 1rem; }
+  .cash-shopping-trends-impact-infographic .quadrant p {
+    font-size: 0.75rem;
+    line-height: 1rem; }
+  .cash-shopping-trends-impact-infographic .quadrant .row_bottom {
+    padding: 6rem 0; }
 
 /*# sourceMappingURL=style.css.map */
