@@ -2773,56 +2773,6 @@ header + .meta {
   .landing-section-title a, .landing-section-title a:link, .landing-section-title a:active, .landing-section-title a:hover, .landing-section-title a:focus, .landing-section-title a:visited {
     color: #883529; }
 
-.landing-section-title-blog {
-  color: #883529;
-  border-top: 1px #883529 solid;
-  border-bottom: 1px #883529 solid;
-  padding: 1rem 1rem 1rem 1rem;
-  font-size: 1.25rem;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  letter-spacing: 2px;
-  text-align: center; }
-  .landing-section-title-blog a, .landing-section-title-blog a:link, .landing-section-title-blog a:active, .landing-section-title-blog a:hover, .landing-section-title-blog a:focus, .landing-section-title-blog a:visited {
-    color: #883529; }
-
-.landing-section-title-publications {
-  color: #883529;
-  border-top: 1px #883529 solid;
-  border-bottom: 1px #883529 solid;
-  padding: 1rem 0;
-  font-size: 1.25rem;
-  width: 20%;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  letter-spacing: 2px; }
-  .landing-section-title-publications a, .landing-section-title-publications a:link, .landing-section-title-publications a:active, .landing-section-title-publications a:hover, .landing-section-title-publications a:focus, .landing-section-title-publications a:visited {
-    color: #883529; }
-
-.landing-section-title-data {
-  color: #883529;
-  border-top: 1px #883529 solid;
-  border-bottom: 1px #883529 solid;
-  padding: 1rem 0;
-  font-size: 1.25rem;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  letter-spacing: 2px;
-  text-align: center; }
-  .landing-section-title-data a, .landing-section-title-data a:link, .landing-section-title-data a:active, .landing-section-title-data a:hover, .landing-section-title-data a:focus, .landing-section-title-data a:visited {
-    color: #883529; }
-
-.banking .landing-section-title-data {
-  margin-top: 5rem; }
-
 .landing-section-subtitle {
   color: #753d05;
   font-size: 0.85rem;
@@ -3022,23 +2972,23 @@ p {
 
 a.offsite-icon-img {
   padding-right: 22px;
-  background: url("../images/icon-offsite.png") center right no-repeat;
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-offsite.png") center right no-repeat;
   width: 100%;
   height: 100%; }
 
 a.offsite-icon-img-nav {
   padding-right: 26px;
-  background: url("../images/icon-offsite-nav.png") center right no-repeat;
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-offsite-nav.png") center right no-repeat;
   width: 100%;
   height: 100%; }
 
 a.video-icon {
   padding-right: 25px;
-  background: url("../images/video-icon-20x20.png") center right no-repeat; }
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/video-icon-20x20.png") center right no-repeat; }
 
 a.audio-icon {
   padding-right: 30px;
-  background: url("../images/audio-icon-25x18px.png") center right no-repeat; }
+  background: url("/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/audio-icon-25x18px.png") center right no-repeat; }
 
 /* inner content */
 #inner-content #main article header > img {
@@ -3787,16 +3737,6 @@ table.agenda th {
 /* Publication Taxonomy Page */
 .tax-publication-type h1.h5 {
   display: inline-block; }
-
-/* Page Asia Program */
-.page-asia-program .landing-section-title-blog {
-  width: 55%;
-  margin-top: 3rem; }
-
-/* Banking Landing Page */
-.banking .landing-section-title-blog {
-  width: 100%;
-  margin-top: 3rem; }
 
 /* Value of College Calculator */
 .page-value-of-college h2 {
@@ -5472,6 +5412,19 @@ FOOTER STYLES
   position: absolute;
   right: 2em; }
 
+.glossary_terms {
+  width: 100%;
+  padding-top: 30px; }
+
+.glossary_terms span {
+  font-style: normal;
+  font-weight: 300;
+  padding-right: 0.9%; }
+
+.glossary_terms span#active {
+  font-style: normal;
+  font-weight: 700; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -5726,15 +5679,6 @@ you can add resource intensive styles.
     width: 36%;
     margin-top: 2rem;
     margin-bottom: 2rem; }
-
-  .landing-section-title-blog {
-    width: 15%; }
-
-  .banking .landing-section-title-blog {
-    width: 55%; }
-
-  .landing-section-title-data {
-    width: 20%; }
 
   .landing-hero-our-district p {
     top: 25%; }

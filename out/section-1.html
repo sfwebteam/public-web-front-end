@@ -136,7 +136,7 @@ abcdefghijklmnopqrstuvwxyz<br>
                 </h3>
 
                 <div class="kss-box"><p>Default styling of page headings. These are semantic headings with no classes.</p>
-<p>(There will, however, be cases when the semantic won&#39;t match the visual hierarchy of a page. For example, a complex page may have several semantic h1&#39;s, but some of them may visually be required to look like h2. In those cases, use heading classes to make the page visually consistent.)</p>
+<p>(There will, however, be cases when the semantic won&#39;t match the visual hierarchy of a page. For example, a complex page may have several semantic <code>h1</code>&#39;s, but some of them may visually be required to look like <code>h2</code>. In those cases, use heading classes to make the page visually consistent.)</p>
 </div>
 
               <div class="kss-example"><h1>Page Title</h1>
@@ -231,7 +231,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 	&lt;li&gt;A list item&lt;/li&gt;
 &lt;/ul&gt;</pre>
 
-                <h4>Use <code>.short-list</code> for no padding between list items. <span class="pull-right"><code>.short-list</code></span></h4>
+                <h4>Use <code>short-list</code> for no padding between list items. <span class="pull-right"><code>.short-list</code></span></h4>
                 <div class="kss-example"><ul class="ul short-list">
 	<li>A list item</li>
 	<li>A list item</li>
@@ -262,7 +262,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 </h3>
 
                 <div class="kss-box"><p>General pull quote style. Use in excerpts from interviews employed as graphic elements. Typically followed by quote attribution.</p>
-<p>&quot;pullquote&quot; class uses Helvetica to avoid Roboto quote marks.</p>
+<p><code>pullquote</code> class uses Helvetica to avoid Roboto quote marks.</p>
 </div>
 
               <div class="kss-example"><blockquote class="pullquote">
@@ -379,7 +379,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                   <span class="kss-ref badge pull-right">1-1.14</span> Center
                 </h3>
 
-                <div class="kss-box"><p>Use class .aligncenter to center an element.</p>
+                <div class="kss-box"><p>Use class <code>aligncenter</code> to center an element.</p>
 </div>
 
               <div class="kss-example"><p class="aligncenter">Centered element</p>
@@ -1025,6 +1025,29 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
               <hr />
 
             </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.12">
+                  <span class="kss-ref badge pull-right">1-3.12</span> RSS icon
+                </h3>
+
+                <div class="kss-box"><p>Indicates available RSS feed subscription.</p>
+</div>
+
+              <div class="kss-example"><div id="share-links">
+    <p>
+        <a href="#" title="Subscribe to the Community Development Blog RSS feed" ><img src="../files/images/icon-rss.png" width="29" height="30" class="rss" alt="Subscribe to the Community Development Blog RSS feed"></a>
+    </p>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;share-links&quot;&gt;
+    &lt;p&gt;
+        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Subscribe to the Community Development Blog RSS feed&quot; &gt;&lt;img src&#x3D;&quot;../files/images/icon-rss.png&quot; width&#x3D;&quot;29&quot; height&#x3D;&quot;30&quot; class&#x3D;&quot;rss&quot; alt&#x3D;&quot;Subscribe to the Community Development Blog RSS feed&quot;&gt;&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
               <section class="kss-depth-2 m-10of12 m-o-1of12">
                 <h2 class="kss-title" id="1-4">
                   <span class="kss-ref badge pull-right">1-4</span> Buttons
@@ -1089,7 +1112,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                   <span class="kss-ref badge pull-right">1-4.4</span> Recent Presidents button
                 </h3>
 
-                <div class="kss-box"><p>Use class .recent-pres-btn to create link to recent FRBSF presidents on Office of the President page.</p>
+                <div class="kss-box"><p>Use class <code>recent-pres-btn</code> to create link to recent FRBSF presidents on Office of the President page.</p>
 </div>
 
               <div class="kss-example"><article role="article" class="m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12">
@@ -1160,7 +1183,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                   <span class="kss-ref badge pull-right">1-5</span> Images
                 </h2>
 
-                <p>Use the image size guidelines below for the site. They can be made responsive via <code>max-width: 100%;</code> and <code>height: auto;</code> to scale with parent element.</p>
+                <p>Use the image size guidelines below for the site. They can be made responsive via <code>max-width: 100%</code> and <code>height: auto</code> to scale with parent element.</p>
 
             </section>
               <section class="kss-depth-3 m-10of12 m-o-1of12">
@@ -1259,7 +1282,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                   <span class="kss-ref badge pull-right">1-5.6</span> Circle thumbnail
                 </h3>
 
-                <div class="kss-box"><p>Circle-shaped biographic image, 138x158 or 120x120. Floated left of person&#39;s name and title on desktop, stacked on top on mobile. Uses <code>border-radius: 50%</code> to shape image.</p>
+                <div class="kss-box"><p>Circle-shaped biographic image, 138x158 or 120x120. Floated left of person&#39;s name and title on desktop, stacked on top on mobile. Use <code>border-radius: 50%</code> to shape image.</p>
 </div>
 
               <div class="kss-example"><div class="bio-image"><img src="https://placehold.it/138x158" alt="..." ></div>
@@ -1599,7 +1622,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
     });
 
     </script>
-        <script src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/scripts.js"></script>
+        <script src="../files/js/scripts.js"></script>
 
 
     
