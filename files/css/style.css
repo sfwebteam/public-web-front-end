@@ -2149,6 +2149,17 @@ form.to_form_contact {
 #inner-content .field {
   background-color: #f6f5f4; }
 
+/* MailChimp Speech Request Form */
+input.datepart {
+  width: 80px;
+  display: inline-block; }
+
+.mc-field-group.input-group ul {
+  list-style: none; }
+
+.indicates-required {
+  margin-bottom: 1rem; }
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -2588,6 +2599,9 @@ header.banner-image h1 {
   border-top: 1px #ccc solid;
   clear: both; }
 
+.co-author img {
+  margin-bottom: 1.25em; }
+
 /*********************
 HEADER STYLES
 *********************/
@@ -2880,7 +2894,7 @@ and more scalable.
 
 /* end .nav */
 .view-more {
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 1rem 0;
   display: block; }
 
 .landing .meta {
@@ -2981,6 +2995,11 @@ a.offsite-icon-img-nav {
   background: url("../images/icons/icon-offsite-nav.png") center right no-repeat;
   width: 100%;
   height: 100%; }
+
+/* remove offsite icon */
+.no-offsite-icon a {
+  background: none;
+  padding-right: 0; }
 
 a.video-icon {
   padding-right: 25px;
@@ -3435,7 +3454,8 @@ PAGE SPECIFIC STYLES
   margin: 0 auto;
   display: block; }
 
-.single .blog-hero {
+.single .blog-hero,
+.page .blog-hero {
   display: block;
   margin: 0 auto;
   padding-top: 1em; }
@@ -4879,6 +4899,17 @@ p.frbsf_widget_video {
   .easter-egg .cg-buttons .answer.incorrect-highlight {
     background: #883529 url("/files/icon_easter_egg_cracked.png") no-repeat 0.4rem; }
 
+.facts-myths-cash blockquote.pullquote-brown {
+  padding: 0;
+  margin: 0; }
+.facts-myths-cash .cg-buttons .answer {
+  background: #aba091 url("/cash/files/icon_quiz_unchosen.png") no-repeat 0.4rem;
+  padding: 0.7rem 0 0.7rem 2.3rem; }
+  .facts-myths-cash .cg-buttons .answer.correct-highlight {
+    background: #497037 url("/cash/files/icon_quiz_correct.png") no-repeat 0.4rem; }
+  .facts-myths-cash .cg-buttons .answer.incorrect-highlight {
+    background: #883529 url("/cash/files/icon_quiz_incorrect.png") no-repeat 0.4rem; }
+
 .answer-result {
   display: none; }
 
@@ -5335,6 +5366,16 @@ img.eventicon {
   font-style: italic;
   padding: 1em 1em 0px 1em; }
 
+/* Subscribe link in footer of PacEX blog */
+.footer-subscribe {
+  color: #8c8c8c;
+  padding: 1em 1em 0px 1em; }
+
+.blog-disclaimer-pacex {
+  color: #8c8c8c;
+  font-style: italic;
+  padding: 0px 1em 0px 1em; }
+
 /* small - for semantics (disclaimers and other legal text in footer area) */
 small {
   font-size: 1em; }
@@ -5435,18 +5476,18 @@ tweeners.
   /******************************************************************
   Site Name:
   Author:
-
+  
   Stylesheet: 481px and Up Stylesheet
-
+  
   This stylesheet is loaded for larger devices. It's set to
   481px because at 480px it would load on a landscaped iPhone.
   This isn't ideal because then you would be loading all those
   extra styles on that same mobile connection.
-
+  
   A word of warning. This size COULD be a larger mobile device,
   so you still want to keep it pretty light and simply expand
   upon your base.scss styles.
-
+  
   ******************************************************************/
   /*
   IMPORTANT NOTE ABOUT SASS 3.3 & UP
@@ -5647,15 +5688,15 @@ you can add resource intensive styles.
   /******************************************************************
   Site Name:
   Author:
-
+  
   Stylesheet: Tablet & Small Desktop Stylesheet
-
+  
   Here's where you can start getting into the good stuff.
   This size will work on iPads, other tablets, and desktops.
   So you can start working with more styles, background images,
   and other resources. You'll also notice the grid starts to
   come into play. Have fun!
-
+  
   ******************************************************************/
   /*********************
   GENERAL STYLES
@@ -6112,12 +6153,12 @@ you can add resource intensive styles.
   /******************************************************************
   Site Name:
   Author:
-
+  
   Stylesheet: Desktop Stylsheet
-
+  
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop.
-
+  
   ******************************************************************/
   .wrap {
     max-width: 1040px; }
@@ -6207,14 +6248,14 @@ This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name:
-  Author:
-
+  Site Name: 
+  Author: 
+  
   Stylesheet: Super Large Monitor Stylesheet
-
+  
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
-
+  
   ******************************************************************/
   .wrap {
     max-width: 1344px; }
@@ -6251,44 +6292,44 @@ query for retina AND a certain size if you want. Go Nuts.
 *********************/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name:
-  Author:
-
+  Site Name: 
+  Author: 
+  
   Stylesheet: Retina Screens & Devices Stylesheet
-
+  
   When handling retina screens you need to make adjustments, especially
   if you're not using font icons. Here you can add them in one neat
   place.
-
+  
   ******************************************************************/
-  /*
-
-  EXAMPLE
+  /* 
+  
+  EXAMPLE 
   Let's say you have an image and you need to make sure it looks ok
   on retina screens. Let's say we have an icon which dimension are
   24px x 24px. In your regular stylesheets, it would look something
   like this:
-
+  
   .icon {
       width: 24px;
       height: 24px;
       background: url(img/test.png) no-repeat;
   }
-
+  
   For retina screens, we have to make some adjustments, so that image
   doesn't look blurry. So, taking into account the image above and the
   dimensions, this is what we would put in our retina stylesheet:
-
+  
   .icon {
       background: url(img/test@2x.png) no-repeat;
       background-size: 24px 24px;
   }
-
-  So, you would create the same icon, but at double the resolution, meaning
+  
+  So, you would create the same icon, but at double the resolution, meaning 
   it would be 48px x 48px. You'd name it the same, but with a @2x at the end
   (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go.
-
+  the original dimensions and you are good to go. 
+  
   */ }
 /*********************
 PRINT STYLESHEET
@@ -6300,13 +6341,13 @@ be set to display none.
   /******************************************************************
   Site Name: FRBSF.org
   Author: FRBSF
-
+  
   Stylesheet: Print Stylesheet
-
+  
   This is the print stylesheet. There's probably not a lot
   of reasons to edit this stylesheet. If you want to
   though, go for it.
-
+  
   ******************************************************************/
   @page {
     size: 8.5in 11in;
@@ -7378,5 +7419,71 @@ CASH INFOGRAPHIC STYLESHEETS
     text-align: center; }
   .cash-operation-infographic .fed-districts div div {
     padding: 0.5rem; }
+
+.cash-circulation-infographic {
+  background: #e5e6e5;
+  margin: 0 auto 2rem auto;
+  padding: 0 0 1rem 0; }
+  .cash-circulation-infographic img {
+    margin: 0;
+    max-width: auto; }
+  .cash-circulation-infographic h1 {
+    text-transform: uppercase;
+    color: #7c936f; }
+  .cash-circulation-infographic h2 {
+    font-size: 2.2rem; }
+    .cash-circulation-infographic h2.brown {
+      color: #753d05; }
+    .cash-circulation-infographic h2.dark-green {
+      color: #497037; }
+  .cash-circulation-infographic h3 {
+    font-size: 1.1rem;
+    color: #596a9a;
+    text-transform: none;
+    border-bottom: solid 2px #ccc;
+    padding: 0 0 0.3rem 0; }
+  .cash-circulation-infographic p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6rem; }
+    .cash-circulation-infographic p strong {
+      color: #2e4520;
+      font-weight: 700; }
+    .cash-circulation-infographic p.big-green {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #7c936f; }
+      .cash-circulation-infographic p.big-green strong {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #497037; }
+    .cash-circulation-infographic p span.italic-blue {
+      font-style: italic;
+      color: #3d7dba; }
+    .cash-circulation-infographic p.note {
+      text-align: center;
+      font-size: 0.8rem; }
+    .cash-circulation-infographic p.periwinkle {
+      color: #596a9a;
+      font-size: 0.65rem;
+      font-weight: 700;
+      line-height: normal; }
+  .cash-circulation-infographic .subsection-header {
+    margin: 2rem 0;
+    background: url(/cash/files/header_dash.png) repeat-x 0; }
+    .cash-circulation-infographic .subsection-header h2 {
+      font-size: 0.9rem;
+      color: #753d05;
+      text-transform: uppercase;
+      margin: 0;
+      display: inline-block;
+      background-color: #e5e6e5; }
+  .cash-circulation-infographic hr {
+    border: none;
+    border-top: 1px solid #e5e6e5;
+    padding: 1rem 0;
+    background: none; }
+  .cash-circulation-infographic .demand-currency-icon-container {
+    height: 70px; }
 
 /*# sourceMappingURL=style.css.map */

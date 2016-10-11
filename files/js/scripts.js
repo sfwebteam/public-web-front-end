@@ -267,6 +267,15 @@ jQuery(function($) {
 
   });
 
+  /*
+  hide / show caption for galleria.io
+  */
+
+  jQuery('.plusminus').click(function() {
+    jQuery('.gallery-caption p').slideToggle();
+  });
+
+
   /**
    * Cash diary quiz
    */
@@ -310,7 +319,7 @@ jQuery(function($) {
    cashDiaryQuiz();
 
   /**
-   * Code for generic right/wrong quiz
+   * Code for JW's Easter Egg quiz
    */
 
   var easterEggQuiz = function() {
@@ -326,7 +335,7 @@ jQuery(function($) {
       // If correct, add "correct-highlight" class
       if ( $(this).hasClass("correct-answer") ) {
 
-        // If no siblings have either .correct-highlight or .incorrect-highlight classes,
+        // If no siblings have either .correct-highlight or .incorrect-highlight class,
         // increment correct_count
         if($(this).siblings('.correct-highlight, .incorrect-highlight').length === 0){
           correct_count++;
@@ -342,7 +351,7 @@ jQuery(function($) {
       // If incorrect, add "incorrect-highlight" class
       else {
 
-        // If no siblings have either .correct-highlight or .incorrect-highlight classes,
+        // If no siblings have either .correct-highlight or .incorrect-highlight class,
         // increment incorrect_count
         if($(this).siblings('.correct-highlight, .incorrect-highlight').length === 0){
           incorrect_count++;
@@ -408,6 +417,113 @@ jQuery(function($) {
   easterEggQuiz();
 
   /**
+   * Code for Facts and Myths About Cash quiz
+   */
+
+  var factsMythsCashQuiz = function() {
+
+    var parent_selector = ".game-container.facts-myths-cash";
+    var num_questions = $(parent_selector + " .cg-question").length;
+
+    // Initialize user answers object to capture chosen answers
+    var user_answers = {};
+
+    // Show answers
+    $(parent_selector + " .answer").click(function() {
+
+      // Get current question index
+      var current_index = $(this).parent().parent(".cg-question").index();
+
+      // If correct, add "correct-highlight" class
+      if ( $(this).hasClass("correct-answer") ) {
+
+        // If user_answers object does not contain a key representing the current index,
+        // set the key to the current index and value to 1 (or, correct)
+        // This prevents changing one's answer
+        if ( !user_answers.hasOwnProperty(current_index) ) {
+          user_answers[current_index] = 1;
+        }
+
+        // Initially remove correct and incorrect classes from all answer choices
+        $(this).parent(".cg-buttons").children(".answer").removeClass("correct-highlight incorrect-highlight");
+
+        $(this).addClass("correct-highlight");
+        $(this).parent(".cg-buttons").siblings(".answer-result-correct").show();
+        $(this).parent(".cg-buttons").siblings(".answer-result-incorrect").hide();
+      }
+
+      // If incorrect, add "incorrect-highlight" class
+      else {
+
+        // If user_answers object does not contain a key representing the current index,
+        // set the key to the current index and value to 0 (or, incorrect)
+        // This prevents changing one's answer
+        if ( !user_answers.hasOwnProperty(current_index) ) {
+          user_answers[current_index] = 0;
+        }
+
+        // Initially remove correct and incorrect classes from all answer choices
+        $(this).parent(".cg-buttons").children(".answer").removeClass("correct-highlight incorrect-highlight");
+
+        $(this).addClass("incorrect-highlight");
+        $(this).parent(".cg-buttons").siblings(".answer-result-incorrect").show();
+        $(this).parent(".cg-buttons").siblings(".answer-result-correct").hide();
+      }
+
+      // Get number of correct answers
+      var num_correct_highlights = $(".cg-buttons .answer.correct-highlight").length;
+      // Get number of incorrect answers
+      var num_incorrect_highlights = $(".cg-buttons .answer.incorrect-highlight").length;
+      // Total correct and incorrect answers
+      var num_total_highlights = num_correct_highlights + num_incorrect_highlights;
+
+      // Initialize score text
+      var score_text;
+
+      // Show score when all answers have been selected.
+      if (num_questions === num_total_highlights) {
+
+        // Sum correct answers
+        var sum_answers = 0;
+        for (var index in user_answers) {
+          if (user_answers.hasOwnProperty(index)) {
+            sum_answers += parseInt( user_answers[index] );
+          }
+        }
+
+        // Show quiz result
+        $(".cg-results").show();
+
+        // If perfect score, congratulate user.
+        if ( sum_answers === num_questions ) {
+          score_text = '<h2 class="h1">' + sum_answers + '/' + num_questions + ' You got a perfect score!</h2><p>Congratulations! You have your cash facts straight.</p>';
+        }
+        else if ( sum_answers >= 4 && sum_answers <= 6 ) {
+          score_text = '<h2 class="h1">' + sum_answers + '/' + num_questions + ' Correct</h2><p>Excellent! You gave other quiz-takers a run for their money.</p>';
+        }
+        // If imperfect score, notify user.
+        else {
+          score_text = '<h2 class="h1">' + sum_answers + '/' + num_questions + ' Correct</h2><p>Nice try, but looks like you took a few too many cash myths at face value.</p>';
+        }
+
+        // Show quiz score
+        $(".cg-results #score").html(score_text);
+
+        // Set social link code
+        var social_link_code = '<h4>Share this quiz</h4><div id="share-links"><p><a href="http://www.facebook.com/sharer.php?u=http://www.frbsf.org%2Fcash%2Fcash-how-we-use-it%2Fcash-myths-facts-quiz%2F%3Futm_source%3Dfrbsf-home-sffedblog-hero%26utm_medium%3Dfrbsf%26utm_campaign%3Dsffedblog&amp;utm_source=sharebutton&amp;utm_medium=frbsf&amp;utm_campaign=facebook" title="Share on Facebook" target="_blank"><img src="/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-facebook.png" width="44" height="44" alt="Share on Facebook"></a><a href="http://twitter.com/share?text=Facts%20and%20Myths%20About%20Cash&#58;%20Test%20Your%20Knowledge&amp;http://www.frbsf.org%2Fcash%2Fcash-how-we-use-it%2Fcash-myths-facts-quiz%2F%3Futm_source%3Dfrbsf-home-sffedblog-hero%26utm_medium%3Dfrbsf%26utm_campaign%3Dsffedblog&amp;utm_source=sharebutton&amp;utm_medium=frbsf&amp;utm_campaign=twitter" title="Share on Twitter" target="_blank"><img src="/wp-content/themes/sf_fed_rebrand_2015/library/images/icons/icon-twitter.png" width="44" height="44" alt="Share on Twitter"></a></p></div>';
+
+        // Show social links
+        $(".cg-results #social").html(social_link_code);
+
+      }
+
+    });
+
+  };
+
+  factsMythsCashQuiz();
+
+  /**
    * Enable share links to appear on Research publication EOLs
    */
 
@@ -470,4 +586,5 @@ jQuery(function($) {
     offsetAnchor();
   }, 1);
 
-}); /* end of as page load scripts */
+});
+/* end of as page load scripts */
