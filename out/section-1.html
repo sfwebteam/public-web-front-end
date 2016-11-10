@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="public/kss.css">
     <link type="text/css" rel="stylesheet" href="public/prettify.css">
     <link href='https://fonts.googleapis.com/css?family=Lato|Droid+Sans|Merriweather|Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic|Roboto+Slab:700|Roboto+Slab:300|Roboto+Condensed:400' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="../files/css/style.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css">
 
     <link type="text/css" rel="stylesheet" href="public/bootstrap-minimal.css">
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -23,7 +23,7 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header m-all t-6of12 d-4of12 t-o-1of12 d-o-1of12">
-          <h1><a class="navbar-brand" href="index.html"><img style="display:inline-block" src="../files/images/logo-org.png">
+          <h1><a class="navbar-brand" href="index.html"><img style="display:inline-block" src="../assets/images/logo-org.png">
 FRBSF.org Pattern Library</a></h1>
         </div>
         <div class="m-o-1of12 mobile-menu">
@@ -407,28 +407,38 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>(Text color #fff used only to make text readable.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #6f0733; color: #fff">$er-color:	#6f0733</td>
-		<td style="background: #96200f; color: #fff">$banking-color: #96200f</td>
-		<td style="background: #026877; color: #fff">$education-color: #026877</td>
-	</tr>
-	<tr>
-		<td style="background: #ae6320; color: #fff">$cd-color: #ae6320</td>
-		<td style="background: #215b33; color: #fff">$cash-color: #215b33</td>
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #6f0733; color: #fff&quot;&gt;$er-color:	#6f0733&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #96200f; color: #fff&quot;&gt;$banking-color: #96200f&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #026877; color: #fff&quot;&gt;$education-color: #026877&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #ae6320; color: #fff&quot;&gt;$cd-color: #ae6320&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #215b33; color: #fff&quot;&gt;$cash-color: #215b33&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #6f0733;; color: #fff">
+	<p class="aligncenter">$er-color: #6f0733</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #96200f; color: #fff">
+	<p class="aligncenter">$banking-color: #96200f</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #026877; color: #fff">
+	<p class="aligncenter">$education-color: #026877</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #ae6320;; color: #fff">
+	<p class="aligncenter">$cd-color: #ae6320</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #215b33; color: #fff">
+	<p class="aligncenter">$cash-color: #215b33</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6f0733;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$er-color: #6f0733&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #96200f; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$banking-color: #96200f&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #026877; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$education-color: #026877&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ae6320;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cd-color: #ae6320&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #215b33; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cash-color: #215b33&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -442,40 +452,60 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>These are used for <a href="http://www.frbsf.org/our-district/about/unreserved/">#unreserved</a> landing block colors. (Text color #fff used only to make text readable.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #3d7dba; color: #fff">$graphics-blue: $light-blue</td>
-		<td style="background: #a64a36; color: #fff">$graphics-red: #a64a36</td>
-		<td style="background: #c39709; color: #fff">$graphics-yellow: #c39709</td>
-	</tr>
-	<tr>
-		<td style="background: #518000; color: #fff">$graphics-green: #518000</td>
-		<td style="background: #827ac9; color: #fff">$graphics-purple: #827ac9</td>
-		<td style="background: #aba091; color: #fff">$graphics-beige: #aba091</td>
-	</tr>
-	<tr>
-		<td style="background: #516e5c; color: #fff">$graphics-sage: #516e5c</td>
-		<td style="background: #6291a6; color: #fff">$graphics-teal: $teal</td>
-		<td style="background: #784139; color: #fff">$graphics-dark-red: $dark-red</td>
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #3d7dba; color: #fff&quot;&gt;$graphics-blue: $light-blue&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #a64a36; color: #fff&quot;&gt;$graphics-red: #a64a36&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #c39709; color: #fff&quot;&gt;$graphics-yellow: #c39709&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #518000; color: #fff&quot;&gt;$graphics-green: #518000&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #827ac9; color: #fff&quot;&gt;$graphics-purple: #827ac9&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #aba091; color: #fff&quot;&gt;$graphics-beige: #aba091&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #516e5c; color: #fff&quot;&gt;$graphics-sage: #516e5c&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;$graphics-teal: $teal&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #784139; color: #fff&quot;&gt;$graphics-dark-red: $dark-red&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #3d7dba;; color: #fff">
+	<p class="aligncenter">$graphics-blue: $light-blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #a64a36; color: #fff">
+	<p class="aligncenter">$graphics-red: #a64a36</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #c39709; color: #fff">
+	<p class="aligncenter">$graphics-yellow: #c39709</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #518000;; color: #fff">
+	<p class="aligncenter">$graphics-green: #518000</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #827ac9; color: #fff">
+	<p class="aligncenter">$graphics-purple: #827ac9</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #aba091; color: #fff">
+	<p class="aligncenter">$graphics-beige: #aba091</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #516e5c;; color: #fff">
+	<p class="aligncenter">$graphics-sage: #516e5c</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
+	<p class="aligncenter">$graphics-teal: $teal</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #784139; color: #fff">
+	<p class="aligncenter">$graphics-dark-red: $dark-red</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #3d7dba;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-blue: $light-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #a64a36; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-red: #a64a36&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c39709; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-yellow: #c39709&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #518000;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-green: #518000&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #827ac9; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-purple: #827ac9&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #aba091; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-beige: #aba091&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #516e5c;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-sage: #516e5c&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-teal: $teal&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #784139; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-dark-red: $dark-red&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -489,18 +519,20 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Black text color and white background. (Note: &quot;color: #fff&quot; used to show text only.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #333; color: #fff">$black</td>
-		<td style="background: #fff">$white</td>
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #333; color: #fff&quot;&gt;$black&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #fff&quot;&gt;$white&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of8 d-4of8" style="background: #333;; color: #fff">
+	<p class="aligncenter">$black</p></article>
+	<article class="m-all t-4of8 d-4of8" style="background: #fff; color: #333">
+	<p class="aligncenter">$white</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #333;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$black&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #fff; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$white&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -514,44 +546,64 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Shades of gray. (Note: &quot;color: #fff&quot; used to show text only.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #f6f5f4">$pale-gray</td>
-		<td style="background: #ebebeb">$light-gray</td>
-		<td style="background: #cacaca">$nav-btn-gray</td>
-	</tr>
-	<tr>
-		<td style="background: #6e6e6e; color: #fff">$medium-gray</td>
-		<td style="background: #8c8c8c; color: #fff">$gray</td>
-		<td style="background: #4e4e4e; color: #fff">$coal-gray</td>
-	</tr>
-	<tr>
-		<td style="background: #f1eeec">$sand-gray</td>
-		<td style="background: #e1dddb">$lt-sand-gray</td>
-		<!--Games not-selected button background color-->
-		<td style="background: #c1bbb9">$med-sand-gray</td>
-		<!--Games not-selected button text-->
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #f6f5f4&quot;&gt;$pale-gray&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #ebebeb&quot;&gt;$light-gray&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #cacaca&quot;&gt;$nav-btn-gray&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;$medium-gray&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;$gray&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;$coal-gray&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #f1eeec&quot;&gt;$sand-gray&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #e1dddb&quot;&gt;$lt-sand-gray&lt;/td&gt;
-		&lt;!--Games not-selected button background color--&gt;
-		&lt;td style&#x3D;&quot;background: #c1bbb9&quot;&gt;$med-sand-gray&lt;/td&gt;
-		&lt;!--Games not-selected button text--&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #f6f5f4;; color: #333">
+	<p class="aligncenter">$pale-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
+	<p class="aligncenter">$light-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #cacaca; color: #333">
+	<p class="aligncenter">$nav-btn-gray</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #6e6e6e;; color: #fff">
+	<p class="aligncenter">$medium-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
+	<p class="aligncenter">$gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
+	<p class="aligncenter">$coal-gray</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #f1eeec;; color: #333">
+	<p class="aligncenter">$sand-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #e1dddb; color: #333">
+	<p class="aligncenter">$lt-sand-gray</p></article>
+	<!--Games not-selected button background color-->
+	<article class="m-all t-4of12 d-4of12" style="background: #c1bbb9; color: #333">
+	<p class="aligncenter">$med-sand-gray</p></article>
+	<!--Games not-selected button text-->
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4;; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pale-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #cacaca; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$nav-btn-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$medium-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$coal-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec;; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #e1dddb; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$lt-sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;!--Games not-selected button background color--&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c1bbb9; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$med-sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;!--Games not-selected button text--&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -565,30 +617,42 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Shades of brown and gold. (Note: &quot;color: #fff&quot; used to show text only.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #eceee5">$tan</td>
-		<td style="background: #bea572">$beige</td>
-		<td style="background: #837a57">$dark-beige</td>
-	</tr>
-	<tr>
-		<td style="background: #753d05; color: #fff">$brown</td>
-		<td style="background: #6c441c; color: #fff">$light-brown</td>
-		<td style="background: #be9f72; color: #fff">$gold</td>
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #eceee5&quot;&gt;$tan&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #bea572&quot;&gt;$beige&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #837a57&quot;&gt;$dark-beige&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #753d05; color: #fff&quot;&gt;$brown&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #6c441c; color: #fff&quot;&gt;$light-brown&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #be9f72; color: #fff&quot;&gt;$gold&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #eceee5;; color: #333">
+	<p class="aligncenter">$tan</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #bea572; color: #fff">
+	<p class="aligncenter">$beige</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #837a57; color: #fff">
+	<p class="aligncenter">$dark-beige</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #753d05;; color: #fff">
+	<p class="aligncenter">$brown</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6c441c; color: #fff">
+	<p class="aligncenter">$light-brown</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #be9f72; color: #fff">
+	<p class="aligncenter">$gold</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #eceee5;; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$tan&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #bea572; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$beige&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #837a57; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dark-beige&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #753d05;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$brown&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6c441c; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-brown&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #be9f72; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gold&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -602,22 +666,24 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Shades of green. (Note: &quot;color: #fff&quot; used to show text only.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #2e4520; color: #fff">$green</td>
-		<td style="background: #7c936f; color: #fff">$light-green</td>
-		<td style="background: #497037; color: #fff">$dark-green</td>
-		<!-- Games correct answer selected -->
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #2e4520; color: #fff&quot;&gt;$green&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #7c936f; color: #fff&quot;&gt;$light-green&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #497037; color: #fff&quot;&gt;$dark-green&lt;/td&gt;
-		&lt;!-- Games correct answer selected --&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #2e4520;; color: #fff">
+	<p class="aligncenter">$green</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #7c936f; color: #fff">
+	<p class="aligncenter">$light-green</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #497037; color: #fff">
+	<p class="aligncenter">$dark-green</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e4520;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$green&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #7c936f; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-green&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #497037; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dark-green&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -631,28 +697,38 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Shades of blue, including teal. (Note: &quot;color: #fff&quot; used to show text only.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #0256a5; color: #fff">$blue</td>
-		<td style="background: #022951; color: #fff">$dark-blue</td>
-		<td style="background: #3d7dba; color: #fff">$light-blue</td>
-	</tr>
-	<tr>
-		<td style="background: #596a9a; color: #fff">$periwinkle</td>
-		<td style="background: #6291a6; color: #fff">$teal</td>
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #0256a5; color: #fff&quot;&gt;$blue&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #022951; color: #fff&quot;&gt;$dark-blue&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #3d7dba; color: #fff&quot;&gt;$light-blue&lt;/td&gt;
-	&lt;/tr&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #596a9a; color: #fff&quot;&gt;$periwinkle&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;$teal&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #0256a5;; color: #fff">
+	<p class="aligncenter">$blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #022951; color: #fff">
+	<p class="aligncenter">$dark-blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #3d7dba; color: #fff">
+	<p class="aligncenter">$light-blue</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #596a9a;; color: #fff">
+	<p class="aligncenter">$periwinkle</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
+	<p class="aligncenter">$teal</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #0256a5;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #022951; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dark-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #3d7dba; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-blue&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #596a9a;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$periwinkle&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$teal&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -666,20 +742,22 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Shades of red. (Note: &quot;color: #fff&quot; used to show text only.)</p>
 </div>
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="background: #784139; color: #fff">$dark-red</td>
-		<td style="background: #883529; color: #fff">$maroon</td>
-		<!-- Games incorrect answer selected -->
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #784139; color: #fff&quot;&gt;$dark-red&lt;/td&gt;
-		&lt;td style&#x3D;&quot;background: #883529; color: #fff&quot;&gt;$maroon&lt;/td&gt;
-		&lt;!-- Games incorrect answer selected --&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of8 d-4of8" style="background: #784139;; color: #fff">
+	<p class="aligncenter">$dark-red</p></article>
+	<article class="m-all t-4of8 d-4of8" style="background: #883529; color: #fff">
+	<p class="aligncenter">$maroon</p></article>
+	<!-- Games incorrect answer selected -->
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #784139;; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dark-red&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #883529; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$maroon&lt;/p&gt;&lt;/article&gt;
+	&lt;!-- Games incorrect answer selected --&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -691,26 +769,20 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 </h3>
 
 
-              <div class="kss-example"><table class="data-table">
-	<tr>
-		<td style="border-color: #ebebeb">$border-color: $light-gray</td>
-	</tr>
-</table>
-<table class="data-table">
-	<tr>
-		<td style="background: #6e6e6e">$disabled-gray: $medium-gray</td>
-	</tr>
-</table></div>
-              <pre class="prettyprint lang-html">&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;border-color: #ebebeb&quot;&gt;$border-color: $light-gray&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;
-&lt;table class&#x3D;&quot;data-table&quot;&gt;
-	&lt;tr&gt;
-		&lt;td style&#x3D;&quot;background: #6e6e6e&quot;&gt;$disabled-gray: $medium-gray&lt;/td&gt;
-	&lt;/tr&gt;
-&lt;/table&gt;</pre>
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of8 d-4of8" style="color: #333; border: solid 2px #ebebeb;">
+	<p class="aligncenter">$border-color: $light-gray</p></article>
+	<article class="m-all t-4of8 d-4of8" style="background: #6e6e6e; color: #fff">
+	<p class="aligncenter">$disabled-gray: $medium-gray</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;color: #333; border: solid 2px #ebebeb;&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$border-color: $light-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$disabled-gray: $medium-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
 
               <hr />
@@ -752,6 +824,581 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
               <hr />
 
             </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.12">
+                  <span class="kss-ref badge pull-right">1-2.12</span> Data visualization colors
+                </h3>
+
+                <div class="kss-box"><p>Use these approved colors for data charts and only in the <a href="#1-2.13">color combinations</a> according to chart type. Sass color names are preceded by <code>$data-viz-</code>, e.g., <code>$data-viz-dark-blue</code>.</p>
+<p>When color labels are more approriate for the data versus black (#333), please use alternate colors for data labels. <a href="../out/section-2.html#2-5.4">See example.</p>
+</div>
+
+              <div class="kss-example"><h4>Principal colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b; color: #fff">
+	<p class="aligncenter">dark-blue</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e; color: #fff">
+	<p class="aligncenter">light-green</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d; color: #fff">
+	<p class="aligncenter">light-yellow</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #88cde5; color: #fff">
+	<p class="aligncenter">light-blue</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #6d6aaa; color: #fff">
+	<p class="aligncenter">purple</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #6291a6; color: #fff">
+	<p class="aligncenter">teal</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #474747; color: #fff">
+	<p class="aligncenter">dark-gray</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #b63b36; color: #fff">
+	<p class="aligncenter">red</p></article>
+</main>
+<p class="cf"></p>
+<h4>Alternate colors for data labels (to improve readability)</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #dca303">
+	<p class="aligncenter">label color for light-yellow</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #3dabc9">
+	<p class="aligncenter">label color for light-blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #769627">
+	<p class="aligncenter">label color for light-green</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;h4&gt;Principal colors&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #2e5e8b; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;dark-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #8baf3e; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;light-green&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;light-yellow&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #88cde5; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;light-blue&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #6d6aaa; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;purple&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;teal&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #474747; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;dark-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #b63b36; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;red&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Alternate colors for data labels (to improve readability)&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #dca303&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-yellow&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #3dabc9&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #769627&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-green&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.13">
+                  <span class="kss-ref badge pull-right">1-2.13</span> Qualitative scheme color combinations
+                </h3>
+
+                <div class="kss-box"><p>Use to represent discrete data sets. Colors do not represent magnitude differences between data sets. (<a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" class="offsite-icon-img" target="_blank">ColorBrewer 2.0: Color Advice for Cartography.</a>) (Reviewed for color blindness (Protanopia and Deuteuranopia).</p>
+<p><a href="../out/section-2.html#2-5.1">See examples</a>.</p>
+</div>
+
+              <div class="kss-example"><h4>2 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-4of12 t-4of12 d-4of12">
+	<p class="aligncenter">Default</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-4of12 t-4of12 d-4of12">
+	<p class="aligncenter">Option 2<br>(Use Default First)</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-4of12 t-4of12 d-4of12">
+	<p class="aligncenter">Option 3<br>(Use Default First)</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #6291a6">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #b63b36">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>3 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12">
+	<p class="aligncenter">Option 1</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12">
+	<p class="aligncenter">Option 2</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #6291a6">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #474747">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>4 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #88cde5">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>5 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #88cde5">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;h4&gt;2 Colors&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Default&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 2&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 3&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;3 Colors&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 1&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 2&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #474747&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;4 Colors&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;5 Colors&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.14">
+                  <span class="kss-ref badge pull-right">1-2.14</span> Diverging schemes color combinations
+                </h3>
+
+                <div class="kss-box"><p>Use to display deviations from the mean. (<a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" class="offsite-icon-img" target="_blank">ColorBrewer 2.0: Color Advice for Cartography.</a>)</p>
+<p><a href="../out/section-2.html#2-5.2">See example</a>.</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #b9cf8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #a7a6cc">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #829eB9">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #d38986">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #b63b36">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #b9cf8b&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #f7f7f7&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #a7a6cc&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #829eB9&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #f7f7f7&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #d38986&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.15">
+                  <span class="kss-ref badge pull-right">1-2.15</span> Sequential schemes color combinations
+                </h3>
+
+                <div class="kss-box"><p>Use to order data that progresses from low to high, lightness steps with light colors for low data values to dark colors for high data values. (<a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" class="offsite-icon-img" target="_blank">ColorBrewer 2.0: Color Advice for Cartography.</a>)</p>
+<p><a href="../out/section-2.html#2-5.3">See example</a>.</p>
+</div>
+
+              <div class="kss-example"><h4>Based on <code>data-viz-dark-blue</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #D5DFE8">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #ABBFD1">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #829EB9">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #587EA2">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #2e5e8b; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #234768">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #172F46">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #0C1823">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-light-green</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #E8EFD8">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #D1DFB2">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #B9CF8B">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #A2BF65">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #8BAF3E; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #68832F">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #46581F">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #232C10">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-light-yellow</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FEF4D5">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FEE8AB">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FDDD81">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FDD157">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FCC62D; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #BD9522">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #7E6317">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #3F310B">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-teal</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #E0E9ED">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #C0D3DB">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #A1BDCA">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #81A7B8">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #6291A6; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #4A6D7D">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #314953">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #182429">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-purple</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #E2E1EE">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #C5C3DD">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #A7A6CC">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #8A88BB">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #6D6AAA; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #525080">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #373555">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #1B1B2A">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;h4&gt;Based on &lt;code&gt;data-viz-dark-blue&lt;/code&gt;&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #D5DFE8&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #ABBFD1&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #829EB9&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #587EA2&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #2e5e8b; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #234768&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #172F46&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #0C1823&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-light-green&lt;/code&gt;&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E8EFD8&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #D1DFB2&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #B9CF8B&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A2BF65&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8BAF3E; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #68832F&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #46581F&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #232C10&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-light-yellow&lt;/code&gt;&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FEF4D5&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FEE8AB&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FDDD81&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FDD157&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FCC62D; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #BD9522&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #7E6317&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #3F310B&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-teal&lt;/code&gt;&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E0E9ED&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #C0D3DB&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A1BDCA&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #81A7B8&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6291A6; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #4A6D7D&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #314953&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #182429&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-purple&lt;/code&gt;&lt;/h4&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E2E1EE&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #C5C3DD&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A7A6CC&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8A88BB&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6D6AAA; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #525080&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #373555&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #1B1B2A&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.16">
+                  <span class="kss-ref badge pull-right">1-2.16</span> Grays for reference lines and to accentuate focus
+                </h3>
+
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #333">
+	<p class="aligncenter">$pale-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #333">
+	<p class="aligncenter">$sand-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
+	<p class="aligncenter">$light-gray</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
+	<p class="aligncenter">$gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
+	<p class="aligncenter">$medium-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
+	<p class="aligncenter">$coal-gray</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pale-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #333&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$medium-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
+	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$coal-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
               <section class="kss-depth-2 m-10of12 m-o-1of12">
                 <h2 class="kss-title" id="1-3">
                   <span class="kss-ref badge pull-right">1-3</span> Icons
@@ -769,19 +1416,19 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div id="nav-btn-show" tabindex="0" class="m-1of4 d-1of6 t-1of6" style="background: #333; color: #6e6e6e; padding: 1rem">
-	<img src="../files/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
+	<img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
 </div>
 <p class="cf"></p>
 <div id="nav-btn" tabindex="0" class="m-1of4 d-1of6 t-1of6 fixed" style="background: #f1eeec; color: #6e6e6e; padding: 1rem">
-	<img src="../files/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
+	<img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
 </div>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;nav-btn-show&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6&quot; style&#x3D;&quot;background: #333; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
+	&lt;img src&#x3D;&quot;../assets/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;div id&#x3D;&quot;nav-btn&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6 fixed&quot; style&#x3D;&quot;background: #f1eeec; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
+	&lt;img src&#x3D;&quot;../assets/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -798,19 +1445,19 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div id="search-site" class="m-1of4 d-1of6 t-1of6" style="background: #333; color: #6e6e6e; padding: 1rem">
-	<img src="../files/images/search-icon.png" alt="Search SF Fed" style="display: block;">
+	<img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
 </div>
 <p class="cf"></p>
 <div id="search-site" class="m-1of4 d-1of6 t-1of6" style="background: #f1eeec; color: #6e6e6e; padding: 1rem">
-	<img src="../files/images/search-icon.png" alt="Search SF Fed" style="display: block;">
+	<img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
 </div>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;search-site&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6&quot; style&#x3D;&quot;background: #333; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
+	&lt;img src&#x3D;&quot;../assets/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;div id&#x3D;&quot;search-site&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6&quot; style&#x3D;&quot;background: #f1eeec; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
+	&lt;img src&#x3D;&quot;../assets/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -868,24 +1515,24 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
               <div class="kss-example"><p>
 <a href="#">
-	<img src="../files/images/icon-pdf.png" width="46" height="30" alt="View PDF" class="padding-r pdf">&nbsp;&nbsp;&nbsp;
+	<img src="../assets/images/icon-pdf.png" width="46" height="30" alt="View PDF" class="padding-r pdf">&nbsp;&nbsp;&nbsp;
 </a>
 <a href="#" title="" target="_blank">
-	<img src="../files/images/icon-email.png" width="41" height="30" alt="Subscribe to FedViews">&nbsp;&nbsp;&nbsp;
+	<img src="../assets/images/icon-email.png" width="41" height="30" alt="Subscribe to FedViews">&nbsp;&nbsp;&nbsp;
 </a>
 <a href="#" class="share">
-	<img src="../files/images/icon-share.png" width="37" height="30" alt="Share">
+	<img src="../assets/images/icon-share.png" width="37" height="30" alt="Share">
 </a>
 </p></div>
               <pre class="prettyprint lang-html">&lt;p&gt;
 &lt;a href&#x3D;&quot;#&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/icon-pdf.png&quot; width&#x3D;&quot;46&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;View PDF&quot; class&#x3D;&quot;padding-r pdf&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+	&lt;img src&#x3D;&quot;../assets/images/icon-pdf.png&quot; width&#x3D;&quot;46&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;View PDF&quot; class&#x3D;&quot;padding-r pdf&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
 &lt;/a&gt;
 &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot; target&#x3D;&quot;_blank&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/icon-email.png&quot; width&#x3D;&quot;41&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Subscribe to FedViews&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+	&lt;img src&#x3D;&quot;../assets/images/icon-email.png&quot; width&#x3D;&quot;41&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Subscribe to FedViews&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
 &lt;/a&gt;
 &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;share&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/icon-share.png&quot; width&#x3D;&quot;37&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Share&quot;&gt;
+	&lt;img src&#x3D;&quot;../assets/images/icon-share.png&quot; width&#x3D;&quot;37&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Share&quot;&gt;
 &lt;/a&gt;
 &lt;/p&gt;</pre>
 
@@ -902,14 +1549,14 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div id="share-links">
-        <a href="#"><img src="../files/images/icon-facebook.png" width="44" height="44" alt="Share on Facebook"></a>
-        <a href="#" title="Share on Twitter" target="_blank"><img src="../files/images/icon-twitter.png" width="44" height="44" alt="Share on Twitter"></a>
-        <a href="#"><img src="../files/images/icon-linkedin.png" width="44" height="44" alt="Share on LinkedIn"></a>
+        <a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Share on Facebook"></a>
+        <a href="#" title="Share on Twitter" target="_blank"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Share on Twitter"></a>
+        <a href="#"><img src="../assets/images/icon-linkedin.png" width="44" height="44" alt="Share on LinkedIn"></a>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;share-links&quot;&gt;
-        &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Share on Facebook&quot;&gt;&lt;/a&gt;
-        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Share on Twitter&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Share on Twitter&quot;&gt;&lt;/a&gt;
-        &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-linkedin.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Share on LinkedIn&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Share on Facebook&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Share on Twitter&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Share on Twitter&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-linkedin.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Share on LinkedIn&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;</pre>
 
 
@@ -925,20 +1572,20 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="landing-follow-section-ed desktop">
-	<a href="#"><img src="../files/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
-	<a href="#"><img src="../files/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
-	<a href="#"><img src="../files/images/icon-pinterest.png" width="44" height="44" alt="Pinterest"></a>
-	<a href="#"><img src="../files/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
-	<a href="#"><img border="0" src="../files/images/icon-edublog.png" alt="Edublog"></a>
-	<a href="#"><img border="0" src="../files/images/icon-email.png" alt="Newsletter"></a>
+	<a href="#"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
+	<a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
+	<a href="#"><img src="../assets/images/icon-pinterest.png" width="44" height="44" alt="Pinterest"></a>
+	<a href="#"><img src="../assets/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
+	<a href="#"><img border="0" src="../assets/images/icon-edublog.png" alt="Edublog"></a>
+	<a href="#"><img border="0" src="../assets/images/icon-email.png" alt="Newsletter"></a>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;landing-follow-section-ed desktop&quot;&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Twitter&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Facebook&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-pinterest.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Pinterest&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-youtube.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Youtube&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../files/images/icon-edublog.png&quot; alt&#x3D;&quot;Edublog&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../files/images/icon-email.png&quot; alt&#x3D;&quot;Newsletter&quot;&gt;&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Twitter&quot;&gt;&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Facebook&quot;&gt;&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-pinterest.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Pinterest&quot;&gt;&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-youtube.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Youtube&quot;&gt;&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../assets/images/icon-edublog.png&quot; alt&#x3D;&quot;Edublog&quot;&gt;&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../assets/images/icon-email.png&quot; alt&#x3D;&quot;Newsletter&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;</pre>
 
 
@@ -954,18 +1601,18 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="landing-follow-section desktop">
-    <a href="#"><img src="../files/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
-    <a href="#"><img src="../files/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
-    <a href="#"><img src="../files/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
-    <a href="#"><img src="../files/images/icon-linkedin.png" width="44" height="44" alt="LinkedIn"></a>
-    <a href="#"><img border="0" src="../files/images/icon-email.png" alt="Newsletter"></a>
+    <a href="#"><img src="../assets/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
+    <a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
+    <a href="#"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
+    <a href="#"><img src="../assets/images/icon-linkedin.png" width="44" height="44" alt="LinkedIn"></a>
+    <a href="#"><img border="0" src="../assets/images/icon-email.png" alt="Newsletter"></a>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;landing-follow-section desktop&quot;&gt;
-    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-youtube.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Youtube&quot;&gt;&lt;/a&gt;
-    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Facebook&quot;&gt;&lt;/a&gt;
-    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Twitter&quot;&gt;&lt;/a&gt;
-    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-linkedin.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;LinkedIn&quot;&gt;&lt;/a&gt;
-    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../files/images/icon-email.png&quot; alt&#x3D;&quot;Newsletter&quot;&gt;&lt;/a&gt;
+    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-youtube.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Youtube&quot;&gt;&lt;/a&gt;
+    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Facebook&quot;&gt;&lt;/a&gt;
+    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Twitter&quot;&gt;&lt;/a&gt;
+    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-linkedin.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;LinkedIn&quot;&gt;&lt;/a&gt;
+    &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../assets/images/icon-email.png&quot; alt&#x3D;&quot;Newsletter&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;</pre>
 
 
@@ -996,11 +1643,11 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="landing-events">
-	<img src="../files/images/icon-event-calendar.png" width="40" height="44" alt="Upcoming Events" class="eventicon">
+	<img src="../assets/images/icon-event-calendar.png" width="40" height="44" alt="Upcoming Events" class="eventicon">
 	<h3><a href="/education/events/">Upcoming Events</a></h3>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;landing-events&quot;&gt;
-	&lt;img src&#x3D;&quot;../files/images/icon-event-calendar.png&quot; width&#x3D;&quot;40&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Upcoming Events&quot; class&#x3D;&quot;eventicon&quot;&gt;
+	&lt;img src&#x3D;&quot;../assets/images/icon-event-calendar.png&quot; width&#x3D;&quot;40&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Upcoming Events&quot; class&#x3D;&quot;eventicon&quot;&gt;
 	&lt;h3&gt;&lt;a href&#x3D;&quot;/education/events/&quot;&gt;Upcoming Events&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;</pre>
 
@@ -1016,10 +1663,10 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Plus and minus icons used to toggle visibility of elements.</p>
 </div>
 
-              <div class="kss-example"><img src="../files/images/icon-plus.png" class="icon hideshow" width="30" height="30" alt="Show this section">
-<img src="../files/images/icon-minus.png" class="icon hideshow" width="30" height="30" alt="Hide this section"></div>
-              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../files/images/icon-plus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Show this section&quot;&gt;
-&lt;img src&#x3D;&quot;../files/images/icon-minus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Hide this section&quot;&gt;</pre>
+              <div class="kss-example"><img src="../assets/images/icon-plus.png" class="icon hideshow" width="30" height="30" alt="Show this section">
+<img src="../assets/images/icon-minus.png" class="icon hideshow" width="30" height="30" alt="Hide this section"></div>
+              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../assets/images/icon-plus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Show this section&quot;&gt;
+&lt;img src&#x3D;&quot;../assets/images/icon-minus.png&quot; class&#x3D;&quot;icon hideshow&quot; width&#x3D;&quot;30&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Hide this section&quot;&gt;</pre>
 
 
               <hr />
@@ -1035,12 +1682,12 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
               <div class="kss-example"><div id="share-links">
     <p>
-        <a href="#" title="Subscribe to the Community Development Blog RSS feed" ><img src="../files/images/icon-rss.png" width="29" height="30" class="rss" alt="Subscribe to the Community Development Blog RSS feed"></a>
+        <a href="#" title="Subscribe to the Community Development Blog RSS feed" ><img src="../assets/images/icon-rss.png" width="29" height="30" class="rss" alt="Subscribe to the Community Development Blog RSS feed"></a>
     </p>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;share-links&quot;&gt;
     &lt;p&gt;
-        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Subscribe to the Community Development Blog RSS feed&quot; &gt;&lt;img src&#x3D;&quot;../files/images/icon-rss.png&quot; width&#x3D;&quot;29&quot; height&#x3D;&quot;30&quot; class&#x3D;&quot;rss&quot; alt&#x3D;&quot;Subscribe to the Community Development Blog RSS feed&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Subscribe to the Community Development Blog RSS feed&quot; &gt;&lt;img src&#x3D;&quot;../assets/images/icon-rss.png&quot; width&#x3D;&quot;29&quot; height&#x3D;&quot;30&quot; class&#x3D;&quot;rss&quot; alt&#x3D;&quot;Subscribe to the Community Development Blog RSS feed&quot;&gt;&lt;/a&gt;
     &lt;/p&gt;
 &lt;/div&gt;</pre>
 
@@ -1095,11 +1742,11 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="ur-text m-all t-4of12 d-4of12" style="background:#516e5c">
-	<p style="text-align: center"><img src="../files/images/icon-left-arrow.png" alt"left="" arrow"="" title="Read more"></p>
+	<p style="text-align: center"><img src="../assets/images/icon-left-arrow.png" alt"left="" arrow"="" title="Read more"></p>
 </div>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;ur-text m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background:#516e5c&quot;&gt;
-	&lt;p style&#x3D;&quot;text-align: center&quot;&gt;&lt;img src&#x3D;&quot;../files/images/icon-left-arrow.png&quot; alt&quot;left&#x3D;&quot;&quot; arrow&quot;&#x3D;&quot;&quot; title&#x3D;&quot;Read more&quot;&gt;&lt;/p&gt;
+	&lt;p style&#x3D;&quot;text-align: center&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-left-arrow.png&quot; alt&quot;left&#x3D;&quot;&quot; arrow&quot;&#x3D;&quot;&quot; title&#x3D;&quot;Read more&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -1148,10 +1795,10 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Audio control buttons (mainly for Careers landing page). Image toggles when clicked.</p>
 </div>
 
-              <div class="kss-example"><img src="../files/images/audio-pause.png" class="button" id="play1" href="#" title="" style="width:50px">
-<img src="../files/images/audio-play2.png" class="button" id="play1" href="#" title="" style="width:50px"></div>
-              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../files/images/audio-pause.png&quot; class&#x3D;&quot;button&quot; id&#x3D;&quot;play1&quot; href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot; style&#x3D;&quot;width:50px&quot;&gt;
-&lt;img src&#x3D;&quot;../files/images/audio-play2.png&quot; class&#x3D;&quot;button&quot; id&#x3D;&quot;play1&quot; href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot; style&#x3D;&quot;width:50px&quot;&gt;</pre>
+              <div class="kss-example"><img src="../assets/images/audio-pause.png" class="button" id="play1" href="#" title="" style="width:50px">
+<img src="../assets/images/audio-play2.png" class="button" id="play1" href="#" title="" style="width:50px"></div>
+              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../assets/images/audio-pause.png&quot; class&#x3D;&quot;button&quot; id&#x3D;&quot;play1&quot; href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot; style&#x3D;&quot;width:50px&quot;&gt;
+&lt;img src&#x3D;&quot;../assets/images/audio-play2.png&quot; class&#x3D;&quot;button&quot; id&#x3D;&quot;play1&quot; href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot; style&#x3D;&quot;width:50px&quot;&gt;</pre>
 
 
               <hr />
@@ -1165,14 +1812,14 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>A number of one-off, non-standard buttons created for <a href="http://www.frbsf.org/education/teacher-resources/chair-federal-reserve-economy-simulation-game">Chair the Fed</a> game in Teacher Resources. They have the following respective functions: Launch Game, For the Public, For Educators, and Contact Us.</p>
 </div>
 
-              <div class="kss-example"><img src="../files/images/button_launch_game.png" width="200" height="56" alt="Launch Game" title="Launch Game" class="chair-the-fed-launch-btn">
-<img src="../files/images/icon_p.png" width="142" height="142" alt="For the Public">
-<img src="../files/images/icon_e.png" width="142" height="142" alt="For Educators">
-<img src="../files/images/icon_contact.png" width="142" height="142" alt="Contact Us"></div>
-              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../files/images/button_launch_game.png&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;56&quot; alt&#x3D;&quot;Launch Game&quot; title&#x3D;&quot;Launch Game&quot; class&#x3D;&quot;chair-the-fed-launch-btn&quot;&gt;
-&lt;img src&#x3D;&quot;../files/images/icon_p.png&quot; width&#x3D;&quot;142&quot; height&#x3D;&quot;142&quot; alt&#x3D;&quot;For the Public&quot;&gt;
-&lt;img src&#x3D;&quot;../files/images/icon_e.png&quot; width&#x3D;&quot;142&quot; height&#x3D;&quot;142&quot; alt&#x3D;&quot;For Educators&quot;&gt;
-&lt;img src&#x3D;&quot;../files/images/icon_contact.png&quot; width&#x3D;&quot;142&quot; height&#x3D;&quot;142&quot; alt&#x3D;&quot;Contact Us&quot;&gt;</pre>
+              <div class="kss-example"><img src="../assets/images/button_launch_game.png" width="200" height="56" alt="Launch Game" title="Launch Game" class="chair-the-fed-launch-btn">
+<img src="../assets/images/icon_p.png" width="142" height="142" alt="For the Public">
+<img src="../assets/images/icon_e.png" width="142" height="142" alt="For Educators">
+<img src="../assets/images/icon_contact.png" width="142" height="142" alt="Contact Us"></div>
+              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../assets/images/button_launch_game.png&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;56&quot; alt&#x3D;&quot;Launch Game&quot; title&#x3D;&quot;Launch Game&quot; class&#x3D;&quot;chair-the-fed-launch-btn&quot;&gt;
+&lt;img src&#x3D;&quot;../assets/images/icon_p.png&quot; width&#x3D;&quot;142&quot; height&#x3D;&quot;142&quot; alt&#x3D;&quot;For the Public&quot;&gt;
+&lt;img src&#x3D;&quot;../assets/images/icon_e.png&quot; width&#x3D;&quot;142&quot; height&#x3D;&quot;142&quot; alt&#x3D;&quot;For Educators&quot;&gt;
+&lt;img src&#x3D;&quot;../assets/images/icon_contact.png&quot; width&#x3D;&quot;142&quot; height&#x3D;&quot;142&quot; alt&#x3D;&quot;Contact Us&quot;&gt;</pre>
 
 
               <hr />
@@ -1196,11 +1843,11 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
               <div class="kss-example"><div class="landing-hero-our-district">
     <p class="desktop">The 12th District</p>
-    <img class="hero" src="../files/images/our-district-hero-img.jpg" width="960" height="252" alt="">
+    <img class="hero" src="../assets/images/our-district-hero-img.jpg" width="960" height="252" alt="">
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;landing-hero-our-district&quot;&gt;
     &lt;p class&#x3D;&quot;desktop&quot;&gt;The 12th District&lt;/p&gt;
-    &lt;img class&#x3D;&quot;hero&quot; src&#x3D;&quot;../files/images/our-district-hero-img.jpg&quot; width&#x3D;&quot;960&quot; height&#x3D;&quot;252&quot; alt&#x3D;&quot;&quot;&gt;
+    &lt;img class&#x3D;&quot;hero&quot; src&#x3D;&quot;../assets/images/our-district-hero-img.jpg&quot; width&#x3D;&quot;960&quot; height&#x3D;&quot;252&quot; alt&#x3D;&quot;&quot;&gt;
 &lt;/div&gt;</pre>
 
 
@@ -1260,13 +1907,13 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>B&amp;W thumbnail, usually Board of Directors.</p>
 </div>
 
-              <div class="kss-example"><div class="bio-image" style="border-radius: 0%"><img src="https://placehold.it/100x100" alt="..." width="100" height="100"></div>
+              <div class="kss-example"><div class="bio-image" style="border-radius: 0%"><img src="https://placehold.it/120x120" alt="..." width="138" height="138"></div>
 	<div class="bio-text">
         <p><strong>Name</strong>
         <br><strong>Title</strong>
         <br>bio</p>
     </div></div>
-              <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;bio-image&quot; style&#x3D;&quot;border-radius: 0%&quot;&gt;&lt;img src&#x3D;&quot;https://placehold.it/100x100&quot; alt&#x3D;&quot;...&quot; width&#x3D;&quot;100&quot; height&#x3D;&quot;100&quot;&gt;&lt;/div&gt;
+              <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;bio-image&quot; style&#x3D;&quot;border-radius: 0%&quot;&gt;&lt;img src&#x3D;&quot;https://placehold.it/120x120&quot; alt&#x3D;&quot;...&quot; width&#x3D;&quot;138&quot; height&#x3D;&quot;138&quot;&gt;&lt;/div&gt;
 	&lt;div class&#x3D;&quot;bio-text&quot;&gt;
         &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;
         &lt;br&gt;&lt;strong&gt;Title&lt;/strong&gt;
@@ -1347,8 +1994,8 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>The 404 Search Sloth.</p>
 </div>
 
-              <div class="kss-example"><img src="../files/images/404-search-sloth.jpg" width="245" height="305" alt=""></div>
-              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../files/images/404-search-sloth.jpg&quot; width&#x3D;&quot;245&quot; height&#x3D;&quot;305&quot; alt&#x3D;&quot;&quot;&gt;</pre>
+              <div class="kss-example"><img src="../assets/images/404-search-sloth.jpg" width="245" height="305" alt=""></div>
+              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../assets/images/404-search-sloth.jpg&quot; width&#x3D;&quot;245&quot; height&#x3D;&quot;305&quot; alt&#x3D;&quot;&quot;&gt;</pre>
 
 
               <hr />
@@ -1362,8 +2009,8 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
                 <div class="kss-box"><p>Easter egg animated gif from President&#39;s Speech Easter Eggs game.</p>
 </div>
 
-              <div class="kss-example"><img src="../files/images/egg_chick_animation.gif"></div>
-              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../files/images/egg_chick_animation.gif&quot;&gt;</pre>
+              <div class="kss-example"><img src="../assets/images/egg_chick_animation.gif"></div>
+              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;../assets/images/egg_chick_animation.gif&quot;&gt;</pre>
 
 
               <hr />
@@ -1622,7 +2269,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
     });
 
     </script>
-        <script src="../files/js/scripts.js"></script>
+        <script src="../assets/js/scripts.js"></script>
 
 
     
