@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
   <title>
-    Key Executives Bio Page Annotations
+    Data Page Annotations
   </title>
   <link href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500&amp;lang=en" rel=
   "stylesheet">
@@ -28,33 +28,38 @@
   </script>
   <link rel="stylesheet" type="text/css" href="../out/public/prettify.css"></link>
 
+
 <!--position the list of annotations as image overlay for screens larger than 650 px -->
     <style>
       @media screen and (min-width:650px) {
         .anno-bg-img {
-          background: url(images/t08-keyexecbio-d01.jpg) no-repeat;
-          padding-top: 70%
+          background: url(images/t14-datapage-d01.jpg) no-repeat;
+          padding-top: 180%
         }
 
         .anno-text li:nth-child(1) {
-            left: 34%;
-            top: 12%
+            left: 28%;
+            top: 7%
         }
         .anno-text li:nth-child(2) {
             left: 9%;
-            top: 20%
+            top: 10%
         }
         .anno-text li:nth-child(3) {
             left: 9%;
-            top: 27%
+            top: 17%
         }
         .anno-text li:nth-child(4) {
-            left: 30%;
-            top: 28%
+            left: 24%;
+            top: 35%
         }
         .anno-text li:nth-child(5) {
             left: 12%;
             top: 45%
+        }
+        .anno-text li:nth-child(6) {
+            left: 12%;
+            top: 55%
         }
     }
     </style>
@@ -74,13 +79,13 @@ FRBSF.org Pattern Library</a></h1>
           <ul class="nav navbar-nav navbar-right">
             <!-- <li><a href="/">Home</a></li> -->
             <li class="nav-item nav-item--prev">
-              <a href="board-bio.html"><< Previous</a>
+              <a href="cpbs-landing.html"><< Previous</a>
             </li>
             <li class="nav-item nav-item--curr">
-              <strong>Key Exec Bio</strong>
+              <strong>Data Page</strong>
             </li>
             <li class="nav-item nav-item--next">
-              <a href="presidents-page.html">Next >></a>
+              <a href="econ-bio.html">Next >></a>
             </li>
             <li class="nav-item nav-item--index">
               <a href="../out/section-4.html">Index of Templates</a>
@@ -93,10 +98,10 @@ FRBSF.org Pattern Library</a></h1>
         <div class="yoga-aux old">
           <div class="content" style="padding-top: 0">
             <h2>
-              Key Executives Bio Template
+              Data Page Template
             </h2>
             <p>
-              A one-column page used for bio pages of Key Executives.
+              A one-column page used for data and indicators pages, which feature charts and tables.
             </p>
             <p class="desktop-only">
               <strong>Resize window to see mobile.</strong>
@@ -107,21 +112,21 @@ FRBSF.org Pattern Library</a></h1>
               <figure class="annotated mobile-only">
 
               <img alt="page screenshot" class="parts-img" src=
-              "images/t08-keyexecbio-m01.jpg">
+              "images/t14-datapage-m01.jpg">
 <!-- position list of secondary annotations on screens less than 650 px, with links to primary annotations -->
               <figcaption>
                 <ol>
                   <li style="left: 30%; top: 16%"><a href="#1">1</a></li>
                   <li style="left: 7%; top: 25%"><a href="#2">2</a></li>
-                  <li style="left: 1%; top: 31%"><a href="#3">3</a></li>
-                  <li style="left: 7%; top: 60%"><a href="#4">4</a></li>
-                  <li style="left: 7%; top: 52%"><a href="#5">5</a></li>
+                  <li style="left: 7%; top: 31%"><a href="#3">3</a></li>
+                  <li style="left: 7%; top: 46%"><a href="#4">4</a></li>
+                  <li style="left: 7%; top: 58%"><a href="#5">5</a></li>
                 </ol>
               </figcaption>
 <!-- end secondary annotations -->
               </figure>
               <div aria-role="img" class="anno-bg-img">
-                <img class="parts-img" src="images/t08-keyexecbio-d01.jpg">
+                <img class="parts-img" src="images/t14-datapage-d01.jpg">
               </div>
             </div>
             <ol class="anno-text">
@@ -135,28 +140,32 @@ FRBSF.org Pattern Library</a></h1>
               <li class="marker" tabindex="0" id="2">
                 <div class="desc">
                   <h3>Headcrumb</h3>
-                  Display the headcrumb nav with a &lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">"section-header"</span>&gt; wrapper. Style the link text with h4 and link back to <a href="http://www.frbsf.org/our-district/leadership/key-executives/">Key Executives landing page</a>, ensuring href has <span class="atn">id</span>=<span class="atv">"page-title-ourdistrict-execs"</span>.
+                  Display the headcrumb nav with a &lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">"section-header"</span>&gt; wrapper. Style the link text with h4 and link back to <a href="http://www.frbsf.org/education/about/economic-education-staff">Economic Education Staff landing page</a>, ensuring href has <span class="atn">id</span>=<span class="atv">"page-title-ed-staff"</span>.
                 </div>
               </li>
 
               <li class="marker" tabindex="0" id="3">
                 <div class="desc">
-                  <h3>Main body</h3>
-                  Below the headcrumb, define body content with a wrapper &lt;<span class="tag">main</span> <span class="atn">id</span>=<span class="atv">"main"</span> <span class="atn">class</span>=<span class="atv">"m-all t-all d-all cf"</span> <span class="atn">role</span>=<span class="atv">"main"</span>&gt;. Define inner wrapper with &lt;<span class="tag">article</span> <span class="atn">role</span>=<span class="atv">"article"</span> <span class="atn">class</span>=<span class="atv">"m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12"</span>&gt;. This functions as desktop and tablet layout.
-                </div>
-              </li>
-              <li class="marker" tabindex="0" id="5">
-                <div class="desc">
-                  <h3>Header and body text</h3>
-                  Style header (exec name) with &lt;<span class="tag">h1</span>&gt;. Use &lt;<span class="tag">p</span>&gt; for each paragraph of the bio.
+                  <h3>Badge image and title</h3>
+                  Create a <a href="../out/section-2.html#1-5.7">badge image</a>, specially sized for data pages. Wrap image with &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">"landing-hero-data"</span>&gt; and &lt;<span class="tag">img</span> <span class="atn">class</span>=<span class="atv">"banner"</span>&gt; and place white title overlay for desktop and tablet, none for mobile. Float image left on desktop and stack on mobile. Style title with &lt;<span class="tag">h1</span> <span class="atn">class</span>=<span class="atv">"banner-title"</span>&gt; and add <a href="../out/section-1.html#1-5">share links and icons</a> below.
                 </div>
               </li>
               <li class="marker" tabindex="0" id="4">
                 <div class="desc">
-                  <h3>Bio image and title</h3>
-                  Code image and title twice. On mobile, position the image above the bio paragraphs by using <span class="tag">&lt;div</span> <span class="atn">class</span><span class="pun">=</span><span class="atv">"frbsf_widget_cta mobile"</span><span class="tag">&gt;</span>. Additionally, enclose the exec title in <span class="tag">&lt;p</span> <span class="atn">class</span><span class="pun">=</span><span class="atv">"note padding-bottom"</span><span class="tag">&gt;</span> <span class="tag">&lt;p</span>.<br><br>
-
-                  On desktop, embed the image within the text, usually after the first paragraph. Use <span class="tag">&lt;div</span> <span class="atn">class</span><span class="pun">=</span><span class="atv">"frbsf_widget_cta desktop"</span><span class="tag">&gt;</span>. Title also gets the same class as above.
+                  <h3>Chart title</h3>
+                  Use &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">"h5"</span>&gt;.
+                </div>
+              </li>
+              <li class="marker" tabindex="0" id="5">
+                <div class="desc">
+                  <h3>Data chart</h3>
+                  Use JavaScript to format, lay out, and customize charts on the page. Refer to data visualization <a href="../out/section-2.html#2-5">components</a> and guidelines.
+                </div>
+              </li>
+              <li class="marker" tabindex="0" id="6">
+                <div class="desc">
+                  <h3>Table</h3>
+                  If a table is required, use <a href="../out/section-1.html#1-6">responsive table layout</a> to present data (&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">"data-table"</span>&gt;). Use &lt;<span class="tag">h4</span>&gt; for table title.
                 </div>
               </li>
             </ol>
