@@ -545,7 +545,8 @@ jQuery(function($) {
    * Handle hash
    */
 
-  $("img.hideshow").click(function() {
+  $("img.hideshow").click(function(e) {
+    e.preventDefault();
     $(this).parent().parent().siblings("article").slideToggle("fast");
 
     // toggle plus and minus category icons
