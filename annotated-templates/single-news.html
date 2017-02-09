@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
     <title>
-      Events Page Annotations
+      Single News Release Page Annotations
     </title>
     <link href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500&amp;lang=en" rel=
     "stylesheet">
@@ -32,37 +32,37 @@
     <style>
       @media screen and (min-width:650px) {
         .anno-bg-img {
-          background: url(images/t40-events-d01.jpg) no-repeat;
-          padding-top: 110%
+          background: url(images/t38-singlenews-d01.jpg) no-repeat;
+          padding-top: 115%
         }
 
         .anno-text li:nth-child(1) {
-            left: 28%;
-            top: 9%
+            left: 33%;
+            top: 8%
         }
         .anno-text li:nth-child(2) {
-            left: 11%;
-            top: 16%
+            left: 3%;
+            top: 13%
         }
         .anno-text li:nth-child(3) {
-            left: 11%;
-            top: 23%
+            left: 9%;
+            top: 24%
         }
         .anno-text li:nth-child(4) {
-            left: 23%;
-            top: 31%
+            left: 9%;
+            top: 30%
         }
         .anno-text li:nth-child(5) {
-            left: 11%;
-            top: 36%
+            left: 9%;
+            top: 55%
         }
         .anno-text li:nth-child(6) {
-            left: 11%;
-            top: 52%
+            left: 9%;
+            top: 68%
         }
         .anno-text li:nth-child(7) {
-            left: 11%;
-            top: 66%
+            left: 9%;
+            top: 75%
         }
     }
     </style>
@@ -82,13 +82,13 @@ FRBSF.org Pattern Library</a></h1>
           <ul class="nav navbar-nav navbar-right">
             <!-- <li><a href="/">Home</a></li> -->
             <li class="nav-item nav-item--prev">
-              <a href="archive-unreserved.html"><< Previous</a>
+              <a href="events.html"><< Previous</a>
             </li>
             <li class="nav-item nav-item--curr">
-              <strong>Events Page</strong>
+              <strong>Single News Release Page</strong>
             </li>
             <li class="nav-item nav-item--next">
-              <a href="single-speech.html">Next >></a>
+              <a href="home.html">Next >></a>
             </li>
             <li class="nav-item nav-item--index">
               <a href="../out/section-4.html">Index of Templates</a>
@@ -101,10 +101,10 @@ FRBSF.org Pattern Library</a></h1>
         <div class="yoga-aux old">
           <div class="content" style="padding-top: 0">
             <h2>
-              Events Page Template
+              Single News Release Template
             </h2>
             <p>
-              A one-column page used for event and conference announcements.
+              A one-column page used for Fed news releases.
             </p>
             <p class="desktop-only">
               <strong>Resize window to see mobile.</strong>
@@ -115,23 +115,23 @@ FRBSF.org Pattern Library</a></h1>
               <figure class="annotated mobile-only">
 
               <img alt="page screenshot" class="parts-img" src=
-              "images/t40-events-m01.jpg">
+              "images/t38-singlenews-m01.jpg">
 <!-- position list of secondary annotations on screens less than 650 px, with links to primary annotations -->
               <figcaption>
                 <ol>
-                  <li style="left: 16%; top: 13%"><a href="#1">1</a></li>
-                  <li style="left: 7%; top: 20%"><a href="#2">2</a></li>
-                  <li style="left: 7%; top: 27%"><a href="#3">3</a></li>
-                  <li style="left: 38%; top: 36%"><a href="#4">4</a></li>
-                  <li style="left: 7%; top: 44%"><a href="#5">5</a></li>
-                  <li style="left: 7%; top: 65%"><a href="#6">6</a></li>
-                  <li style="left: 7%; top: 75%"><a href="#7">7</a></li>
+                  <li style="left: 30%; top: 10%"><a href="#1">1</a></li>
+                  <li style="left: 3%; top: 16%"><a href="#2">2</a></li>
+                  <li style="left: 3%; top: 28%"><a href="#3">3</a></li>
+                  <li style="left: 3%; top: 36%"><a href="#4">4</a></li>
+                  <li style="left: 3%; top: 59%"><a href="#5">5</a></li>
+                  <li style="left: 3%; top: 75%"><a href="#6">6</a></li>
+                  <li style="left: 3%; top: 84%"><a href="#7">7</a></li>
                 </ol>
               </figcaption>
 <!-- end secondary annotations -->
               </figure>
               <div aria-role="img" class="anno-bg-img">
-                <img class="parts-img" src="images/t40-events-d01.jpg">
+                <img class="parts-img" src="images/t38-singlenews-d01.jpg">
               </div>
             </div>
             <ol class="anno-text">
@@ -149,42 +149,32 @@ FRBSF.org Pattern Library</a></h1>
               </li>
               <li class="marker" tabindex="0" id="3">
                 <div class="desc">
-                  <h3>Event title</h3>
-                  Use &lt;<span class="tag">h1</span> <span class="atn">id</span>=<span class="atv">"page-title"</span>&gt;.
+                  <h3>Title and date</h3>
+                  Use &lt;<span class="tag">h1</span>&gt; for title; &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">"meta date"</span>&gt; for date.
                 </div>
               </li>
               <li class="marker" tabindex="0" id="4">
                 <div class="desc">
-                  <h3>Event info</h3>
-                  Create a &lt;<span class="tag">div</span> <span class="atn">id</span>=<span class="atv">"event-info"</span>&gt; and show the following info in order: <br>
-                  - day/date<br>
-                  - time<br>
-                  - location name<br>
-                  - address<br>
-                  - city, state, ZIP
+                  <h3>Social icons</h3>
+                  Arrange in the order seen here, link to appropriate social media, then enclose in a &lt;<span class="tag">div</span> <span class="atn">id</span>=<span class="atv">"share-links"</span>&gt;.
                 </div>
               </li>
              <li class="marker" tabindex="0" id="5">
                 <div class="desc">
-                  <h3>Register button</h3>
-                  Use <a href="../out/section-1.html#1-4.1">blue button style</a> &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">"register-btn"</span>&gt;, and link to appropriate registration site.
+                  <h3>Image</h3>
+                  Wrap image with &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">"frbsf_widget_cta"</span>&gt;. Size thumbnail 200 x 287 and link to full-sized image if available.
                 </div>
               </li>
               <li class="marker" tabindex="0" id="6">
                 <div class="desc">
                   <h3>Contact</h3>
-                  Create a &lt;<span class="tag">div</span> <span class="atn">id</span>=<span class="atv">"event-contacts"</span>&gt;, style heading with &lt;<span class="tag">h4</span>&gt; and show the following info in order: <br>
-                  - contact person with email link, title, department<br>
-                  - company or institution<br>
-                  - phone number<br>
+                  Place contact name with mailto link, affiliation, and phone number.
                 </div>
               </li>
               <li class="marker" tabindex="0" id="7">
                 <div class="desc">
-                  <h3>Sponsors</h3>
-                  Style heading with &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">"event-sponsor-title"</span>&gt;, which contains the horizontal line. Use a &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">"sponsors"</span>&gt; for sponsors.<br><br>
-
-                  In <a href="http://www.frbsf.org/community-development/events/2012/february/healthy-communities-san-francisco-2012/#event-contacts" target="_blank">pages using a logo image</a> for sponsors, use &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">"sponsor-logo"</span>&gt;. Place "logo" in meta description to pull the image here.
+                  <h3>Boilerplate</h3>
+                  Draw a &lt;<span class="tag">hr</span>&gt;, then use &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">"note"</span>&gt; and &lt;<span class="tag">em</span>&gt; for required boilerplate.
                 </div>
               </li>
             </ol>
@@ -193,7 +183,7 @@ FRBSF.org Pattern Library</a></h1>
       </section>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/at.js">
     </script>
   </body>
