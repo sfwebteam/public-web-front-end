@@ -2189,6 +2189,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
         });
 
         //if the height of the nav div exceeds height of window
+        var sidebarHeight = jQuery('.affix').offset().top + jQuery('.affix').height();
         if (sidebarHeight >= jQuery(window).height()) {
             jQuery('.affix').css('position', 'absolute');
         }

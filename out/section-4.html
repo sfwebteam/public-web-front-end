@@ -281,6 +281,7 @@ FRBSF.org Pattern Library</a></h1>
         });
 
         //if the height of the nav div exceeds height of window
+        var sidebarHeight = jQuery('.affix').offset().top + jQuery('.affix').height();
         if (sidebarHeight >= jQuery(window).height()) {
             jQuery('.affix').css('position', 'absolute');
         }

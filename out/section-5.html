@@ -172,6 +172,7 @@ Brewer, Cynthia. Web 10 August 2016.</li>
         });
 
         //if the height of the nav div exceeds height of window
+        var sidebarHeight = jQuery('.affix').offset().top + jQuery('.affix').height();
         if (sidebarHeight >= jQuery(window).height()) {
             jQuery('.affix').css('position', 'absolute');
         }
