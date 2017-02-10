@@ -170,6 +170,11 @@ Brewer, Cynthia. Web 10 August 2016.</li>
         jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
           jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
         });
+
+        //if the height of the nav div exceeds height of window
+        if (sidebarHeight >= jQuery(window).height()) {
+            jQuery('.affix').css('position', 'absolute');
+        }
       });
 
       // Gallery slideshow kss-example
