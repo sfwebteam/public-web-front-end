@@ -13,7 +13,11 @@
     <link type="text/css" rel="stylesheet" href="../assets/css/style.css">
 
     <link type="text/css" rel="stylesheet" href="public/bootstrap-minimal.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/galleria/themes/sffed/galleria.sffed.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--<script> $113 = jQuery.noConflict();</script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+
 
   </head>
   <body data-spy="scroll" data-target="#sidebar" class="m-10of12 m-o-1of12 t-10of12 d-10of12 t-o-1of12 d-o-1of12">
@@ -23,7 +27,7 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header m-all t-6of12 d-4of12 t-o-1of12 d-o-1of12">
-          <h1><a class="navbar-brand" href="index.html"><img style="display:inline-block" src="../assets/images/logo-org.png">
+          <h1><a class="navbar-brand" href="index.html"><img style="display:inline-block" src="../assets/images/logo-org.png" alt=""/>
 FRBSF.org Pattern Library</a></h1>
         </div>
         <div class="m-o-1of12 mobile-menu">
@@ -70,8 +74,9 @@ FRBSF.org Pattern Library</a></h1>
                   <a class="list-group-item" href="#4-9"><!--<span class="kss-ref badge" >4-9</span> -->Data</a>
                   <a class="list-group-item" href="#4-10"><!--<span class="kss-ref badge" >4-10</span> -->Publications</a>
                   <a class="list-group-item" href="#4-11"><!--<span class="kss-ref badge" >4-11</span> -->Single or Default</a>
-                  <a class="list-group-item" href="#4-12"><!--<span class="kss-ref badge" >4-12</span> -->Persistent Components</a>
-                  <a class="list-group-item" href="#4-13"><!--<span class="kss-ref badge" >4-13</span> -->Facebook Instant Articles</a>
+                  <a class="list-group-item" href="#4-12"><!--<span class="kss-ref badge" >4-12</span> -->Facebook Instant Articles</a>
+                  <a class="list-group-item" href="#4-13"><!--<span class="kss-ref badge" >4-13</span> -->Google AMP</a>
+                  <a class="list-group-item" href="#4-14"><!--<span class="kss-ref badge" >4-14</span> -->Persistent Components</a>
             </div>
           </div>
           <article class="m-all t-all d-8of12 d-o-3of12">
@@ -193,11 +198,11 @@ FRBSF.org Pattern Library</a></h1>
 
                 <p>Templates for pages that include data, such as charts and graphs.</p>
 <ul>
+<li><a href="../annotated-templates/data-page.html">Weather and Employment</a></li>
 <li>[PCE]</li>
 <li>[Tech Pulse]</li>
 <li>[Total Factor Productivity]</li>
 <li>[Wage Rigidity Meter]</li>
-<li><a href="../annotated-templates/data-page.html">Weather and Employment</a></li>
 </ul>
 
             </section>
@@ -208,7 +213,7 @@ FRBSF.org Pattern Library</a></h1>
 
                 <p>Publication layouts.</p>
 <ul>
-<li>[Economic Letter]</li>
+<li><a href="../annotated-templates/single-econletter.html">Economic Letter</a></li>
 <li><a href="../annotated-templates/events.html">Events &amp; Conferences</a></li>
 <li><a href="../annotated-templates/single-speech.html">Speeches</a></li>
 <li><a href="../annotated-templates/single-news.html">News Releases</a></li>
@@ -238,25 +243,36 @@ FRBSF.org Pattern Library</a></h1>
             </section>
               <section class="kss-depth-2 m-10of12 m-o-1of12">
                 <h2 class="kss-title" id="4-12">
-                  <span class="kss-ref badge pull-right">4-12</span> Persistent Components
-                </h2>
-
-                <p>Common header and footer for all templates.</p>
-<ul>
-<li>[Header]</li>
-<li>[Footer]</li>
-</ul>
-
-            </section>
-              <section class="kss-depth-2 m-10of12 m-o-1of12">
-                <h2 class="kss-title" id="4-13">
-                  <span class="kss-ref badge pull-right">4-13</span> Facebook Instant Articles
+                  <span class="kss-ref badge pull-right">4-12</span> Facebook Instant Articles
                 </h2>
 
                 <p>Custom styles and layouts for IA.</p>
 <ul>
 <li><a href="../annotated-templates/fbia-econ-letter.html">Economic Letter</a></li>
 <li><a href="../annotated-templates/fbia-fed-blog.html">SF Fed Blog</a></li>
+</ul>
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="4-13">
+                  <span class="kss-ref badge pull-right">4-13</span> Google AMP
+                </h2>
+
+                <p>Custom styles and layouts for Google AMP.</p>
+<ul>
+<li><a href="../annotated-templates/googamp-econ-letter.html">Economic Letter</a></li>
+</ul>
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="4-14">
+                  <span class="kss-ref badge pull-right">4-14</span> Persistent Components
+                </h2>
+
+                <p>Common header and footer for all templates.</p>
+<ul>
+<li>[Header]</li>
+<li>[Footer]</li>
 </ul>
 
             </section>
@@ -300,7 +316,12 @@ FRBSF.org Pattern Library</a></h1>
               $(slide_large[0]).show();
           }
 
-          initSlides();
+          if (window.innerWidth <= 768) {
+              slide_large.show();
+          } else {
+              initSlides();
+
+          }
 
           function goToSlide(slideIndex) {
               slide_large.hide();
@@ -318,8 +339,54 @@ FRBSF.org Pattern Library</a></h1>
           });
       }
 
-
       updateCashSlideshow();
+
+      // Gallery without text (center: image, below: thumbnails)
+      function updatePlainSlideshow() {
+          // Cache a reference to the wrappers
+          var slideshow_plain_large = $('.slideshow_plain_large');
+          var slide_large = slideshow_plain_large.find('.slide_large');
+          var slideshow_plain_thumb = $('.slideshow_plain_thumb');
+          var slide_thumb = slideshow_plain_thumb.find('.slide_thumb');
+
+          function initSlides() {
+              slide_large.hide();
+              $(slide_large[0]).show();
+          }
+
+          if (window.innerWidth <= 768) {
+              slide_large.show();
+          } else {
+              initSlides();
+
+          }
+
+          function goToSlide(slideIndex) {
+              //remove active from slide large and add active to current slide large
+              $(slide_large).removeClass('active');
+              $(slide_large[slideIndex]).addClass('active');
+              $(slide_large).hide();
+              $(slide_large[slideIndex]).show();
+          }
+
+          // Listen for events in the slideshow
+          $(slide_thumb).on('click', function(e) {
+              e.preventDefault();
+              thumbIndex = $(this).index();
+              goToSlide(thumbIndex);
+          });
+      }
+
+      updatePlainSlideshow();
+
+      // Call on window resize
+      $(window).resize(function() {
+          updatePlainSlideshow();
+          updateCashSlideshow();
+      });
+
+
+
 
     $("img.hideshow").click(function() {
       $(this).parent().parent().siblings("article").slideToggle("fast");
@@ -368,13 +435,52 @@ FRBSF.org Pattern Library</a></h1>
     });
 
     </script>
-        <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <script type="text/javascript" src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/galleria/galleria-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/galleria/themes/sffed/galleria.sffed.js"></script>
 
 
     
     <script>
     $('.mobile-menu').click(function() {
       $('.collapse').toggle();
+    });
+
+    /**
+     * Hide and show nav items
+     */
+    // $("#nav-btn-show ~ #nav-menu").toggle();
+    $("#nav-btn-show, #nav-btn-hide").click(function() {
+
+        $("#nav-btn-show ~ #nav-menu").toggle();
+
+    });
+
+    $("#nav-menu a.hideshow_link").click(function(e) {
+
+        e.preventDefault();
+
+        if ($(this).children("span").text() == "+") {
+
+            $(this).children("span").text("-");
+
+            $(this).parent("p").next("div.hideshow_subnav").removeClass("hide");
+
+        } else {
+
+            $(this).children("span").text("+");
+
+            $(this).parent("p").next("div.hideshow_subnav").addClass("hide");
+
+        }
+
+    });
+
+    // Hide nav menu when clicking or tapping off it
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('#nav-btn-show img, #nav-btn-hide img, #nav-menu').length) {
+            $('#nav-menu').hide();
+        }
     });
 
 

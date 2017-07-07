@@ -192,11 +192,10 @@ jQuery(function($) {
 
   // toggle abstract on Research pub indices
   $('.tog').click(function(e) {
-
     e.preventDefault();
-
     $(this).parent().next('.collapsible').toggle();
-
+    var toggleState = ( $(this).children('span').text() === '+' ) ? "-" : "+";
+    $(this).children('span').text(toggleState);
   });
 
   if (window.innerWidth > 768) {
