@@ -1,0 +1,2413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FRBSF.org Pattern Library</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="public/kss.css">
+    <link type="text/css" rel="stylesheet" href="public/prettify.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato|Droid+Sans|Merriweather|Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic|Roboto+Slab:700|Roboto+Slab:300|Roboto+Condensed:400' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css">
+
+    <link type="text/css" rel="stylesheet" href="public/bootstrap-minimal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </head>
+  <body data-spy="scroll" data-target="#sidebar" class="m-10of12 m-o-1of12 t-10of12 d-10of12 t-o-1of12 d-o-1of12">
+
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header m-all t-6of12 d-4of12 t-o-1of12 d-o-1of12">
+          <h1><a class="navbar-brand" href="index.html"><img style="display:inline-block" src="../assets/images/logo-org.png">
+FRBSF.org Pattern Library</a></h1>
+        </div>
+        <div class="m-o-1of12 mobile-menu">
+          <span style="color:#fff; margin: 35px 0 10px 0; display: inline-block; border: 1px #777 solid; padding: 5px;">MENU</span>
+      </div>
+        <div class="collapse navbar-collapse navbar-styleguide-collapse m-all t-5of12 d-6of12 t-o-3of12">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="padding-bottom-none">
+                <a href="section-1.html"><!--1.0: -->CSS</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-2.html"><!--2.0: -->Components</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-3.html"><!--3.0: -->JavaScript</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-4.html"><!--4.0: -->Templates</a>
+              </li>
+              <li class="padding-bottom-none">
+                <a href="section-5.html"><!--5.0: -->Appendix</a>
+              </li>
+        </div>
+    </nav>
+
+
+
+
+    <div class="">
+      <div class="">
+          <div class="m-all t-10of12 d-2of12" id="sidebar">
+            <div class="list-group m-all t-10of12 d-2of12 desktop" data-spy="affix">
+                  <!--<li><a href="#" class="list-group-item disabled">
+                    <h4 class="list-group-item-heading">CSS</h4>
+                  </a></li>-->
+                  <a class="list-group-item" href="#1-1"><!--<span class="kss-ref badge" >1-1</span> -->Typography</a>
+                  <a class="list-group-item" href="#1-2"><!--<span class="kss-ref badge" >1-2</span> -->Colors</a>
+                  <a class="list-group-item" href="#1-3"><!--<span class="kss-ref badge" >1-3</span> -->Icons</a>
+                  <a class="list-group-item" href="#1-4"><!--<span class="kss-ref badge" >1-4</span> -->Buttons</a>
+                  <a class="list-group-item" href="#1-5"><!--<span class="kss-ref badge" >1-5</span> -->Images</a>
+                  <a class="list-group-item" href="#1-6"><!--<span class="kss-ref badge" >1-6</span> -->Table</a>
+            </div>
+          </div>
+          <article class="m-all t-all d-8of12 d-o-3of12">
+
+              <section class="kss-depth-1 jumbotron">
+                <h1 class="kss-title" id="1">CSS</h1>
+
+                <p>Foundational styles applied to FRBSF.org. We use the CSS preprocessor Sass.</p>
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="1-1">
+                  <span class="kss-ref badge pull-right">1-1</span> Typography
+                </h2>
+
+                <p>Documentation of typographical styles across the site.</p>
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.1">
+                  <span class="kss-ref badge pull-right">1-1.1</span> Font
+                </h3>
+
+                <p>The site uses Roboto as its main font. Base size is 20px.</p>
+<p>Backup font is <span style="font-family: Helvetica">Helvetica</span>. Use <span style="font-family: Helvetica Neue">Helvetica Neue</span> as default <a href="../out/section-4.html#4-13">Facebook Instant Articles</a> font.</p>
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.2">
+                  <span class="kss-ref badge pull-right">1-1.2</span> Font weights
+                </h3>
+
+                <div class="kss-box"><p>We use Sass variables for font weights.</p>
+</div>
+
+              <div class="kss-example"><p style="font-weight: [modifier class]">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+1234567890!@#$%^&*()_+</p></div>
+              <pre class="prettyprint lang-html">&lt;p style=&quot;font-weight: [modifier class]&quot;&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;br&gt;
+abcdefghijklmnopqrstuvwxyz&lt;br&gt;
+1234567890!@#$%^&amp;*()_+&lt;/p&gt;</pre>
+
+                <h4>$thin <span class="pull-right"><code>.100 weight</code></span></h4>
+                <div class="kss-example"><p style="font-weight: 100">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+1234567890!@#$%^&*()_+</p></div>
+                <h4>$light <span class="pull-right"><code>.300 weight</code></span></h4>
+                <div class="kss-example"><p style="font-weight: 300">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+1234567890!@#$%^&*()_+</p></div>
+                <h4>$normal <span class="pull-right"><code>.400 weight</code></span></h4>
+                <div class="kss-example"><p style="font-weight: 400">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+1234567890!@#$%^&*()_+</p></div>
+                <h4>$medium <span class="pull-right"><code>.500 weight</code></span></h4>
+                <div class="kss-example"><p style="font-weight: 500">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+1234567890!@#$%^&*()_+</p></div>
+                <h4>$bold <span class="pull-right"><code>.700 weight</code></span></h4>
+                <div class="kss-example"><p style="font-weight: 700">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+1234567890!@#$%^&*()_+</p></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.3">
+                  <span class="kss-ref badge pull-right">1-1.3</span> Foundational headings
+                </h3>
+
+                <div class="kss-box"><p>Default styling of page headings. These are semantic headings with no classes.</p>
+<p>(There will, however, be cases when the semantic won&#39;t match the visual hierarchy of a page. For example, a complex page may have several semantic <code>h1</code>&#39;s, but some of them may visually be required to look like <code>h2</code>. In those cases, use heading classes to make the page visually consistent.)</p>
+</div>
+
+              <div class="kss-example"><h1>Page Title</h1>
+<h2>Primary Sub-heading</h2>
+<h3>Secondary Sub-heading</h3>
+<h4>Related or In This Section heading</h4>
+<h5>Article Title on Archive Pages (event, blog, and publication)</h5></div>
+              <pre class="prettyprint lang-html">&lt;h1&gt;Page Title&lt;/h1&gt;
+&lt;h2&gt;Primary Sub-heading&lt;/h2&gt;
+&lt;h3&gt;Secondary Sub-heading&lt;/h3&gt;
+&lt;h4&gt;Related or In This Section heading&lt;/h4&gt;
+&lt;h5&gt;Article Title on Archive Pages (event, blog, and publication)&lt;/h5&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.4">
+                  <span class="kss-ref badge pull-right">1-1.4</span> Additional headings
+                </h3>
+
+                <div class="kss-box"><p>Headings with special modifier classes.</p>
+</div>
+
+              <div class="kss-example"><h2 class="secTitle">Economic Letter sub-heading</h2>
+<p id="pubName">
+	<span id="sf_eltop">FRBSF</span> <span id="pub_title">Economic Letter</span>
+</p>
+<h2 class="landing-section-title"><a href="#">Section link</a></h2>
+<h2 class="margin-bottom-none padding-top-add"><a href="#">Publications section link</a></h2>
+<h3 class="author vcard"><a href="#">Blog author</a></h3>
+<h3 class="heading-bg">Additional info box heading</h3>
+<h3 class="landing-follow">Follow Us box heading</h3>
+<header class="section-header">
+    <h4><a href="#">Headcrumb heading style</a></h4>
+</header></div>
+              <pre class="prettyprint lang-html">&lt;h2 class=&quot;secTitle&quot;&gt;Economic Letter sub-heading&lt;/h2&gt;
+&lt;p id=&quot;pubName&quot;&gt;
+	&lt;span id=&quot;sf_eltop&quot;&gt;FRBSF&lt;/span&gt; &lt;span id=&quot;pub_title&quot;&gt;Economic Letter&lt;/span&gt;
+&lt;/p&gt;
+&lt;h2 class=&quot;landing-section-title&quot;&gt;&lt;a href=&quot;#&quot;&gt;Section link&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 class=&quot;margin-bottom-none padding-top-add&quot;&gt;&lt;a href=&quot;#&quot;&gt;Publications section link&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 class=&quot;author vcard&quot;&gt;&lt;a href=&quot;#&quot;&gt;Blog author&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 class=&quot;heading-bg&quot;&gt;Additional info box heading&lt;/h3&gt;
+&lt;h3 class=&quot;landing-follow&quot;&gt;Follow Us box heading&lt;/h3&gt;
+&lt;header class=&quot;section-header&quot;&gt;
+    &lt;h4&gt;&lt;a href=&quot;#&quot;&gt;Headcrumb heading style&lt;/a&gt;&lt;/h4&gt;
+&lt;/header&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.5">
+                  <span class="kss-ref badge pull-right">1-1.5</span> Paragraph
+                </h3>
+
+                <div class="kss-box"><p>Default styling of paragraphs.</p>
+</div>
+
+              <div class="kss-example"><p>The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
+lovably dim wiki-girl. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. How
+razorback-jumping frogs can level six piqued gymnasts! All questions asked by
+five watched experts—amaze the judge.</p></div>
+              <pre class="prettyprint lang-html">&lt;p&gt;The quick brown fox jumps over the lazy dog. Foxy parsons quiz and cajole the
+lovably dim wiki-girl. Watch &quot;Jeopardy!&quot;, Alex Trebek&#x27;s fun TV quiz game. How
+razorback-jumping frogs can level six piqued gymnasts! All questions asked by
+five watched experts—amaze the judge.&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.6">
+                  <span class="kss-ref badge pull-right">1-1.6</span> Lists
+                </h3>
+
+                <div class="kss-box"><p>Default styling of lists.</p>
+</div>
+
+              <div class="kss-example"><ul class="ul [modifier class]">
+	<li>A list item</li>
+	<li>A list item</li>
+	<li>A list item</li>
+</ul></div>
+              <pre class="prettyprint lang-html">&lt;ul class=&quot;ul [modifier class]&quot;&gt;
+	&lt;li&gt;A list item&lt;/li&gt;
+	&lt;li&gt;A list item&lt;/li&gt;
+	&lt;li&gt;A list item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+                <h4>Use <code>short-list</code> for no padding between list items. <span class="pull-right"><code>.short-list</code></span></h4>
+                <div class="kss-example"><ul class="ul short-list">
+	<li>A list item</li>
+	<li>A list item</li>
+	<li>A list item</li>
+</ul></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.7">
+                  <span class="kss-ref badge pull-right">1-1.7</span> Blockquote
+                </h3>
+
+                <div class="kss-box"><p>Default styling of blockquotes.</p>
+</div>
+
+              <div class="kss-example"><blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</blockquote></div>
+              <pre class="prettyprint lang-html">&lt;blockquote&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/blockquote&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.8">
+                  <span class="kss-ref badge pull-right">1-1.8</span> Pull quote
+                </h3>
+
+                <div class="kss-box"><p>General pull quote style. Use in excerpts from interviews employed as graphic elements. Typically followed by quote attribution.</p>
+<p><code>pullquote</code> class uses Helvetica to avoid Roboto quote marks.</p>
+</div>
+
+              <div class="kss-example"><blockquote class="pullquote">
+<p>“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”</p>
+    <footer>John, Quote author</footer>
+</blockquote></div>
+              <pre class="prettyprint lang-html">&lt;blockquote class=&quot;pullquote&quot;&gt;
+&lt;p&gt;“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”&lt;/p&gt;
+    &lt;footer&gt;John, Quote author&lt;/footer&gt;
+&lt;/blockquote&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.9">
+                  <span class="kss-ref badge pull-right">1-1.9</span> Pull quote (Jobs)
+                </h3>
+
+                <div class="kss-box"><p>The <a href="http://www.frbsf.org/our-district/careers/">Jobs page</a> uses a special pull quote class for its multimedia gallery.</p>
+</div>
+
+              <div class="kss-example"><article role="article" class="m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12 page-careers">
+	<div id="jp_container" class="demo-container">
+		<div class="slideshow_large">
+	    	<div class="slide_large active" id="slide_large1" style="display: block;">
+	        	<img src="http://placehold.it/550x375" width="550" height="375" class="alignnone size-full" />
+				<div class="quote">
+					<p>“The quick brown fox jumps over the lazy dog. Watch 'Jeopardy!', Alex Trebek's fun TV quiz game.”</p>
+					<p class="quote-author">Jane, Quote author</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;article role=&quot;article&quot; class=&quot;m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12 page-careers&quot;&gt;
+	&lt;div id=&quot;jp_container&quot; class=&quot;demo-container&quot;&gt;
+		&lt;div class=&quot;slideshow_large&quot;&gt;
+	    	&lt;div class=&quot;slide_large active&quot; id=&quot;slide_large1&quot; style=&quot;display: block;&quot;&gt;
+	        	&lt;img src=&quot;http://placehold.it/550x375&quot; width=&quot;550&quot; height=&quot;375&quot; class=&quot;alignnone size-full&quot; /&gt;
+				&lt;div class=&quot;quote&quot;&gt;
+					&lt;p&gt;“The quick brown fox jumps over the lazy dog. Watch &#x27;Jeopardy!&#x27;, Alex Trebek&#x27;s fun TV quiz game.”&lt;/p&gt;
+					&lt;p class=&quot;quote-author&quot;&gt;Jane, Quote author&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.11">
+                  <span class="kss-ref badge pull-right">1-1.11</span> Chart or table title
+                </h3>
+
+                <div class="kss-box"><p>Title style for charts and tables (Economic Letter).</p>
+</div>
+
+              <div class="kss-example"><div class="Rchart">
+	<p>Table or Chart Title<br>
+	Description of table or chart</p>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;Rchart&quot;&gt;
+	&lt;p&gt;Table or Chart Title&lt;br&gt;
+	Description of table or chart&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.12">
+                  <span class="kss-ref badge pull-right">1-1.12</span> Chart or table footer
+                </h3>
+
+                <div class="kss-box"><p>Footnote style for charts and tables (Economic Letter).</p>
+</div>
+
+              <div class="kss-example"><div class="Rchart">
+	<p class="note">Note: Footnote about or source of chart or table.</p>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;Rchart&quot;&gt;
+	&lt;p class=&quot;note&quot;&gt;Note: Footnote about or source of chart or table.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.13">
+                  <span class="kss-ref badge pull-right">1-1.13</span> Superscript
+                </h3>
+
+                <div class="kss-box"><p>Superscript style for text that requires it, for example, <a href="http://www.frbsf.org/our-district/press/presidents-speeches/williams-speeches/">President&#39;s Speeches</a> footnotes. Link it to the corresponding citation or footnote at the bottom of the page.</p>
+</div>
+
+              <div class="kss-example"><p>Footnoted phrase<a class="footnotenumbersraised">1</a></p></div>
+              <pre class="prettyprint lang-html">&lt;p&gt;Footnoted phrase&lt;a class=&quot;footnotenumbersraised&quot;&gt;1&lt;/a&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.14">
+                  <span class="kss-ref badge pull-right">1-1.14</span> Center
+                </h3>
+
+                <div class="kss-box"><p>Use class <code>aligncenter</code> to center an element.</p>
+</div>
+
+              <div class="kss-example"><p class="aligncenter">Centered element</p>
+<p class="aligncenter"><img src="http://placehold.it/450x280"></p></div>
+              <pre class="prettyprint lang-html">&lt;p class=&quot;aligncenter&quot;&gt;Centered element&lt;/p&gt;
+&lt;p class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;http://placehold.it/450x280&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-1.15">
+                  <span class="kss-ref badge pull-right">1-1.15</span> Disclaimer
+                </h3>
+
+                <div class="kss-box"><p>Style for boilerplate language required on some pages.</p>
+</div>
+
+              <div class="kss-example"><footer>
+	<p class="disclaimer">
+		<small>The views expressed are not necessarily those of the Federal Reserve Bank of San Francisco or of the Federal Reserve System.</small>
+	</p>
+</footer></div>
+              <pre class="prettyprint lang-html">&lt;footer&gt;
+	&lt;p class=&quot;disclaimer&quot;&gt;
+		&lt;small&gt;The views expressed are not necessarily those of the Federal Reserve Bank of San Francisco or of the Federal Reserve System.&lt;/small&gt;
+	&lt;/p&gt;
+&lt;/footer&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="1-2">
+                  <span class="kss-ref badge pull-right">1-2</span> Colors
+                </h2>
+
+                <p>These are the approved colors for use on the site. We use SASS variables to set colors. (Check out <a href="http://geoffgraham.me/naming-sass-color-variables/" class="offsite-icon-img" target="_blank">&quot;Naming SASS Color Variables&quot;</a> and <a href="https://craigmdennis.com/articles/better-sass-variables/" class="offsite-icon-img" target="_blank">&quot;Better SASS variables through abstraction&quot;</a>).</p>
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.1">
+                  <span class="kss-ref badge pull-right">1-2.1</span> Department section colors
+                </h3>
+
+                <div class="kss-box"><p>(Text color #fff used only to make text readable.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #6f0733;; color: #fff">
+	<p class="aligncenter">$er-color: #6f0733</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #96200f; color: #fff">
+	<p class="aligncenter">$banking-color: #96200f</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #026877; color: #fff">
+	<p class="aligncenter">$education-color: #026877</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #ae6320;; color: #fff">
+	<p class="aligncenter">$cd-color: #ae6320</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #215b33; color: #fff">
+	<p class="aligncenter">$cash-color: #215b33</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #6f0733;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$er-color: #6f0733&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #96200f; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$banking-color: #96200f&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #026877; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$education-color: #026877&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #ae6320;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$cd-color: #ae6320&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #215b33; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$cash-color: #215b33&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.2">
+                  <span class="kss-ref badge pull-right">1-2.2</span> Graphics colors (#unreserved)
+                </h3>
+
+                <div class="kss-box"><p>These are used for <a href="http://www.frbsf.org/our-district/about/unreserved/">#unreserved</a> landing block colors. (Text color #fff used only to make text readable.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #3d7dba;; color: #fff">
+	<p class="aligncenter">$graphics-blue: $light-blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #a64a36; color: #fff">
+	<p class="aligncenter">$graphics-red: #a64a36</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #c39709; color: #fff">
+	<p class="aligncenter">$graphics-yellow: #c39709</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #518000;; color: #fff">
+	<p class="aligncenter">$graphics-green: #518000</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #827ac9; color: #fff">
+	<p class="aligncenter">$graphics-purple: #827ac9</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #aba091; color: #fff">
+	<p class="aligncenter">$graphics-beige: #aba091</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #516e5c;; color: #fff">
+	<p class="aligncenter">$graphics-sage: #516e5c</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
+	<p class="aligncenter">$graphics-teal: $teal</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #784139; color: #fff">
+	<p class="aligncenter">$graphics-dark-red: $dark-red</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #3d7dba;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-blue: $light-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #a64a36; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-red: #a64a36&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #c39709; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-yellow: #c39709&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #518000;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-green: #518000&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #827ac9; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-purple: #827ac9&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #aba091; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-beige: #aba091&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #516e5c;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-sage: #516e5c&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #6291a6; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-teal: $teal&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #784139; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$graphics-dark-red: $dark-red&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.3">
+                  <span class="kss-ref badge pull-right">1-2.3</span> Text and background
+                </h3>
+
+                <div class="kss-box"><p>Black text color and white background. (Note: &quot;color: #fff&quot; used to show text only.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of8 d-4of8" style="background: #333;; color: #fff">
+	<p class="aligncenter">$black</p></article>
+	<article class="m-all t-4of8 d-4of8" style="background: #fff; color: #333">
+	<p class="aligncenter">$white</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of8 d-4of8&quot; style=&quot;background: #333;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$black&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of8 d-4of8&quot; style=&quot;background: #fff; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$white&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.4">
+                  <span class="kss-ref badge pull-right">1-2.4</span> Gray background colors
+                </h3>
+
+                <div class="kss-box"><p>Shades of gray. (Note: &quot;color: #fff&quot; used to show text only.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #f6f5f4;; color: #333">
+	<p class="aligncenter">$pale-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
+	<p class="aligncenter">$light-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #cacaca; color: #333">
+	<p class="aligncenter">$nav-btn-gray</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #6e6e6e;; color: #fff">
+	<p class="aligncenter">$medium-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
+	<p class="aligncenter">$gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
+	<p class="aligncenter">$coal-gray</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #f1eeec;; color: #333">
+	<p class="aligncenter">$sand-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #e1dddb; color: #333">
+	<p class="aligncenter">$lt-sand-gray</p></article>
+	<!--Games not-selected button background color-->
+	<article class="m-all t-4of12 d-4of12" style="background: #c1bbb9; color: #333">
+	<p class="aligncenter">$med-sand-gray</p></article>
+	<!--Games not-selected button text-->
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #f6f5f4;; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$pale-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #ebebeb; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$light-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #cacaca; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$nav-btn-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #6e6e6e;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$medium-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #8c8c8c; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #4e4e4e; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$coal-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #f1eeec;; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #e1dddb; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$lt-sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;!--Games not-selected button background color--&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #c1bbb9; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$med-sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;!--Games not-selected button text--&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.5">
+                  <span class="kss-ref badge pull-right">1-2.5</span> Brown and gold
+                </h3>
+
+                <div class="kss-box"><p>Shades of brown and gold. (Note: &quot;color: #fff&quot; used to show text only.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #eceee5;; color: #333">
+	<p class="aligncenter">$tan</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #bea572; color: #fff">
+	<p class="aligncenter">$beige</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #837a57; color: #fff">
+	<p class="aligncenter">$dark-beige</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #753d05;; color: #fff">
+	<p class="aligncenter">$brown</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6c441c; color: #fff">
+	<p class="aligncenter">$light-brown</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #be9f72; color: #fff">
+	<p class="aligncenter">$gold</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #eceee5;; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$tan&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #bea572; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$beige&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #837a57; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$dark-beige&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #753d05;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$brown&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #6c441c; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$light-brown&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #be9f72; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$gold&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.6">
+                  <span class="kss-ref badge pull-right">1-2.6</span> Green
+                </h3>
+
+                <div class="kss-box"><p>Shades of green. (Note: &quot;color: #fff&quot; used to show text only.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #2e4520;; color: #fff">
+	<p class="aligncenter">$green</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #7c936f; color: #fff">
+	<p class="aligncenter">$light-green</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #497037; color: #fff">
+	<p class="aligncenter">$dark-green</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #2e4520;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$green&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #7c936f; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$light-green&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #497037; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$dark-green&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.7">
+                  <span class="kss-ref badge pull-right">1-2.7</span> Blue
+                </h3>
+
+                <div class="kss-box"><p>Shades of blue, including teal. (Note: &quot;color: #fff&quot; used to show text only.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #0256a5;; color: #fff">
+	<p class="aligncenter">$blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #022951; color: #fff">
+	<p class="aligncenter">$dark-blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #3d7dba; color: #fff">
+	<p class="aligncenter">$light-blue</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #596a9a;; color: #fff">
+	<p class="aligncenter">$periwinkle</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
+	<p class="aligncenter">$teal</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #0256a5;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #022951; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$dark-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #3d7dba; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$light-blue&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #596a9a;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$periwinkle&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #6291a6; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$teal&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.8">
+                  <span class="kss-ref badge pull-right">1-2.8</span> Red
+                </h3>
+
+                <div class="kss-box"><p>Shades of red. (Note: &quot;color: #fff&quot; used to show text only.)</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of8 d-4of8" style="background: #784139;; color: #fff">
+	<p class="aligncenter">$dark-red</p></article>
+	<article class="m-all t-4of8 d-4of8" style="background: #883529; color: #fff">
+	<p class="aligncenter">$maroon</p></article>
+	<!-- Games incorrect answer selected -->
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of8 d-4of8&quot; style=&quot;background: #784139;; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$dark-red&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of8 d-4of8&quot; style=&quot;background: #883529; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$maroon&lt;/p&gt;&lt;/article&gt;
+	&lt;!-- Games incorrect answer selected --&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.9">
+                  <span class="kss-ref badge pull-right">1-2.9</span> Border and disabled gray
+                </h3>
+
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of8 d-4of8" style="color: #333; border: solid 2px #ebebeb;">
+	<p class="aligncenter">$border-color: $light-gray</p></article>
+	<article class="m-all t-4of8 d-4of8" style="background: #6e6e6e; color: #fff">
+	<p class="aligncenter">$disabled-gray: $medium-gray</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of8 d-4of8&quot; style=&quot;color: #333; border: solid 2px #ebebeb;&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$border-color: $light-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of8 d-4of8&quot; style=&quot;background: #6e6e6e; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$disabled-gray: $medium-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.10">
+                  <span class="kss-ref badge pull-right">1-2.10</span> Text color
+                </h3>
+
+                <div class="kss-box"><p>Text color (black).</p>
+</div>
+
+              <div class="kss-example"><p style="color: #333">Use $black for text color.</p></div>
+              <pre class="prettyprint lang-html">&lt;p style=&quot;color: #333&quot;&gt;Use $black for text color.&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.11">
+                  <span class="kss-ref badge pull-right">1-2.11</span> Link color
+                </h3>
+
+                <div class="kss-box"><p>Link color, hover color.</p>
+</div>
+
+              <div class="kss-example"><a href="#">Link and hover color in action.</a>
+<p>SASS formula:</p>
+<p>$link-color: $blue</p>
+<p>$link-hover: darken($link-color, 9%)</p></div>
+              <pre class="prettyprint lang-html">&lt;a href=&quot;#&quot;&gt;Link and hover color in action.&lt;/a&gt;
+&lt;p&gt;SASS formula:&lt;/p&gt;
+&lt;p&gt;$link-color: $blue&lt;/p&gt;
+&lt;p&gt;$link-hover: darken($link-color, 9%)&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.12">
+                  <span class="kss-ref badge pull-right">1-2.12</span> Data visualization colors
+                </h3>
+
+                <div class="kss-box"><p>Use these approved colors for data charts and only in the <a href="#1-2.13">color combinations</a> according to chart type. Sass color names are preceded by <code>$data-viz-</code>, e.g., <code>$data-viz-dark-blue</code>.</p>
+<p>When color labels are more approriate for the data versus black (#333), please use alternate colors for data labels. <a href="../out/section-2.html#2-5.4">See example.</a></p>
+</div>
+
+              <div class="kss-example"><h4>Principal colors</h4>
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Color</th>
+            <th>Hex Value</th>
+            <th>RGB Value</th>
+        </tr>
+    </thead>
+    <tr>
+        <td data-title="Color" style="background: #2e5e8b; color: #fff; padding: 15px">dark-blue</td>
+        <td data-title="Hex Value">2e5e8b</td>
+        <td data-title="RGB Value">(46,94,139)</td>
+    </tr>
+    <tr>
+        <td data-title="Color" style="background: #8baf3e; color: #fff; padding: 15px">light-green</td>
+        <td data-title="Hex Value">8baf3e</td>
+        <td data-title="RGB Value">(139,175,62)</td>
+    </tr>
+    <tr>
+        <td data-title="Color" style="background: #fcc62d; color: #fff; padding: 15px">light-yellow</td>
+        <td data-title="Hex Value">fcc62d</td>
+        <td data-title="RGB Value">(252,198,45)</td>
+    </tr>
+    <tr>
+        <td data-title="Color" style="background: #88cde5; color: #fff; padding: 15px">light-blue</td>
+        <td data-title="Hex Value">88cde5</td>
+        <td data-title="RGB Value">(136,205,229)</td>
+    </tr>
+    <tr>
+        <td data-title="Color" style="background: #6d6aaa; color: #fff; padding: 15px">purple</td>
+        <td data-title="Hex Value">6d6aaa</td>
+        <td data-title="RGB Value">(109,106,170)</td>
+    </tr>
+    <tr>
+        <td data-title="Color" style="background: #6291a6; color: #fff; padding: 15px">teal</td>
+        <td data-title="Hex Value">6291a6</td>
+        <td data-title="RGB Value">(98,145,166)</td>
+    </tr>
+    <tr>
+        <td data-title="Color" style="background: #474747; color: #fff; padding: 15px">dark-gray</td>
+        <td data-title="Hex Value">474747</td>
+        <td data-title="RGB Value">(71,71,71)</td>
+    </tr>
+    <tr>
+        <td data-title="Color" style="background: #b63b36; color: #fff; padding: 15px">red</td>
+        <td data-title="Hex Value">b63b36</td>
+        <td data-title="RGB Value">(182,59,54)</td>
+    </tr>
+</table>
+<p class="cf"></p>
+<h4>Alternate colors for data labels (to improve readability)</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #dca303">
+	<p class="aligncenter">label color for light-yellow</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #3dabc9">
+	<p class="aligncenter">label color for light-blue</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #769627">
+	<p class="aligncenter">label color for light-green</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;h4&gt;Principal colors&lt;/h4&gt;
+<<<<<<< HEAD
+&lt;table class=&quot;data-table&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Color&lt;/th&gt;
+            &lt;th&gt;Hex Value&lt;/th&gt;
+            &lt;th&gt;RGB Value&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #2e5e8b; color: #fff; padding: 15px&quot;&gt;dark-blue&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;2e5e8b&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(46,94,139)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #8baf3e; color: #fff; padding: 15px&quot;&gt;light-green&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;8baf3e&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(139,175,62)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #fcc62d; color: #fff; padding: 15px&quot;&gt;light-yellow&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;fcc62d&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(252,198,45)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #88cde5; color: #fff; padding: 15px&quot;&gt;light-blue&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;88cde5&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(136,205,229)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #6d6aaa; color: #fff; padding: 15px&quot;&gt;purple&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;6d6aaa&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(109,106,170)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #6291a6; color: #fff; padding: 15px&quot;&gt;teal&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;6291a6&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(98,145,166)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #474747; color: #fff; padding: 15px&quot;&gt;dark-gray&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;474747&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(71,71,71)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Color&quot; style=&quot;background: #b63b36; color: #fff; padding: 15px&quot;&gt;red&lt;/td&gt;
+        &lt;td data-title=&quot;Hex Value&quot;&gt;b63b36&lt;/td&gt;
+        &lt;td data-title=&quot;RGB Value&quot;&gt;(182,59,54)&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+=======
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #2e5e8b; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;dark-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #8baf3e; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;light-green&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #fcc62d; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;light-yellow&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #88cde5; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;light-blue&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #6d6aaa; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;purple&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #6291a6; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;teal&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #474747; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;dark-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #b63b36; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;red&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+>>>>>>> 39987c2f840bbad2a0faf0c57b05cf166622101d
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Alternate colors for data labels (to improve readability)&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #fff; color: #dca303&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;label color for light-yellow&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #fff; color: #3dabc9&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;label color for light-blue&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #fff; color: #769627&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;label color for light-green&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.13">
+                  <span class="kss-ref badge pull-right">1-2.13</span> Qualitative scheme color combinations
+                </h3>
+
+                <div class="kss-box"><p>Use to represent discrete data sets. Colors do not represent magnitude differences between data sets. (<a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" class="offsite-icon-img" target="_blank">ColorBrewer 2.0: Color Advice for Cartography.</a>) (Reviewed for color blindness (Protanopia and Deuteuranopia).</p>
+<p><a href="../out/section-2.html#2-5.1">See examples</a>.</p>
+</div>
+
+              <div class="kss-example"><h4>2 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-4of12 t-4of12 d-4of12">
+	<p class="aligncenter">Default</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-4of12 t-4of12 d-4of12">
+	<p class="aligncenter">Option 2<br>(Use Default First)</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-4of12 t-4of12 d-4of12">
+	<p class="aligncenter">Option 3<br>(Use Default First)</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #6291a6">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-4of12 t-4of12 d-4of12" style="background: #b63b36">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>3 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12">
+	<p class="aligncenter">Option 1</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12">
+	<p class="aligncenter">Option 2</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #6291a6">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #474747">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>4 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-3of12 t-3of12 d-3of12" style="background: #88cde5">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>5 Colors</h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #fcc62d">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #88cde5">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;h4&gt;2 Colors&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;Default&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot; style=&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot; style=&quot;background: #8baf3e&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;Option 2&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot; style=&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot; style=&quot;background: #fcc62d&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;Option 3&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot; style=&quot;background: #6291a6&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-4of12 t-4of12 d-4of12&quot; style=&quot;background: #b63b36&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;3 Colors&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;Option 1&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #8baf3e&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #fcc62d&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;Option 2&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #6291a6&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #fcc62d&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #474747&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;4 Colors&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #8baf3e&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #fcc62d&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-3of12 t-3of12 d-3of12&quot; style=&quot;background: #88cde5&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;5 Colors&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #8baf3e&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #fcc62d&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #88cde5&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #6d6aaa&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.14">
+                  <span class="kss-ref badge pull-right">1-2.14</span> Diverging schemes color combinations
+                </h3>
+
+                <div class="kss-box"><p>Use to display deviations from the mean. (<a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" class="offsite-icon-img" target="_blank">ColorBrewer 2.0: Color Advice for Cartography.</a>)</p>
+<p><a href="../out/section-2.html#2-5.2">See example</a>.</p>
+</div>
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #b9cf8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #a7a6cc">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #829eB9">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #d38986">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-2of10 t-2of10 d-2of10" style="background: #b63b36">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #8baf3e&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #b9cf8b&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #f7f7f7&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #a7a6cc&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #6d6aaa&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #2e5e8b&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #829eB9&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #f7f7f7&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #d38986&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-2of10 t-2of10 d-2of10&quot; style=&quot;background: #b63b36&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.15">
+                  <span class="kss-ref badge pull-right">1-2.15</span> Sequential schemes color combinations
+                </h3>
+
+                <div class="kss-box"><p>Use to order data that progresses from low to high, lightness steps with light colors for low data values to dark colors for high data values. (<a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" class="offsite-icon-img" target="_blank">ColorBrewer 2.0: Color Advice for Cartography.</a>)</p>
+<p><a href="../out/section-2.html#2-5.3">See example</a>.</p>
+</div>
+
+              <div class="kss-example"><h4>Based on <code>data-viz-dark-blue</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #D5DFE8">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #ABBFD1">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #829EB9">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #587EA2">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #2e5e8b; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #234768">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #172F46">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #0C1823">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-light-green</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #E8EFD8">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #D1DFB2">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #B9CF8B">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #A2BF65">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #8BAF3E; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #68832F">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #46581F">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #232C10">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-light-yellow</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FEF4D5">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FEE8AB">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FDDD81">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FDD157">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #FCC62D; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #BD9522">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #7E6317">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #3F310B">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-teal</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #E0E9ED">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #C0D3DB">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #A1BDCA">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #81A7B8">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #6291A6; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #4A6D7D">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #314953">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #182429">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p>
+<h4>Based on <code>data-viz-purple</code></h4>
+<main class="m-all t-all d-all cf">
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #E2E1EE">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #C5C3DD">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #A7A6CC">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #8A88BB">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #6D6AAA; color: #fff">
+	<p class="aligncenter">*</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #525080">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #373555">
+	<p class="aligncenter">&nbsp;</p></article>
+	<article class="m-1of8 t-1of8 d-1of8" style="background: #1B1B2A">
+	<p class="aligncenter">&nbsp;</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;h4&gt;Based on &lt;code&gt;data-viz-dark-blue&lt;/code&gt;&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #D5DFE8&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #ABBFD1&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #829EB9&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #587EA2&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #2e5e8b; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #234768&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #172F46&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #0C1823&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-light-green&lt;/code&gt;&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #E8EFD8&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #D1DFB2&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #B9CF8B&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #A2BF65&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #8BAF3E; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #68832F&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #46581F&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #232C10&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-light-yellow&lt;/code&gt;&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #FEF4D5&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #FEE8AB&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #FDDD81&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #FDD157&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #FCC62D; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #BD9522&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #7E6317&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #3F310B&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-teal&lt;/code&gt;&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #E0E9ED&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #C0D3DB&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #A1BDCA&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #81A7B8&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #6291A6; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #4A6D7D&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #314953&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #182429&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;h4&gt;Based on &lt;code&gt;data-viz-purple&lt;/code&gt;&lt;/h4&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #E2E1EE&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #C5C3DD&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #A7A6CC&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #8A88BB&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #6D6AAA; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #525080&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #373555&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-1of8 t-1of8 d-1of8&quot; style=&quot;background: #1B1B2A&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-2.16">
+                  <span class="kss-ref badge pull-right">1-2.16</span> Grays for reference lines and to accentuate focus
+                </h3>
+
+
+              <div class="kss-example"><main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #333">
+	<p class="aligncenter">$pale-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #333">
+	<p class="aligncenter">$sand-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
+	<p class="aligncenter">$light-gray</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+	<article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
+	<p class="aligncenter">$gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
+	<p class="aligncenter">$medium-gray</p></article>
+	<article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
+	<p class="aligncenter">$coal-gray</p></article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #f6f5f4; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$pale-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #f1eeec; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$sand-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #ebebeb; color: #333&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$light-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class=&quot;m-all t-all d-all cf&quot;&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #8c8c8c; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #6e6e6e; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$medium-gray&lt;/p&gt;&lt;/article&gt;
+	&lt;article class=&quot;m-all t-4of12 d-4of12&quot; style=&quot;background: #4e4e4e; color: #fff&quot;&gt;
+	&lt;p class=&quot;aligncenter&quot;&gt;$coal-gray&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="1-3">
+                  <span class="kss-ref badge pull-right">1-3</span> Icons
+                </h2>
+
+                <p>Various icons to direct users around the site.</p>
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.1">
+                  <span class="kss-ref badge pull-right">1-3.1</span> Menu
+                </h3>
+
+                <div class="kss-box"><p>Hamburger icon for main top nav menu.</p>
+</div>
+
+              <div class="kss-example"><div id="nav-btn-show" tabindex="0" class="m-1of4 d-1of6 t-1of6" style="background: #333; color: #6e6e6e; padding: 1rem">
+	<img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
+</div>
+<p class="cf"></p>
+<div id="nav-btn" tabindex="0" class="m-1of4 d-1of6 t-1of6 fixed" style="background: #f1eeec; color: #6e6e6e; padding: 1rem">
+	<img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
+</div>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;div id=&quot;nav-btn-show&quot; tabindex=&quot;0&quot; class=&quot;m-1of4 d-1of6 t-1of6&quot; style=&quot;background: #333; color: #6e6e6e; padding: 1rem&quot;&gt;
+	&lt;img src=&quot;../assets/images/icon-menu.png&quot; width=&quot;27&quot; height=&quot;23&quot; alt=&quot;Show Menu&quot;&gt; MENU
+&lt;/div&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;div id=&quot;nav-btn&quot; tabindex=&quot;0&quot; class=&quot;m-1of4 d-1of6 t-1of6 fixed&quot; style=&quot;background: #f1eeec; color: #6e6e6e; padding: 1rem&quot;&gt;
+	&lt;img src=&quot;../assets/images/icon-menu.png&quot; width=&quot;27&quot; height=&quot;23&quot; alt=&quot;Show Menu&quot;&gt; MENU
+&lt;/div&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.2">
+                  <span class="kss-ref badge pull-right">1-3.2</span> Search
+                </h3>
+
+                <div class="kss-box"><p>Search icon, which, when clicked or tapped becomes a search box form.</p>
+</div>
+
+              <div class="kss-example"><div id="search-site" class="m-1of4 d-1of6 t-1of6" style="background: #333; color: #6e6e6e; padding: 1rem">
+	<img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
+</div>
+<p class="cf"></p>
+<div id="search-site" class="m-1of4 d-1of6 t-1of6" style="background: #f1eeec; color: #6e6e6e; padding: 1rem">
+	<img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
+</div>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;div id=&quot;search-site&quot; class=&quot;m-1of4 d-1of6 t-1of6&quot; style=&quot;background: #333; color: #6e6e6e; padding: 1rem&quot;&gt;
+	&lt;img src=&quot;../assets/images/search-icon.png&quot; alt=&quot;Search SF Fed&quot; style=&quot;display: block;&quot;&gt;
+&lt;/div&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;div id=&quot;search-site&quot; class=&quot;m-1of4 d-1of6 t-1of6&quot; style=&quot;background: #f1eeec; color: #6e6e6e; padding: 1rem&quot;&gt;
+	&lt;img src=&quot;../assets/images/search-icon.png&quot; alt=&quot;Search SF Fed&quot; style=&quot;display: block;&quot;&gt;
+&lt;/div&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.3">
+                  <span class="kss-ref badge pull-right">1-3.3</span> Off-site icon
+                </h3>
+
+                <div class="kss-box"><p>Indicates to user a link that is not frbsf.org and will open a new window.</p>
+<p>Below is a basic link; it&#39;s then followed by those with off-site icon variants.</p>
+</div>
+
+              <div class="kss-example"><a href="http://www.federalreserve.gov" class="a [modifier class]">Link</a></div>
+              <pre class="prettyprint lang-html">&lt;a href=&quot;http://www.federalreserve.gov&quot; class=&quot;a [modifier class]&quot;&gt;Link&lt;/a&gt;</pre>
+
+                <h4>Icon next to non-FRBSF site indicating link will open new window. <span class="pull-right"><code>.offsite-icon-img</code></span></h4>
+                <div class="kss-example"><a href="http://www.federalreserve.gov" class="a offsite-icon-img">Link</a></div>
+                <h4>Off-site link icon in the main navigation. <span class="pull-right"><code>.offsite-icon-img-nav</code></span></h4>
+                <div class="kss-example"><a href="http://www.federalreserve.gov" class="a offsite-icon-img-nav">Link</a></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.4">
+                  <span class="kss-ref badge pull-right">1-3.4</span> Audio and video link icons
+                </h3>
+
+                <div class="kss-box"><p>Indicates whether link goes to audio or video content.</p>
+<p>Below is a basic link; it&#39;s then followed by those with multimedia icon variants.</p>
+</div>
+
+              <div class="kss-example"><a class=" [modifier class]" href="">Link</a></div>
+              <pre class="prettyprint lang-html">&lt;a class=&quot; [modifier class]&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;</pre>
+
+                <h4>Links to video content. <span class="pull-right"><code>.video-icon</code></span></h4>
+                <div class="kss-example"><a class=" video-icon" href="">Link</a></div>
+                <h4>Links to audio content. <span class="pull-right"><code>.audio-icon</code></span></h4>
+                <div class="kss-example"><a class=" audio-icon" href="">Link</a></div>
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.5">
+                  <span class="kss-ref badge pull-right">1-3.5</span> Economic letter icons
+                </h3>
+
+                <div class="kss-box"><p>Share, subscribe and download icons on Economic Letters. <a href="#1-3.6">Social media icons</a> appear when share icon is clicked.</p>
+</div>
+
+              <div class="kss-example"><p>
+<a href="#">
+	<img src="../assets/images/icon-pdf.png" width="46" height="30" alt="View PDF" class="padding-r pdf">&nbsp;&nbsp;&nbsp;
+</a>
+<a href="#" title="" target="_blank">
+	<img src="../assets/images/icon-email.png" width="41" height="30" alt="Subscribe to FedViews">&nbsp;&nbsp;&nbsp;
+</a>
+<a href="#" class="share">
+	<img src="../assets/images/icon-share.png" width="37" height="30" alt="Share">
+</a>
+</p></div>
+              <pre class="prettyprint lang-html">&lt;p&gt;
+&lt;a href=&quot;#&quot;&gt;
+	&lt;img src=&quot;../assets/images/icon-pdf.png&quot; width=&quot;46&quot; height=&quot;30&quot; alt=&quot;View PDF&quot; class=&quot;padding-r pdf&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/a&gt;
+&lt;a href=&quot;#&quot; title=&quot;&quot; target=&quot;_blank&quot;&gt;
+	&lt;img src=&quot;../assets/images/icon-email.png&quot; width=&quot;41&quot; height=&quot;30&quot; alt=&quot;Subscribe to FedViews&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;share&quot;&gt;
+	&lt;img src=&quot;../assets/images/icon-share.png&quot; width=&quot;37&quot; height=&quot;30&quot; alt=&quot;Share&quot;&gt;
+&lt;/a&gt;
+&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.6">
+                  <span class="kss-ref badge pull-right">1-3.6</span> Share icons
+                </h3>
+
+                <div class="kss-box"><p>Social media icons for sharing content. Used on several Fed sections.</p>
+</div>
+
+              <div class="kss-example"><div id="share-links">
+        <a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Share on Facebook"></a>
+        <a href="#" title="Share on Twitter" target="_blank"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Share on Twitter"></a>
+        <a href="#"><img src="../assets/images/icon-linkedin.png" width="44" height="44" alt="Share on LinkedIn"></a>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div id=&quot;share-links&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-facebook.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Share on Facebook&quot;&gt;&lt;/a&gt;
+        &lt;a href=&quot;#&quot; title=&quot;Share on Twitter&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;../assets/images/icon-twitter.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Share on Twitter&quot;&gt;&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-linkedin.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Share on LinkedIn&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.7">
+                  <span class="kss-ref badge pull-right">1-3.7</span> Education share icons
+                </h3>
+
+                <div class="kss-box"><p>Sharing and social icons for Education</p>
+</div>
+
+              <div class="kss-example"><div class="landing-follow-section-ed desktop">
+	<a href="#"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
+	<a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
+	<a href="#"><img src="../assets/images/icon-pinterest.png" width="44" height="44" alt="Pinterest"></a>
+	<a href="#"><img src="../assets/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
+	<a href="#"><img border="0" src="../assets/images/icon-edublog.png" alt="Edublog"></a>
+	<a href="#"><img border="0" src="../assets/images/icon-email.png" alt="Newsletter"></a>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;landing-follow-section-ed desktop&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-twitter.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-facebook.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Facebook&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-pinterest.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Pinterest&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-youtube.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Youtube&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;../assets/images/icon-edublog.png&quot; alt=&quot;Edublog&quot;&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;../assets/images/icon-email.png&quot; alt=&quot;Newsletter&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.8">
+                  <span class="kss-ref badge pull-right">1-3.8</span> Community Development share icons
+                </h3>
+
+                <div class="kss-box"><p>Users can follow CD on social with these icons.</p>
+</div>
+
+              <div class="kss-example"><div class="landing-follow-section desktop">
+    <a href="#"><img src="../assets/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
+    <a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
+    <a href="#"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
+    <a href="#"><img src="../assets/images/icon-linkedin.png" width="44" height="44" alt="LinkedIn"></a>
+    <a href="#"><img border="0" src="../assets/images/icon-email.png" alt="Newsletter"></a>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;landing-follow-section desktop&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-youtube.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Youtube&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-facebook.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Facebook&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-twitter.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/icon-linkedin.png&quot; width=&quot;44&quot; height=&quot;44&quot; alt=&quot;LinkedIn&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;../assets/images/icon-email.png&quot; alt=&quot;Newsletter&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.9">
+                  <span class="kss-ref badge pull-right">1-3.9</span> PDF CV icon
+                </h3>
+
+                <div class="kss-box"><p>Combo &quot;CV/PDF&quot; box for economist bio.</p>
+</div>
+
+              <div class="kss-example"><p id="cv"><a href="#" class="pdf">CV</a></p></div>
+              <pre class="prettyprint lang-html">&lt;p id=&quot;cv&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;pdf&quot;&gt;CV&lt;/a&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.10">
+                  <span class="kss-ref badge pull-right">1-3.10</span> Upcoming events
+                </h3>
+
+                <div class="kss-box"><p>Calendar icon for upcoming events.</p>
+</div>
+
+              <div class="kss-example"><div class="landing-events">
+	<img src="../assets/images/icon-event-calendar.png" width="40" height="44" alt="Upcoming Events" class="eventicon">
+	<h3><a href="/education/events/">Upcoming Events</a></h3>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;landing-events&quot;&gt;
+	&lt;img src=&quot;../assets/images/icon-event-calendar.png&quot; width=&quot;40&quot; height=&quot;44&quot; alt=&quot;Upcoming Events&quot; class=&quot;eventicon&quot;&gt;
+	&lt;h3&gt;&lt;a href=&quot;/education/events/&quot;&gt;Upcoming Events&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.11">
+                  <span class="kss-ref badge pull-right">1-3.11</span> Show and Hide
+                </h3>
+
+                <div class="kss-box"><p>Plus and minus icons used to toggle visibility of elements.</p>
+</div>
+
+              <div class="kss-example"><img src="../assets/images/icon-plus.png" class="icon hideshow" width="30" height="30" alt="Show this section">
+<img src="../assets/images/icon-minus.png" class="icon hideshow" width="30" height="30" alt="Hide this section"></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;../assets/images/icon-plus.png&quot; class=&quot;icon hideshow&quot; width=&quot;30&quot; height=&quot;30&quot; alt=&quot;Show this section&quot;&gt;
+&lt;img src=&quot;../assets/images/icon-minus.png&quot; class=&quot;icon hideshow&quot; width=&quot;30&quot; height=&quot;30&quot; alt=&quot;Hide this section&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-3.12">
+                  <span class="kss-ref badge pull-right">1-3.12</span> RSS icon
+                </h3>
+
+                <div class="kss-box"><p>Indicates available RSS feed subscription.</p>
+</div>
+
+              <div class="kss-example"><div id="share-links">
+    <p>
+        <a href="#" title="Subscribe to the Community Development Blog RSS feed" ><img src="../assets/images/icon-rss.png" width="29" height="30" class="rss" alt="Subscribe to the Community Development Blog RSS feed"></a>
+    </p>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div id=&quot;share-links&quot;&gt;
+    &lt;p&gt;
+        &lt;a href=&quot;#&quot; title=&quot;Subscribe to the Community Development Blog RSS feed&quot; &gt;&lt;img src=&quot;../assets/images/icon-rss.png&quot; width=&quot;29&quot; height=&quot;30&quot; class=&quot;rss&quot; alt=&quot;Subscribe to the Community Development Blog RSS feed&quot;&gt;&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="1-4">
+                  <span class="kss-ref badge pull-right">1-4</span> Buttons
+                </h2>
+
+                <p>Main button styles and special buttons.</p>
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-4.1">
+                  <span class="kss-ref badge pull-right">1-4.1</span> Blue button
+                </h3>
+
+                <div class="kss-box"><p>Main button style.</p>
+</div>
+
+              <div class="kss-example"><p class="register-btn"><a href="#" target="_blank" class="button_gradient">Register</a></p></div>
+              <pre class="prettyprint lang-html">&lt;p class=&quot;register-btn&quot;&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;button_gradient&quot;&gt;Register&lt;/a&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-4.2">
+                  <span class="kss-ref badge pull-right">1-4.2</span> Form submission button
+                </h3>
+
+                <div class="kss-box"><p>Subscription button, mainly for mailchimp pages.</p>
+</div>
+
+              <div class="kss-example"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button gradient"></div>
+              <pre class="prettyprint lang-html">&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button gradient&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-4.3">
+                  <span class="kss-ref badge pull-right">1-4.3</span> Read more button
+                </h3>
+
+                <div class="kss-box"><p>White arrow inside circle used for #unreserved.</p>
+</div>
+
+              <div class="kss-example"><div class="ur-text m-all t-4of12 d-4of12" style="background:#516e5c">
+	<p style="text-align: center"><img src="../assets/images/icon-left-arrow.png" alt"left="" arrow"="" title="Read more"></p>
+</div>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;ur-text m-all t-4of12 d-4of12&quot; style=&quot;background:#516e5c&quot;&gt;
+	&lt;p style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../assets/images/icon-left-arrow.png&quot; alt&quot;left=&quot;&quot; arrow&quot;=&quot;&quot; title=&quot;Read more&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-4.4">
+                  <span class="kss-ref badge pull-right">1-4.4</span> Recent Presidents button
+                </h3>
+
+                <div class="kss-box"><p>Use class <code>recent-pres-btn</code> to create link to recent FRBSF presidents on Office of the President page.</p>
+</div>
+
+              <div class="kss-example"><article role="article" class="m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12">
+	<section class="entry-content cf">
+		<div class="clearfix">
+			<div class="m-all t-5of12 d-5of12 recent-pres-btn sand-btn aligncenter">
+				<p><a href="#">Recent President</a></p>
+			</div>
+		</div>
+	</section>
+</article>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;article role=&quot;article&quot; class=&quot;m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12&quot;&gt;
+	&lt;section class=&quot;entry-content cf&quot;&gt;
+		&lt;div class=&quot;clearfix&quot;&gt;
+			&lt;div class=&quot;m-all t-5of12 d-5of12 recent-pres-btn sand-btn aligncenter&quot;&gt;
+				&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Recent President&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+&lt;/article&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-4.5">
+                  <span class="kss-ref badge pull-right">1-4.5</span> Listen/pause buttons
+                </h3>
+
+                <div class="kss-box"><p>Audio control buttons (mainly for Careers landing page). Image toggles when clicked.</p>
+</div>
+
+              <div class="kss-example"><img src="../assets/images/audio-pause.png" class="button" id="play1" href="#" title="" style="width:50px">
+<img src="../assets/images/audio-play2.png" class="button" id="play1" href="#" title="" style="width:50px"></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;../assets/images/audio-pause.png&quot; class=&quot;button&quot; id=&quot;play1&quot; href=&quot;#&quot; title=&quot;&quot; style=&quot;width:50px&quot;&gt;
+&lt;img src=&quot;../assets/images/audio-play2.png&quot; class=&quot;button&quot; id=&quot;play1&quot; href=&quot;#&quot; title=&quot;&quot; style=&quot;width:50px&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-4.6">
+                  <span class="kss-ref badge pull-right">1-4.6</span> Chair the Fed game buttons
+                </h3>
+
+                <div class="kss-box"><p>A number of one-off, non-standard buttons created for <a href="http://www.frbsf.org/education/teacher-resources/chair-federal-reserve-economy-simulation-game">Chair the Fed</a> game in Teacher Resources. They have the following respective functions: Launch Game, For the Public, For Educators, and Contact Us.</p>
+</div>
+
+              <div class="kss-example"><img src="../assets/images/button_launch_game.png" width="200" height="56" alt="Launch Game" title="Launch Game" class="chair-the-fed-launch-btn">
+<img src="../assets/images/icon_p.png" width="142" height="142" alt="For the Public">
+<img src="../assets/images/icon_e.png" width="142" height="142" alt="For Educators">
+<img src="../assets/images/icon_contact.png" width="142" height="142" alt="Contact Us"></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;../assets/images/button_launch_game.png&quot; width=&quot;200&quot; height=&quot;56&quot; alt=&quot;Launch Game&quot; title=&quot;Launch Game&quot; class=&quot;chair-the-fed-launch-btn&quot;&gt;
+&lt;img src=&quot;../assets/images/icon_p.png&quot; width=&quot;142&quot; height=&quot;142&quot; alt=&quot;For the Public&quot;&gt;
+&lt;img src=&quot;../assets/images/icon_e.png&quot; width=&quot;142&quot; height=&quot;142&quot; alt=&quot;For Educators&quot;&gt;
+&lt;img src=&quot;../assets/images/icon_contact.png&quot; width=&quot;142&quot; height=&quot;142&quot; alt=&quot;Contact Us&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="1-5">
+                  <span class="kss-ref badge pull-right">1-5</span> Images
+                </h2>
+
+                <p>Use the image size guidelines below for the site. They can be made responsive via <code>max-width: 100%</code> and <code>height: auto</code> to scale with parent element.</p>
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.1">
+                  <span class="kss-ref badge pull-right">1-5.1</span> Our District hero
+                </h3>
+
+                <div class="kss-box"><p>Hero image and text on Our District landing page. Text overlay is visible on desktop only.</p>
+</div>
+
+              <div class="kss-example"><div class="landing-hero-our-district">
+    <p class="desktop">The 12th District</p>
+    <img class="hero" src="../assets/images/our-district-hero-img.jpg" width="960" height="252" alt="">
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;landing-hero-our-district&quot;&gt;
+    &lt;p class=&quot;desktop&quot;&gt;The 12th District&lt;/p&gt;
+    &lt;img class=&quot;hero&quot; src=&quot;../assets/images/our-district-hero-img.jpg&quot; width=&quot;960&quot; height=&quot;252&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.2">
+                  <span class="kss-ref badge pull-right">1-5.2</span> #unreserved landing image
+                </h3>
+
+                <div class="kss-box"><p>#unreserved landing image.</p>
+</div>
+
+              <div class="kss-example"><img width="319" height="300" src="https://placehold.it/319x300" class="attachment-" alt="blog landing image"></div>
+              <pre class="prettyprint lang-html">&lt;img width=&quot;319&quot; height=&quot;300&quot; src=&quot;https://placehold.it/319x300&quot; class=&quot;attachment-&quot; alt=&quot;blog landing image&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.3">
+                  <span class="kss-ref badge pull-right">1-5.3</span> #unreserved post image
+                </h3>
+
+                <div class="kss-box"><p>#unreserved individual post, full-sized image.</p>
+</div>
+
+              <div class="kss-example"><img width="800" height="420" src="https://placehold.it/800x420" class="attachment-full" alt="blog post image"></div>
+              <pre class="prettyprint lang-html">&lt;img width=&quot;800&quot; height=&quot;420&quot; src=&quot;https://placehold.it/800x420&quot; class=&quot;attachment-full&quot; alt=&quot;blog post image&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.4">
+                  <span class="kss-ref badge pull-right">1-5.4</span> Blog image
+                </h3>
+
+                <div class="kss-box"><p>SF Fed blog image on landing and individual post. Add from page as Featured Image.</p>
+</div>
+
+              <div class="kss-example"><img src="https://placehold.it/670x268" alt="blog image" class="blog-hero"></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;https://placehold.it/670x268&quot; alt=&quot;blog image&quot; class=&quot;blog-hero&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.5">
+                  <span class="kss-ref badge pull-right">1-5.5</span> Thumbnail
+                </h3>
+
+                <div class="kss-box"><p>B&amp;W thumbnail, usually Board of Directors.</p>
+</div>
+
+              <div class="kss-example"><div class="bio-image" style="border-radius: 0%"><img src="https://placehold.it/120x120" alt="..." width="138" height="138"></div>
+	<div class="bio-text">
+        <p><strong>Name</strong>
+        <br><strong>Title</strong>
+        <br>bio</p>
+    </div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;bio-image&quot; style=&quot;border-radius: 0%&quot;&gt;&lt;img src=&quot;https://placehold.it/120x120&quot; alt=&quot;...&quot; width=&quot;138&quot; height=&quot;138&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;bio-text&quot;&gt;
+        &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;
+        &lt;br&gt;&lt;strong&gt;Title&lt;/strong&gt;
+        &lt;br&gt;bio&lt;/p&gt;
+    &lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.6">
+                  <span class="kss-ref badge pull-right">1-5.6</span> Circle thumbnail
+                </h3>
+
+                <div class="kss-box"><p>Circle-shaped biographic image, 138x158 or 120x120. Floated left of person&#39;s name and title on desktop, stacked on top on mobile. Use <code>border-radius: 50%</code> to shape image.</p>
+</div>
+
+              <div class="kss-example"><div class="bio-image"><img src="https://placehold.it/138x158" alt="..." ></div>
+<div class="bio-text"><h1>Staff Member</h1><h3 class="h5">Title</h3></div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;bio-image&quot;&gt;&lt;img src=&quot;https://placehold.it/138x158&quot; alt=&quot;...&quot; &gt;&lt;/div&gt;
+&lt;div class=&quot;bio-text&quot;&gt;&lt;h1&gt;Staff Member&lt;/h1&gt;&lt;h3 class=&quot;h5&quot;&gt;Title&lt;/h3&gt;&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.7">
+                  <span class="kss-ref badge pull-right">1-5.7</span> Badge images
+                </h3>
+
+                <div class="kss-box"><p>Badge images, floated left of first paragraph or top on mobile, required by some pages (e.g., Tech Pulse)</p>
+</div>
+
+              <div class="kss-example"><article class="cf">
+	<div class="m-all t-5of12 d-4of12 padding-bottom-add">
+	    <div class="landing-hero-data">
+	        <img class="banner" src="https://placehold.it/375x205">
+	        <p>Title</p>
+	    </div>
+	</div>
+	<div class="m-all t-7of12 d-8of12 padding-bottom-add">
+            <h1 class="banner-title">Page Title</h1>
+            <p>This is a description of the section.</p>
+    </div>
+    <div></div>
+</article>
+<div class="desktop">
+   <h2 class="section-title">Section Title</h2>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;article class=&quot;cf&quot;&gt;
+	&lt;div class=&quot;m-all t-5of12 d-4of12 padding-bottom-add&quot;&gt;
+	    &lt;div class=&quot;landing-hero-data&quot;&gt;
+	        &lt;img class=&quot;banner&quot; src=&quot;https://placehold.it/375x205&quot;&gt;
+	        &lt;p&gt;Title&lt;/p&gt;
+	    &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;m-all t-7of12 d-8of12 padding-bottom-add&quot;&gt;
+            &lt;h1 class=&quot;banner-title&quot;&gt;Page Title&lt;/h1&gt;
+            &lt;p&gt;This is a description of the section.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;&lt;/div&gt;
+&lt;/article&gt;
+&lt;div class=&quot;desktop&quot;&gt;
+   &lt;h2 class=&quot;section-title&quot;&gt;Section Title&lt;/h2&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.8">
+                  <span class="kss-ref badge pull-right">1-5.8</span> Page not found sloth
+                </h3>
+
+                <div class="kss-box"><p>The 404 Search Sloth.</p>
+</div>
+
+              <div class="kss-example"><img src="../assets/images/404-search-sloth.jpg" width="245" height="305" alt=""></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;../assets/images/404-search-sloth.jpg&quot; width=&quot;245&quot; height=&quot;305&quot; alt=&quot;&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.9">
+                  <span class="kss-ref badge pull-right">1-5.9</span> Easter egg rock chick
+                </h3>
+
+                <div class="kss-box"><p>Easter egg animated gif from President&#39;s Speech Easter Eggs game.</p>
+</div>
+
+              <div class="kss-example"><img src="../assets/images/egg_chick_animation.gif"></div>
+              <pre class="prettyprint lang-html">&lt;img src=&quot;../assets/images/egg_chick_animation.gif&quot;&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.10">
+                  <span class="kss-ref badge pull-right">1-5.10</span> SF Fed Blog and In the Media image (from landing page)
+                </h3>
+
+                <div class="kss-box"><p>The SF Fed Blog and In the Media image links from <a href="http://www.frbsf.org/our-district/">Our District</a> landing page. Two-column responsive layout stacks on mobile.</p>
+</div>
+
+              <div class="kss-example"><main id="main" class="m-all t-all d-all cf" role="main">
+    <article class="m-all t-all d-10of12 d-o-1of12">
+        <div class="m-all t-6of12 d-6of12 sf-fed-blog">
+            <a href="#">
+                <p>Image 1</p>
+                <img src="https://placehold.it/467x264" width="467" height="264" alt="">
+            </a>
+        </div>
+        <div class="m-all t-6of12 d-6of12 in-the-media">
+            <a href="/our-district/press/">
+                <p>Image 2</p>
+                <img src="https://placehold.it/467x264" width="467" height="264" alt="">
+            </a>
+        </div>
+    </article>
+</main>
+<p class="cf"></p></div>
+              <pre class="prettyprint lang-html">&lt;main id=&quot;main&quot; class=&quot;m-all t-all d-all cf&quot; role=&quot;main&quot;&gt;
+    &lt;article class=&quot;m-all t-all d-10of12 d-o-1of12&quot;&gt;
+        &lt;div class=&quot;m-all t-6of12 d-6of12 sf-fed-blog&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;p&gt;Image 1&lt;/p&gt;
+                &lt;img src=&quot;https://placehold.it/467x264&quot; width=&quot;467&quot; height=&quot;264&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;m-all t-6of12 d-6of12 in-the-media&quot;&gt;
+            &lt;a href=&quot;/our-district/press/&quot;&gt;
+                &lt;p&gt;Image 2&lt;/p&gt;
+                &lt;img src=&quot;https://placehold.it/467x264&quot; width=&quot;467&quot; height=&quot;264&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+&lt;p class=&quot;cf&quot;&gt;&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.11">
+                  <span class="kss-ref badge pull-right">1-5.11</span> Inline image (blog)
+                </h3>
+
+                <div class="kss-box"><p>Use <code>figure</code> to display inline blog images and charts, and <code>figcaption</code> for accompanying captions or notes.</p>
+</div>
+
+              <div class="kss-example"><figure class="aligncenter">
+    <p><strong>Figure 1 - Title</strong></p>
+    <img src="https://placehold.it/481x300" alt="placeholder image">
+    <figcaption>Source: source name.</figcaption>
+</figure></div>
+              <pre class="prettyprint lang-html">&lt;figure class=&quot;aligncenter&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Figure 1 - Title&lt;/strong&gt;&lt;/p&gt;
+    &lt;img src=&quot;https://placehold.it/481x300&quot; alt=&quot;placeholder image&quot;&gt;
+    &lt;figcaption&gt;Source: source name.&lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.12">
+                  <span class="kss-ref badge pull-right">1-5.12</span> CPBS logo
+                </h3>
+
+                <div class="kss-box"><p>Used in CTA box on landing page</p>
+</div>
+
+              <div class="kss-example"><div class="landing-did-you-know">
+    <p><img src="http://www.frbsf.org/economic-research/wp-content/themes/sf_fed_rebrand_2015/library/images/cpbs-logo.png" class="fullwidth"></p>
+</div></div>
+              <pre class="prettyprint lang-html">&lt;div class=&quot;landing-did-you-know&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;http://www.frbsf.org/economic-research/wp-content/themes/sf_fed_rebrand_2015/library/images/cpbs-logo.png&quot; class=&quot;fullwidth&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-2 m-10of12 m-o-1of12">
+                <h2 class="kss-title" id="1-6">
+                  <span class="kss-ref badge pull-right">1-6</span> Table
+                </h2>
+
+                <div class="kss-box"><p>We use <a href="http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html" class="offsite-icon-img" target="_blank">NPR&#39;s responsive data table model</a>. On smaller screens, table stacks to become row-based.</p>
+</div>
+
+              <div class="kss-example"><table class="data-table">
+    <thead>
+        <tr>
+            <th>Institution</th>
+            <th>Country</th>
+            <th>Systemic Importance Rank</th>
+        </tr>
+    </thead>
+    <tr>
+        <td data-title="Institution">Mitsubishi UFJ Financial Group</td>
+        <td data-title="Country">Japan</td>
+        <td data-title="Systemic Importance Rank">11</td>
+    </tr>
+    <tr>
+        <td data-title="Institution">Bank of China</td>
+        <td data-title="Country">China</td>
+        <td data-title="Systemic Importance Rank">17</td>
+    </tr>
+    <tr>
+        <td data-title="Institution">Mizuho Financial Group</td>
+        <td data-title="Country">Japan</td>
+        <td data-title="Systemic Importance Rank">20</td>
+    </tr>
+    <tr>
+        <td data-title="Institution">Agricultural Bank of China</td>
+        <td data-title="Country">China</td>
+        <td data-title="Systemic Importance Rank">27</td>
+    </tr>
+    <tr>
+        <td data-title="Institution">Standard Chartered</td>
+        <td data-title="Country">UK</td>
+        <td data-title="Systemic Importance Rank">27</td>
+    </tr>
+</table></div>
+              <pre class="prettyprint lang-html">&lt;table class=&quot;data-table&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Institution&lt;/th&gt;
+            &lt;th&gt;Country&lt;/th&gt;
+            &lt;th&gt;Systemic Importance Rank&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Institution&quot;&gt;Mitsubishi UFJ Financial Group&lt;/td&gt;
+        &lt;td data-title=&quot;Country&quot;&gt;Japan&lt;/td&gt;
+        &lt;td data-title=&quot;Systemic Importance Rank&quot;&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Institution&quot;&gt;Bank of China&lt;/td&gt;
+        &lt;td data-title=&quot;Country&quot;&gt;China&lt;/td&gt;
+        &lt;td data-title=&quot;Systemic Importance Rank&quot;&gt;17&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Institution&quot;&gt;Mizuho Financial Group&lt;/td&gt;
+        &lt;td data-title=&quot;Country&quot;&gt;Japan&lt;/td&gt;
+        &lt;td data-title=&quot;Systemic Importance Rank&quot;&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Institution&quot;&gt;Agricultural Bank of China&lt;/td&gt;
+        &lt;td data-title=&quot;Country&quot;&gt;China&lt;/td&gt;
+        &lt;td data-title=&quot;Systemic Importance Rank&quot;&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td data-title=&quot;Institution&quot;&gt;Standard Chartered&lt;/td&gt;
+        &lt;td data-title=&quot;Country&quot;&gt;UK&lt;/td&gt;
+        &lt;td data-title=&quot;Systemic Importance Rank&quot;&gt;27&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+
+              <hr />
+
+            </section>
+        </article>
+      </div>
+    </div>
+
+
+    <!-- <script src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="public/kss.js"></script>
+    <script src="public/prettify.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        // Ensure code blocks are highlighted properly...
+        jQuery('pre>code').addClass('prettyprint');
+        prettyPrint();
+
+        // Set the navigation to be the correct width.
+        jQuery('#sidebar .list-group').on('affix.bs.affix', function () {
+          jQuery('#sidebar .list-group').width(jQuery('.col-sm-3').width());
+        });
+
+        //if the height of the nav div exceeds height of window
+        var sidebarHeight = jQuery('.affix').offset().top + jQuery('.affix').height();
+        if (sidebarHeight >= jQuery(window).height()) {
+            jQuery('.affix').css('position', 'absolute');
+        }
+      });
+
+      // Gallery slideshow kss-example
+      function updateCashSlideshow() {
+          // Cache a reference to the wrappers
+          var slideshow_large = $('.slideshow_large');
+          var slide_large = slideshow_large.find('.slide_large');
+          var slideshow_thumb = $('.slideshow_thumb');
+          var slide_thumb = slideshow_thumb.find('.slide_thumb a');
+
+          function initSlides() {
+              slide_large.hide();
+              $(slide_large[0]).show();
+          }
+
+          initSlides();
+
+          function goToSlide(slideIndex) {
+              slide_large.hide();
+              $(slide_large[slideIndex]).show();
+              //remove active from slide large and add active to current slide large
+              $(slide_large).removeClass('active');
+              $(slide_large[slideIndex]).addClass('active');
+          }
+
+          // Listen for events in the slideshow
+          $(slide_thumb).on('click', function(e) {
+              e.preventDefault();
+              thumbIndex = $(this).parent().index();
+              goToSlide(thumbIndex);
+          });
+      }
+
+
+      updateCashSlideshow();
+
+    $("img.hideshow").click(function() {
+      $(this).parent().parent().siblings("article").slideToggle("fast");
+
+      // toggle plus and minus category icons
+      var src = $("img.hideshow").attr("src");
+
+      if ($(this).attr("src").match(/\-minus/)) {
+        $(this).attr("src", src.replace(/\-minus/, "-plus"));
+      } else {
+        $(this).attr("src", src.replace(/\-plus/, "-minus"));
+      }
+    });
+
+
+    $('.info a.tog').next('.collapsible').hide();
+
+    $('.info a.tog').click(function(e) {
+        e.preventDefault(); // prevent adding "#" to URL
+
+        var plus_minus_text = $(this).children('span');
+
+        switch (plus_minus_text.text()) {
+            case '–': // emdash
+                plus_minus_text.text('+');
+                break;
+
+            case '-': // dash
+                plus_minus_text.text('+');
+                break;
+
+            case '- ': // dash with space
+                plus_minus_text.text('+ ');
+                break;
+
+            case '+': // plus
+                plus_minus_text.text('-');
+                break;
+
+            case '+ ': // plus with space
+                plus_minus_text.text('- ');
+                break;
+        }
+
+        $(this).next('.collapsible').toggle('fast');
+    });
+
+    </script>
+        <script src="../assets/js/scripts.js"></script>
+
+
+    
+    <script>
+    $('.mobile-menu').click(function() {
+      $('.collapse').toggle();
+    });
+
+
+    </script>
+  </body>
+</html>
