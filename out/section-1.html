@@ -142,6 +142,8 @@ abcdefghijklmnopqrstuvwxyz<br>
 
                 <div class="kss-box"><p>Default styling of page headings. These are semantic headings with no classes.</p>
 <p>(There will, however, be cases when the semantic won&#39;t match the visual hierarchy of a page. For example, a complex page may have several semantic <code>h1</code>&#39;s, but some of them may visually be required to look like <code>h2</code>. In those cases, use heading classes to make the page visually consistent.)</p>
+
+<p>Note about <code>h1</code>: All <code>h1</code>s have <code>font-weight: 300</code> or <code>$light</code>, except on mobile viewports (&lt;= 480), at which point they become <code>font-weight: 500</code> or <code>$medium</code>.</p>
 </div>
 
               <div class="kss-example"><h1>Page Title</h1>
@@ -169,7 +171,7 @@ abcdefghijklmnopqrstuvwxyz<br>
 
               <div class="kss-example"><h2 class="secTitle">Economic Letter sub-heading</h2>
 <p id="pubName">
-	<span id="sf_eltop">FRBSF</span> <span id="pub_title">Economic Letter</span>
+  <span id="sf_eltop">FRBSF</span> <span id="pub_title">Economic Letter</span>
 </p>
 <h2 class="landing-section-title"><a href="#">Section link</a></h2>
 <h2 class="margin-bottom-none padding-top-add"><a href="#">Publications section link</a></h2>
@@ -181,7 +183,7 @@ abcdefghijklmnopqrstuvwxyz<br>
 </header></div>
               <pre class="prettyprint lang-html">&lt;h2 class&#x3D;&quot;secTitle&quot;&gt;Economic Letter sub-heading&lt;/h2&gt;
 &lt;p id&#x3D;&quot;pubName&quot;&gt;
-	&lt;span id&#x3D;&quot;sf_eltop&quot;&gt;FRBSF&lt;/span&gt; &lt;span id&#x3D;&quot;pub_title&quot;&gt;Economic Letter&lt;/span&gt;
+  &lt;span id&#x3D;&quot;sf_eltop&quot;&gt;FRBSF&lt;/span&gt; &lt;span id&#x3D;&quot;pub_title&quot;&gt;Economic Letter&lt;/span&gt;
 &lt;/p&gt;
 &lt;h2 class&#x3D;&quot;landing-section-title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Section link&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 class&#x3D;&quot;margin-bottom-none padding-top-add&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Publications section link&lt;/a&gt;&lt;/h2&gt;
@@ -226,27 +228,27 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><ul class="ul [modifier class]">
-	<li>A list item</li>
-	<li>A list item</li>
-	<li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
 </ul></div>
               <pre class="prettyprint lang-html">&lt;ul class&#x3D;&quot;ul [modifier class]&quot;&gt;
-	&lt;li&gt;A list item&lt;/li&gt;
-	&lt;li&gt;A list item&lt;/li&gt;
-	&lt;li&gt;A list item&lt;/li&gt;
+  &lt;li&gt;A list item&lt;/li&gt;
+  &lt;li&gt;A list item&lt;/li&gt;
+  &lt;li&gt;A list item&lt;/li&gt;
 &lt;/ul&gt;</pre>
 
                 <h4>Use <code>short-list</code> for no padding between list items. <span class="pull-right"><code>.short-list</code></span></h4>
                 <div class="kss-example"><ul class="ul short-list">
-	<li>A list item</li>
-	<li>A list item</li>
-	<li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
 </ul></div>
                 <h4>Use for bulleted press release highlights. <span class="pull-right"><code>.subhead</code></span></h4>
                 <div class="kss-example"><ul class="ul subhead">
-	<li>A list item</li>
-	<li>A list item</li>
-	<li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
+  <li>A list item</li>
 </ul></div>
 
               <hr />
@@ -298,31 +300,31 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><article role="article" class="m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12 page-careers">
-	<div id="jp_container" class="demo-container">
-		<div class="slideshow_large">
-	    	<div class="slide_large active" id="slide_large1" style="display: block;">
-	        	<img src="http://placehold.it/550x375" width="550" height="375" class="alignnone size-full" />
-				<div class="quote">
-					<p>“The quick brown fox jumps over the lazy dog. Watch 'Jeopardy!', Alex Trebek's fun TV quiz game.”</p>
-					<p class="quote-author">Jane, Quote author</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div id="jp_container" class="demo-container">
+    <div class="slideshow_large">
+        <div class="slide_large active" id="slide_large1" style="display: block;">
+            <img src="http://placehold.it/550x375" width="550" height="375" class="alignnone size-full" />
+        <div class="quote">
+          <p>“The quick brown fox jumps over the lazy dog. Watch 'Jeopardy!', Alex Trebek's fun TV quiz game.”</p>
+          <p class="quote-author">Jane, Quote author</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </article>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;article role&#x3D;&quot;article&quot; class&#x3D;&quot;m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12 page-careers&quot;&gt;
-	&lt;div id&#x3D;&quot;jp_container&quot; class&#x3D;&quot;demo-container&quot;&gt;
-		&lt;div class&#x3D;&quot;slideshow_large&quot;&gt;
-	    	&lt;div class&#x3D;&quot;slide_large active&quot; id&#x3D;&quot;slide_large1&quot; style&#x3D;&quot;display: block;&quot;&gt;
-	        	&lt;img src&#x3D;&quot;http://placehold.it/550x375&quot; width&#x3D;&quot;550&quot; height&#x3D;&quot;375&quot; class&#x3D;&quot;alignnone size-full&quot; /&gt;
-				&lt;div class&#x3D;&quot;quote&quot;&gt;
-					&lt;p&gt;“The quick brown fox jumps over the lazy dog. Watch &#x27;Jeopardy!&#x27;, Alex Trebek&#x27;s fun TV quiz game.”&lt;/p&gt;
-					&lt;p class&#x3D;&quot;quote-author&quot;&gt;Jane, Quote author&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+  &lt;div id&#x3D;&quot;jp_container&quot; class&#x3D;&quot;demo-container&quot;&gt;
+    &lt;div class&#x3D;&quot;slideshow_large&quot;&gt;
+        &lt;div class&#x3D;&quot;slide_large active&quot; id&#x3D;&quot;slide_large1&quot; style&#x3D;&quot;display: block;&quot;&gt;
+            &lt;img src&#x3D;&quot;http://placehold.it/550x375&quot; width&#x3D;&quot;550&quot; height&#x3D;&quot;375&quot; class&#x3D;&quot;alignnone size-full&quot; /&gt;
+        &lt;div class&#x3D;&quot;quote&quot;&gt;
+          &lt;p&gt;“The quick brown fox jumps over the lazy dog. Watch &#x27;Jeopardy!&#x27;, Alex Trebek&#x27;s fun TV quiz game.”&lt;/p&gt;
+          &lt;p class&#x3D;&quot;quote-author&quot;&gt;Jane, Quote author&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/article&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -339,12 +341,12 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="Rchart">
-	<p>Table or Chart Title<br>
-	Description of table or chart</p>
+  <p>Table or Chart Title<br>
+  Description of table or chart</p>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;Rchart&quot;&gt;
-	&lt;p&gt;Table or Chart Title&lt;br&gt;
-	Description of table or chart&lt;/p&gt;
+  &lt;p&gt;Table or Chart Title&lt;br&gt;
+  Description of table or chart&lt;/p&gt;
 &lt;/div&gt;</pre>
 
 
@@ -360,10 +362,10 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="Rchart">
-	<p class="note">Note: Footnote about or source of chart or table.</p>
+  <p class="note">Note: Footnote about or source of chart or table.</p>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;Rchart&quot;&gt;
-	&lt;p class&#x3D;&quot;note&quot;&gt;Note: Footnote about or source of chart or table.&lt;/p&gt;
+  &lt;p class&#x3D;&quot;note&quot;&gt;Note: Footnote about or source of chart or table.&lt;/p&gt;
 &lt;/div&gt;</pre>
 
 
@@ -411,14 +413,14 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><footer>
-	<p class="disclaimer">
-		<small>The views expressed are not necessarily those of the Federal Reserve Bank of San Francisco or of the Federal Reserve System.</small>
-	</p>
+  <p class="disclaimer">
+    <small>The views expressed are not necessarily those of the Federal Reserve Bank of San Francisco or of the Federal Reserve System.</small>
+  </p>
 </footer></div>
               <pre class="prettyprint lang-html">&lt;footer&gt;
-	&lt;p class&#x3D;&quot;disclaimer&quot;&gt;
-		&lt;small&gt;The views expressed are not necessarily those of the Federal Reserve Bank of San Francisco or of the Federal Reserve System.&lt;/small&gt;
-	&lt;/p&gt;
+  &lt;p class&#x3D;&quot;disclaimer&quot;&gt;
+    &lt;small&gt;The views expressed are not necessarily those of the Federal Reserve Bank of San Francisco or of the Federal Reserve System.&lt;/small&gt;
+  &lt;/p&gt;
 &lt;/footer&gt;</pre>
 
 
@@ -442,225 +444,225 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #000">
-	<p class="aligncenter">$white-smoke: #f6f5f4</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #000">
-	<p class="aligncenter">$pampas: #f1eeec</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #000">
-	<p class="aligncenter">$gallery: #ebebeb</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #000">
+  <p class="aligncenter">$white-smoke: #f6f5f4</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #000">
+  <p class="aligncenter">$pampas: #f1eeec</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #000">
+  <p class="aligncenter">$gallery: #ebebeb</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #e1dddb; color: #000">
-	<p class="aligncenter">$swiss-coffee: #e1dddb</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #cacaca; color: #000">
-	<p class="aligncenter">$silver: #cacaca</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #c1bbb9; color: #fff">
-	<p class="aligncenter">$cottonseed: #c1bbb9</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #e1dddb; color: #000">
+  <p class="aligncenter">$swiss-coffee: #e1dddb</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #cacaca; color: #000">
+  <p class="aligncenter">$silver: #cacaca</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #c1bbb9; color: #fff">
+  <p class="aligncenter">$cottonseed: #c1bbb9</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
-	<p class="aligncenter">$gray: #8c8c8c</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
-	<p class="aligncenter">$dove-gray: #6e6e6e</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
-	<p class="aligncenter">$tundora: #4e4e4e</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
+  <p class="aligncenter">$gray: #8c8c8c</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
+  <p class="aligncenter">$dove-gray: #6e6e6e</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
+  <p class="aligncenter">$tundora: #4e4e4e</p></article>
 </main>
 <p class="cf"></p>
 <p></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #333; color: #fff">
-	<p class="aligncenter">$mine-shaft: #333</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #333; color: #fff">
+  <p class="aligncenter">$mine-shaft: #333</p></article>
 </main>
 <p class="cf"></p>
-	<article class="m-all t-4of12 d-4of12" style="background: #aba091; color: #fff">
-	<p class="aligncenter">$napa: #aba091</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #be9f72; color: #fff">
-	<p class="aligncenter">$gimblet: #be9f72</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #837a57; color: #fff">
-	<p class="aligncenter">$clay-creek: #837a57</p></article>
-</main>
-<p class="cf"></p>
-<main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #c39709; color: #fff">
-	<p class="aligncenter">$dark-goldenrod: #c39709</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #ae6320; color: #fff">
-	<p class="aligncenter">$desert: #ae6320</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #a64a36; color: #fff">
-	<p class="aligncenter">$orange-roughy: #a64a36</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #aba091; color: #fff">
+  <p class="aligncenter">$napa: #aba091</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #be9f72; color: #fff">
+  <p class="aligncenter">$gimblet: #be9f72</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #837a57; color: #fff">
+  <p class="aligncenter">$clay-creek: #837a57</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #96200f; color: #fff">
-	<p class="aligncenter">$tabasco: #96200f</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #883529; color: #fff">
-	<p class="aligncenter">$burnt-umber: #883529</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #784139; color: #fff">
-	<p class="aligncenter">$ironstone: #784139</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #c39709; color: #fff">
+  <p class="aligncenter">$dark-goldenrod: #c39709</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #ae6320; color: #fff">
+  <p class="aligncenter">$desert: #ae6320</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #a64a36; color: #fff">
+  <p class="aligncenter">$orange-roughy: #a64a36</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #753d05; color: #fff">
-	<p class="aligncenter">$antique-bronze: #753d05</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #6c441c; color: #fff">
-	<p class="aligncenter">$walnut: #6c441c</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #6f0733; color: #fff">
-	<p class="aligncenter">$black-rose: #6f0733</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #96200f; color: #fff">
+  <p class="aligncenter">$tabasco: #96200f</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #883529; color: #fff">
+  <p class="aligncenter">$burnt-umber: #883529</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #784139; color: #fff">
+  <p class="aligncenter">$ironstone: #784139</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #eceee5; color: #000">
-	<p class="aligncenter">$narvik: #eceee5</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #7c936f; color: #fff">
-	<p class="aligncenter">$amulet: #7c936f</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #516e5c; color: #fff">
-	<p class="aligncenter">$finlandia: #516e5c</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #753d05; color: #fff">
+  <p class="aligncenter">$antique-bronze: #753d05</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6c441c; color: #fff">
+  <p class="aligncenter">$walnut: #6c441c</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6f0733; color: #fff">
+  <p class="aligncenter">$black-rose: #6f0733</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #518000; color: #fff">
-	<p class="aligncenter">$limeade: #518000</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #497037; color: #fff">
-	<p class="aligncenter">$chalet: #497037</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #215b33; color: #fff">
-	<p class="aligncenter">$green-pea: #215b33</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #eceee5; color: #000">
+  <p class="aligncenter">$narvik: #eceee5</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #7c936f; color: #fff">
+  <p class="aligncenter">$amulet: #7c936f</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #516e5c; color: #fff">
+  <p class="aligncenter">$finlandia: #516e5c</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #2e4520; color: #fff">
-	<p class="aligncenter">$mallard: #2e4520</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
-	<p class="aligncenter">$horizon: #6291a6</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #026877; color: #fff">
-	<p class="aligncenter">$blue-lagoon: #026877</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #518000; color: #fff">
+  <p class="aligncenter">$limeade: #518000</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #497037; color: #fff">
+  <p class="aligncenter">$chalet: #497037</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #215b33; color: #fff">
+  <p class="aligncenter">$green-pea: #215b33</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #3d7dba; color: #fff">
-	<p class="aligncenter">$boston-blue: #3d7dba</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #0256a5; color: #fff">
-	<p class="aligncenter">$endeavor: #0256a5</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #022951; color: #fff">
-	<p class="aligncenter">$prussian-blue: #022951</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #2e4520; color: #fff">
+  <p class="aligncenter">$mallard: #2e4520</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
+  <p class="aligncenter">$horizon: #6291a6</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #026877; color: #fff">
+  <p class="aligncenter">$blue-lagoon: #026877</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #596a9a; color: #fff">
-	<p class="aligncenter">$waikawa-gray: #596a9a</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #827ac9; color: #fff">
-	<p class="aligncenter">$blue-marguerite: #827ac9</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #3d7dba; color: #fff">
+  <p class="aligncenter">$boston-blue: #3d7dba</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #0256a5; color: #fff">
+  <p class="aligncenter">$endeavor: #0256a5</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #022951; color: #fff">
+  <p class="aligncenter">$prussian-blue: #022951</p></article>
+</main>
+<p class="cf"></p>
+<main class="m-all t-all d-all cf">
+  <article class="m-all t-4of12 d-4of12" style="background: #596a9a; color: #fff">
+  <p class="aligncenter">$waikawa-gray: #596a9a</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #827ac9; color: #fff">
+  <p class="aligncenter">$blue-marguerite: #827ac9</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4; color: #000&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$white-smoke: #f6f5f4&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec; color: #000&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pampas: #f1eeec&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #000&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gallery: #ebebeb&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4; color: #000&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$white-smoke: #f6f5f4&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec; color: #000&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pampas: #f1eeec&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #000&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gallery: #ebebeb&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #e1dddb; color: #000&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$swiss-coffee: #e1dddb&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #cacaca; color: #000&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$silver: #cacaca&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c1bbb9; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cottonseed: #c1bbb9&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #e1dddb; color: #000&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$swiss-coffee: #e1dddb&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #cacaca; color: #000&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$silver: #cacaca&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c1bbb9; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cottonseed: #c1bbb9&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray: #8c8c8c&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dove-gray: #6e6e6e&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$tundora: #4e4e4e&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray: #8c8c8c&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dove-gray: #6e6e6e&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$tundora: #4e4e4e&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #333; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$mine-shaft: #333&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #333; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$mine-shaft: #333&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #aba091; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$napa: #aba091&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #be9f72; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gimblet: #be9f72&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #837a57; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$clay-creek: #837a57&lt;/p&gt;&lt;/article&gt;
-&lt;/main&gt;
-&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
-&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c39709; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dark-goldenrod: #c39709&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ae6320; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$desert: #ae6320&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #a64a36; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$orange-roughy: #a64a36&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #aba091; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$napa: #aba091&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #be9f72; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gimblet: #be9f72&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #837a57; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$clay-creek: #837a57&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #96200f; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$tabasco: #96200f&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #883529; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$burnt-umber: #883529&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #784139; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$ironstone: #784139&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c39709; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$dark-goldenrod: #c39709&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ae6320; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$desert: #ae6320&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #a64a36; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$orange-roughy: #a64a36&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #753d05; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$antique-bronze: #753d05&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6c441c; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$walnut: #6c441c&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6f0733; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$black-rose: #6f0733&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #96200f; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$tabasco: #96200f&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #883529; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$burnt-umber: #883529&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #784139; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$ironstone: #784139&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #eceee5; color: #000&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$narvik: #eceee5&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #7c936f; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$amulet: #7c936f&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #516e5c; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$finlandia: #516e5c&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #753d05; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$antique-bronze: #753d05&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6c441c; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$walnut: #6c441c&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6f0733; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$black-rose: #6f0733&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #518000; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$limeade: #518000&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #497037; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$chalet: #497037&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #215b33; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$green-pea: #215b33&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #eceee5; color: #000&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$narvik: #eceee5&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #7c936f; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$amulet: #7c936f&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #516e5c; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$finlandia: #516e5c&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e4520; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$mallard: #2e4520&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$horizon: #6291a6&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #026877; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$blue-lagoon: #026877&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #518000; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$limeade: #518000&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #497037; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$chalet: #497037&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #215b33; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$green-pea: #215b33&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #3d7dba; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$boston-blue: #3d7dba&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #0256a5; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$endeavor: #0256a5&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #022951; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$prussian-blue: #022951&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e4520; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$mallard: #2e4520&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$horizon: #6291a6&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #026877; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$blue-lagoon: #026877&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #596a9a; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$waikawa-gray: #596a9a&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #827ac9; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$blue-marguerite: #827ac9&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #3d7dba; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$boston-blue: #3d7dba&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #0256a5; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$endeavor: #0256a5&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #022951; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$prussian-blue: #022951&lt;/p&gt;&lt;/article&gt;
+&lt;/main&gt;
+&lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
+&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #596a9a; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$waikawa-gray: #596a9a&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #827ac9; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$blue-marguerite: #827ac9&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -677,35 +679,35 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #6f0733; color: #fff">
-	<p class="aligncenter">$er-color: $black-rose</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #96200f; color: #fff">
-	<p class="aligncenter">$banking-color: $tabasco</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #026877; color: #fff">
-	<p class="aligncenter">$education-color: $blue-lagoon</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6f0733; color: #fff">
+  <p class="aligncenter">$er-color: $black-rose</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #96200f; color: #fff">
+  <p class="aligncenter">$banking-color: $tabasco</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #026877; color: #fff">
+  <p class="aligncenter">$education-color: $blue-lagoon</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #ae6320; color: #fff">
-	<p class="aligncenter">$cd-color: $desert</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #215b33; color: #fff">
-	<p class="aligncenter">$cash-color: $green-pea</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #ae6320; color: #fff">
+  <p class="aligncenter">$cd-color: $desert</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #215b33; color: #fff">
+  <p class="aligncenter">$cash-color: $green-pea</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6f0733; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$er-color: $black-rose&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #96200f; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$banking-color: $tabasco&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #026877; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$education-color: $blue-lagoon&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6f0733; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$er-color: $black-rose&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #96200f; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$banking-color: $tabasco&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #026877; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$education-color: $blue-lagoon&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ae6320; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cd-color: $desert&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #215b33; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cash-color: $green-pea&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ae6320; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cd-color: $desert&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #215b33; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$cash-color: $green-pea&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -722,57 +724,57 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #3d7dba; color: #fff">
-	<p class="aligncenter">$graphics-blue: $boston-blue</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #a64a36; color: #fff">
-	<p class="aligncenter">$graphics-red: $orange-roughy</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #c39709; color: #fff">
-	<p class="aligncenter">$graphics-yellow: $dark-goldenrod</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #3d7dba; color: #fff">
+  <p class="aligncenter">$graphics-blue: $boston-blue</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #a64a36; color: #fff">
+  <p class="aligncenter">$graphics-red: $orange-roughy</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #c39709; color: #fff">
+  <p class="aligncenter">$graphics-yellow: $dark-goldenrod</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #518000; color: #fff">
-	<p class="aligncenter">$graphics-green: $limeade</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #827ac9; color: #fff">
-	<p class="aligncenter">$graphics-purple: $blue-marguerite</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #aba091; color: #fff">
-	<p class="aligncenter">$graphics-beige: $napa</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #518000; color: #fff">
+  <p class="aligncenter">$graphics-green: $limeade</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #827ac9; color: #fff">
+  <p class="aligncenter">$graphics-purple: $blue-marguerite</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #aba091; color: #fff">
+  <p class="aligncenter">$graphics-beige: $napa</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #516e5c; color: #fff">
-	<p class="aligncenter">$graphics-sage: $finlandia</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
-	<p class="aligncenter">$graphics-teal: $horizon</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #784139; color: #fff">
-	<p class="aligncenter">$graphics-dark-red: $ironstone</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #516e5c; color: #fff">
+  <p class="aligncenter">$graphics-sage: $finlandia</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6291a6; color: #fff">
+  <p class="aligncenter">$graphics-teal: $horizon</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #784139; color: #fff">
+  <p class="aligncenter">$graphics-dark-red: $ironstone</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #3d7dba; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-blue: $boston-blue&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #a64a36; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-red: $orange-roughy&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c39709; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-yellow: $dark-goldenrod&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #3d7dba; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-blue: $boston-blue&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #a64a36; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-red: $orange-roughy&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c39709; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-yellow: $dark-goldenrod&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #518000; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-green: $limeade&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #827ac9; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-purple: $blue-marguerite&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #aba091; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-beige: $napa&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #518000; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-green: $limeade&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #827ac9; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-purple: $blue-marguerite&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #aba091; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-beige: $napa&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #516e5c; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-sage: $finlandia&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-teal: $horizon&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #784139; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-dark-red: $ironstone&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #516e5c; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-sage: $finlandia&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-teal: $horizon&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #784139; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$graphics-dark-red: $ironstone&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -789,17 +791,17 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-all t-4of8 d-4of8" style="background: #333; color: #fff">
-	<p class="aligncenter">$black: $mine-shaft</p></article>
-	<article class="m-all t-4of8 d-4of8" style="background: #fff; color: #333">
-	<p class="aligncenter">$white: white</p></article>
+  <article class="m-all t-4of8 d-4of8" style="background: #333; color: #fff">
+  <p class="aligncenter">$black: $mine-shaft</p></article>
+  <article class="m-all t-4of8 d-4of8" style="background: #fff; color: #333">
+  <p class="aligncenter">$white: white</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #333; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$black: $mine-shaft&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #fff; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$white: white&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #333; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$black: $mine-shaft&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #fff; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$white: white&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -816,61 +818,61 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #333">
-	<p class="aligncenter">$pale-gray: $white-smoke</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
-	<p class="aligncenter">$light-gray: $gallery</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #cacaca; color: #333">
-	<p class="aligncenter">$nav-btn-gray: $silver</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #333">
+  <p class="aligncenter">$pale-gray: $white-smoke</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
+  <p class="aligncenter">$light-gray: $gallery</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #cacaca; color: #333">
+  <p class="aligncenter">$nav-btn-gray: $silver</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
-	<p class="aligncenter">$medium-gray: $dove-gray</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
-	<p class="aligncenter">$gray</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
-	<p class="aligncenter">$coal-gray: $tundora</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
+  <p class="aligncenter">$medium-gray: $dove-gray</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
+  <p class="aligncenter">$gray</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
+  <p class="aligncenter">$coal-gray: $tundora</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #333">
-	<p class="aligncenter">$sand-gray: $pampas</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #e1dddb; color: #333">
-	<p class="aligncenter">$lt-sand-gray: $swiss-coffee</p></article>
-	<!--Games not-selected button background color-->
-	<article class="m-all t-4of12 d-4of12" style="background: #c1bbb9; color: #333">
-	<p class="aligncenter">$med-sand-gray: $cottonseed</p></article>
-	<!--Games not-selected button text-->
+  <article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #333">
+  <p class="aligncenter">$sand-gray: $pampas</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #e1dddb; color: #333">
+  <p class="aligncenter">$lt-sand-gray: $swiss-coffee</p></article>
+  <!--Games not-selected button background color-->
+  <article class="m-all t-4of12 d-4of12" style="background: #c1bbb9; color: #333">
+  <p class="aligncenter">$med-sand-gray: $cottonseed</p></article>
+  <!--Games not-selected button text-->
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pale-gray: $white-smoke&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-gray: $gallery&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #cacaca; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$nav-btn-gray: $silver&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pale-gray: $white-smoke&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-gray: $gallery&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #cacaca; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$nav-btn-gray: $silver&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$medium-gray: $dove-gray&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$coal-gray: $tundora&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$medium-gray: $dove-gray&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$coal-gray: $tundora&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$sand-gray: $pampas&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #e1dddb; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$lt-sand-gray: $swiss-coffee&lt;/p&gt;&lt;/article&gt;
-	&lt;!--Games not-selected button background color--&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c1bbb9; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$med-sand-gray: $cottonseed&lt;/p&gt;&lt;/article&gt;
-	&lt;!--Games not-selected button text--&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$sand-gray: $pampas&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #e1dddb; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$lt-sand-gray: $swiss-coffee&lt;/p&gt;&lt;/article&gt;
+  &lt;!--Games not-selected button background color--&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #c1bbb9; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$med-sand-gray: $cottonseed&lt;/p&gt;&lt;/article&gt;
+  &lt;!--Games not-selected button text--&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -885,17 +887,17 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-all t-4of8 d-4of8" style="color: #333; border: solid 2px #ebebeb;">
-	<p class="aligncenter">$border-color: $light-gray</p></article>
-	<article class="m-all t-4of8 d-4of8" style="background: #6e6e6e; color: #fff">
-	<p class="aligncenter">$disabled-gray: $medium-gray</p></article>
+  <article class="m-all t-4of8 d-4of8" style="color: #333; border: solid 2px #ebebeb;">
+  <p class="aligncenter">$border-color: $light-gray</p></article>
+  <article class="m-all t-4of8 d-4of8" style="background: #6e6e6e; color: #fff">
+  <p class="aligncenter">$disabled-gray: $medium-gray</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;color: #333; border: solid 2px #ebebeb;&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$border-color: $light-gray&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$disabled-gray: $medium-gray&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;color: #333; border: solid 2px #ebebeb;&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$border-color: $light-gray&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of8 d-4of8&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$disabled-gray: $medium-gray&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -946,39 +948,39 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #333">
-	<p class="aligncenter">$pale-gray: $white-smoke</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #333">
-	<p class="aligncenter">$sand-gray: $pampas</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
-	<p class="aligncenter">$light-gray: $gallery</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #f6f5f4; color: #333">
+  <p class="aligncenter">$pale-gray: $white-smoke</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #f1eeec; color: #333">
+  <p class="aligncenter">$sand-gray: $pampas</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #ebebeb; color: #333">
+  <p class="aligncenter">$light-gray: $gallery</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
-	<p class="aligncenter">$gray</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
-	<p class="aligncenter">$medium-gray: $dove-gray</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
-	<p class="aligncenter">$coal-gray: $tundora</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #8c8c8c; color: #fff">
+  <p class="aligncenter">$gray</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #6e6e6e; color: #fff">
+  <p class="aligncenter">$medium-gray: $dove-gray</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #4e4e4e; color: #fff">
+  <p class="aligncenter">$coal-gray: $tundora</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pale-gray: $white-smoke&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$sand-gray: $pampas&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #333&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-gray: $gallery&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f6f5f4; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$pale-gray: $white-smoke&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #f1eeec; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$sand-gray: $pampas&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #ebebeb; color: #333&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$light-gray: $gallery&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$medium-gray: $dove-gray&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;$coal-gray: $tundora&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8c8c8c; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$gray&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6e6e6e; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$medium-gray: $dove-gray&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #4e4e4e; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;$coal-gray: $tundora&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -1058,12 +1060,12 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 <p class="cf"></p>
 <h4>Alternate colors for data labels (to improve readability)</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #dca303">
-	<p class="aligncenter">label color for light-yellow</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #3dabc9">
-	<p class="aligncenter">label color for light-blue</p></article>
-	<article class="m-all t-4of12 d-4of12" style="background: #fff; color: #769627">
-	<p class="aligncenter">label color for light-green</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #fff; color: #dca303">
+  <p class="aligncenter">label color for light-yellow</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #fff; color: #3dabc9">
+  <p class="aligncenter">label color for light-blue</p></article>
+  <article class="m-all t-4of12 d-4of12" style="background: #fff; color: #769627">
+  <p class="aligncenter">label color for light-green</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;h4&gt;Principal colors&lt;/h4&gt;
@@ -1129,12 +1131,12 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Alternate colors for data labels (to improve readability)&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #dca303&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-yellow&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #3dabc9&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-blue&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #769627&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-green&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #dca303&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-yellow&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #3dabc9&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-blue&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fff; color: #769627&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;label color for light-green&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -1153,356 +1155,356 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
               <div class="kss-example"><h4>2 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-4of12 t-4of12 d-4of12">
-	<p class="aligncenter">Default</p></article>
-	<article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-4of12 t-4of12 d-4of12" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-4of12 t-4of12 d-4of12">
+  <p class="aligncenter">Default</p></article>
+  <article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-4of12 t-4of12 d-4of12" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-4of12 t-4of12 d-4of12">
-	<p class="aligncenter">Option 2<br>(Use Default First)</p></article>
-	<article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-4of12 t-4of12 d-4of12" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-4of12 t-4of12 d-4of12">
+  <p class="aligncenter">Option 2<br>(Use Default First)</p></article>
+  <article class="m-4of12 t-4of12 d-4of12" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-4of12 t-4of12 d-4of12" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-4of12 t-4of12 d-4of12">
-	<p class="aligncenter">Option 3<br>(Use Default First)</p></article>
-	<article class="m-4of12 t-4of12 d-4of12" style="background: #6291a6">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-4of12 t-4of12 d-4of12" style="background: #b63b36">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-4of12 t-4of12 d-4of12">
+  <p class="aligncenter">Option 3<br>(Use Default First)</p></article>
+  <article class="m-4of12 t-4of12 d-4of12" style="background: #6291a6">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-4of12 t-4of12 d-4of12" style="background: #b63b36">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>3 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-3of12 t-3of12 d-3of12">
-	<p class="aligncenter">Option 1</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12">
+  <p class="aligncenter">Option 1</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-3of12 t-3of12 d-3of12">
-	<p class="aligncenter">Option 2</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #6291a6">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #474747">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12">
+  <p class="aligncenter">Option 2</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #6291a6">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #474747">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>4 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-3of12 t-3of12 d-3of12" style="background: #88cde5">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-3of12 t-3of12 d-3of12" style="background: #88cde5">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>5 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #88cde5">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #88cde5">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>6 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of6 t-1of6 d-1of6" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of6 t-1of6 d-1of6" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of6 t-1of6 d-1of6" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of6 t-1of6 d-1of6" style="background: #88cde5">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of6 t-1of6 d-1of6" style="background: #6d6aaa">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of6 t-1of6 d-1of6" style="background: #474747">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of6 t-1of6 d-1of6" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of6 t-1of6 d-1of6" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of6 t-1of6 d-1of6" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of6 t-1of6 d-1of6" style="background: #88cde5">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of6 t-1of6 d-1of6" style="background: #6d6aaa">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of6 t-1of6 d-1of6" style="background: #474747">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>7 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of7 t-1of7 d-1of7" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of7 t-1of7 d-1of7" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of7 t-1of7 d-1of7" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of7 t-1of7 d-1of7" style="background: #88cde5">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of7 t-1of7 d-1of7" style="background: #6d6aaa">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of7 t-1of7 d-1of7" style="background: #474747">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of7 t-1of7 d-1of7" style="background: #b63b36">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of7 t-1of7 d-1of7" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of7 t-1of7 d-1of7" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of7 t-1of7 d-1of7" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of7 t-1of7 d-1of7" style="background: #88cde5">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of7 t-1of7 d-1of7" style="background: #6d6aaa">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of7 t-1of7 d-1of7" style="background: #474747">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of7 t-1of7 d-1of7" style="background: #b63b36">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>8 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #88cde5">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #6d6aaa">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #474747">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #b63b36">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fa7b00">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #88cde5">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #6d6aaa">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #474747">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #b63b36">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fa7b00">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>9 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #88cde5">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #6d6aaa">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #474747">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #b63b36">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #fa7b00">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of9 t-1of9 d-1of9" style="background: #6291a6">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #88cde5">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #6d6aaa">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #474747">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #b63b36">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #fa7b00">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of9 t-1of9 d-1of9" style="background: #6291a6">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>10 Colors</h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #fcc62d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #88cde5">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #6d6aaa">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #474747">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #b63b36">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #fa7b00">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #6291a6">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of10 t-1of10 d-1of10" style="background: #1E5932">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #fcc62d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #88cde5">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #6d6aaa">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #474747">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #b63b36">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #fa7b00">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #6291a6">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of10 t-1of10 d-1of10" style="background: #1E5932">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;h4&gt;2 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Default&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;Default&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 2&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 2&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 3&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 3&lt;br&gt;(Use Default First)&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-4of12 t-4of12 d-4of12&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;3 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 1&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 1&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 2&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #474747&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;Option 2&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #474747&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;4 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-3of12 t-3of12 d-3of12&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;5 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;6 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #474747&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of6 t-1of6 d-1of6&quot; style&#x3D;&quot;background: #474747&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;7 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #474747&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #474747&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of7 t-1of7 d-1of7&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;8 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #474747&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fa7b00&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #474747&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fa7b00&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;9 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #474747&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #fa7b00&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #474747&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #fa7b00&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of9 t-1of9 d-1of9&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;10 Colors&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #474747&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #fa7b00&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #1E5932&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #fcc62d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #88cde5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #474747&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #fa7b00&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #6291a6&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of10 t-1of10 d-1of10&quot; style&#x3D;&quot;background: #1E5932&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -1520,55 +1522,55 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><main class="m-all t-all d-all cf">
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #b9cf8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #a7a6cc">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #8baf3e">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #b9cf8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #a7a6cc">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #6d6aaa">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <main class="m-all t-all d-all cf">
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #829eB9">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #d38986">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-2of10 t-2of10 d-2of10" style="background: #b63b36">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #2e5e8b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #829eB9">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #f7f7f7">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #d38986">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-2of10 t-2of10 d-2of10" style="background: #b63b36">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #b9cf8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #f7f7f7&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #a7a6cc&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #8baf3e&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #b9cf8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #f7f7f7&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #a7a6cc&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #6d6aaa&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #829eB9&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #f7f7f7&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #d38986&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #2e5e8b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #829eB9&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #f7f7f7&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #d38986&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-2of10 t-2of10 d-2of10&quot; style&#x3D;&quot;background: #b63b36&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -1587,402 +1589,402 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
               <div class="kss-example"><h4>Based on <code>data-viz-1</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #D5DFE8">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #ABBFD1">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #829EB9">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #587EA2">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #2e5e8b; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #234768">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #172F46">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #0C1823">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #D5DFE8">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #ABBFD1">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #829EB9">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #587EA2">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #2e5e8b; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #234768">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #172F46">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #0C1823">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-2</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #E8EFD8">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #D1DFB2">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #B9CF8B">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #A2BF65">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #8BAF3E; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #68832F">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #46581F">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #232C10">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #E8EFD8">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #D1DFB2">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #B9CF8B">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #A2BF65">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #8BAF3E; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #68832F">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #46581F">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #232C10">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-3</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #FEF4D5">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #FEE8AB">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #FDDD81">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #FDD157">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #FCC62D; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #BD9522">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #7E6317">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #3F310B">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #FEF4D5">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #FEE8AB">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #FDDD81">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #FDD157">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #FCC62D; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #BD9522">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #7E6317">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #3F310B">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-4</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #E1FFFF">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #BEFFFF">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #ACF1FF">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #9ADFF7">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #88cde5; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #6FB4CC">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #559AB2">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #3C8199">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #E1FFFF">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #BEFFFF">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #ACF1FF">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #9ADFF7">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #88cde5; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #6FB4CC">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #559AB2">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #3C8199">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-5</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #E2E1EE">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #C5C3DD">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #A7A6CC">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #8A88BB">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #6D6AAA; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #525080">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #373555">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #1B1B2A">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #E2E1EE">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #C5C3DD">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #A7A6CC">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #8A88BB">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #6D6AAA; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #525080">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #373555">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #1B1B2A">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-6</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #ADADAD">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #949494">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #7A7A7A">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #616161">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #474747; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #2E2E2E">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #212121">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #141414">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #ADADAD">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #949494">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #7A7A7A">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #616161">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #474747; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #2E2E2E">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #212121">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #141414">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-7</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fff5f0">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fcbba1">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fc9272">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fb6a4a">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #b63b36; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #a50f15">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #67000d">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #4E0000">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fff5f0">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fcbba1">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fc9272">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fb6a4a">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #b63b36; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #a50f15">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #67000d">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #4E0000">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-8</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fff5eb">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fee6ce">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fdd0a2">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fdae6b">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #fa7b00; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #d94801">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #a63603">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #7f2704">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fff5eb">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fee6ce">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fdd0a2">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fdae6b">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #fa7b00; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #d94801">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #a63603">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #7f2704">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-9</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #E0E9ED">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #C0D3DB">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #A1BDCA">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #81A7B8">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #6291A6; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #4A6D7D">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #314953">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #182429">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #E0E9ED">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #C0D3DB">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #A1BDCA">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #81A7B8">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #6291A6; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #4A6D7D">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #314953">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #182429">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p>
 <h4>Based on <code>data-viz-10</code></h4>
 <main class="m-all t-all d-all cf">
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #84BF98">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #6BA67F">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #518C65">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #38734C">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #1E5932; color: #fff">
-	<p class="aligncenter">*</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #114C25">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #054019">
-	<p class="aligncenter">&nbsp;</p></article>
-	<article class="m-1of8 t-1of8 d-1of8" style="background: #00330C">
-	<p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #84BF98">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #6BA67F">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #518C65">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #38734C">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #1E5932; color: #fff">
+  <p class="aligncenter">*</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #114C25">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #054019">
+  <p class="aligncenter">&nbsp;</p></article>
+  <article class="m-1of8 t-1of8 d-1of8" style="background: #00330C">
+  <p class="aligncenter">&nbsp;</p></article>
 </main>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;h4&gt;Based on &lt;code&gt;data-viz-1&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #D5DFE8&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #ABBFD1&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #829EB9&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #587EA2&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #2e5e8b; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #234768&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #172F46&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #0C1823&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #D5DFE8&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #ABBFD1&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #829EB9&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #587EA2&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #2e5e8b; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #234768&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #172F46&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #0C1823&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-2&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E8EFD8&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #D1DFB2&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #B9CF8B&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A2BF65&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8BAF3E; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #68832F&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #46581F&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #232C10&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E8EFD8&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #D1DFB2&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #B9CF8B&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A2BF65&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8BAF3E; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #68832F&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #46581F&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #232C10&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-3&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FEF4D5&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FEE8AB&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FDDD81&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FDD157&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FCC62D; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #BD9522&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #7E6317&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #3F310B&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FEF4D5&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FEE8AB&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FDDD81&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FDD157&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #FCC62D; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #BD9522&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #7E6317&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #3F310B&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-4&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E1FFFF&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #BEFFFF&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #ACF1FF&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #9ADFF7&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #88cde5; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6FB4CC&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #559AB2&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #3C8199&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E1FFFF&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #BEFFFF&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #ACF1FF&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #9ADFF7&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #88cde5; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6FB4CC&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #559AB2&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #3C8199&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-5&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E2E1EE&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #C5C3DD&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A7A6CC&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8A88BB&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6D6AAA; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #525080&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #373555&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #1B1B2A&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E2E1EE&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #C5C3DD&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A7A6CC&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #8A88BB&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6D6AAA; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #525080&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #373555&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #1B1B2A&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-6&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #ADADAD&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #949494&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #7A7A7A&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #616161&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #474747; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #2E2E2E&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #212121&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #141414&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #ADADAD&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #949494&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #7A7A7A&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #616161&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #474747; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #2E2E2E&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #212121&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #141414&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-7&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fff5f0&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fcbba1&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fc9272&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fb6a4a&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #b63b36; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #a50f15&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #67000d&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #4E0000&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fff5f0&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fcbba1&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fc9272&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fb6a4a&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #b63b36; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #a50f15&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #67000d&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #4E0000&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-8&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fff5eb&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fee6ce&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fdd0a2&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fdae6b&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fa7b00; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #d94801&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #a63603&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #7f2704&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fff5eb&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fee6ce&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fdd0a2&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fdae6b&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #fa7b00; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #d94801&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #a63603&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #7f2704&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-9&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E0E9ED&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #C0D3DB&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A1BDCA&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #81A7B8&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6291A6; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #4A6D7D&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #314953&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #182429&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #E0E9ED&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #C0D3DB&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #A1BDCA&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #81A7B8&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6291A6; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #4A6D7D&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #314953&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #182429&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;Based on &lt;code&gt;data-viz-10&lt;/code&gt;&lt;/h4&gt;
 &lt;main class&#x3D;&quot;m-all t-all d-all cf&quot;&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #84BF98&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6BA67F&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #518C65&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #38734C&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #1E5932; color: #fff&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #114C25&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #054019&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
-	&lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #00330C&quot;&gt;
-	&lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #84BF98&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #6BA67F&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #518C65&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #38734C&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #1E5932; color: #fff&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;*&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #114C25&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #054019&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
+  &lt;article class&#x3D;&quot;m-1of8 t-1of8 d-1of8&quot; style&#x3D;&quot;background: #00330C&quot;&gt;
+  &lt;p class&#x3D;&quot;aligncenter&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;/article&gt;
 &lt;/main&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -2007,19 +2009,19 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div id="nav-btn-show" tabindex="0" class="m-1of4 d-1of6 t-1of6" style="background: #333; color: #6e6e6e; padding: 1rem">
-	<img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
+  <img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
 </div>
 <p class="cf"></p>
 <div id="nav-btn" tabindex="0" class="m-1of4 d-1of6 t-1of6 fixed" style="background: #f1eeec; color: #6e6e6e; padding: 1rem">
-	<img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
+  <img src="../assets/images/icon-menu.png" width="27" height="23" alt="Show Menu"> MENU
 </div>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;nav-btn-show&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6&quot; style&#x3D;&quot;background: #333; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
+  &lt;img src&#x3D;&quot;../assets/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;div id&#x3D;&quot;nav-btn&quot; tabindex&#x3D;&quot;0&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6 fixed&quot; style&#x3D;&quot;background: #f1eeec; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
+  &lt;img src&#x3D;&quot;../assets/images/icon-menu.png&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;23&quot; alt&#x3D;&quot;Show Menu&quot;&gt; MENU
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -2036,19 +2038,19 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div id="search-site" class="m-1of4 d-1of6 t-1of6" style="background: #333; color: #6e6e6e; padding: 1rem">
-	<img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
+  <img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
 </div>
 <p class="cf"></p>
 <div id="search-site" class="m-1of4 d-1of6 t-1of6" style="background: #f1eeec; color: #6e6e6e; padding: 1rem">
-	<img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
+  <img src="../assets/images/search-icon.png" alt="Search SF Fed" style="display: block;">
 </div>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;div id&#x3D;&quot;search-site&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6&quot; style&#x3D;&quot;background: #333; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
+  &lt;img src&#x3D;&quot;../assets/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;
 &lt;div id&#x3D;&quot;search-site&quot; class&#x3D;&quot;m-1of4 d-1of6 t-1of6&quot; style&#x3D;&quot;background: #f1eeec; color: #6e6e6e; padding: 1rem&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
+  &lt;img src&#x3D;&quot;../assets/images/search-icon.png&quot; alt&#x3D;&quot;Search SF Fed&quot; style&#x3D;&quot;display: block;&quot;&gt;
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -2106,24 +2108,24 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
               <div class="kss-example"><p>
 <a href="#">
-	<img src="../assets/images/icon-pdf.png" width="46" height="30" alt="View PDF" class="padding-r pdf">&nbsp;&nbsp;&nbsp;
+  <img src="../assets/images/icon-pdf.png" width="46" height="30" alt="View PDF" class="padding-r pdf">&nbsp;&nbsp;&nbsp;
 </a>
 <a href="#" title="" target="_blank" rel="noopener">
-	<img src="../assets/images/icon-email.png" width="41" height="30" alt="Subscribe to FedViews">&nbsp;&nbsp;&nbsp;
+  <img src="../assets/images/icon-email.png" width="41" height="30" alt="Subscribe to FedViews">&nbsp;&nbsp;&nbsp;
 </a>
 <a href="#" class="share">
-	<img src="../assets/images/icon-share.png" width="37" height="30" alt="Share">
+  <img src="../assets/images/icon-share.png" width="37" height="30" alt="Share">
 </a>
 </p></div>
               <pre class="prettyprint lang-html">&lt;p&gt;
 &lt;a href&#x3D;&quot;#&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/icon-pdf.png&quot; width&#x3D;&quot;46&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;View PDF&quot; class&#x3D;&quot;padding-r pdf&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+  &lt;img src&#x3D;&quot;../assets/images/icon-pdf.png&quot; width&#x3D;&quot;46&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;View PDF&quot; class&#x3D;&quot;padding-r pdf&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
 &lt;/a&gt;
 &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/icon-email.png&quot; width&#x3D;&quot;41&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Subscribe to FedViews&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+  &lt;img src&#x3D;&quot;../assets/images/icon-email.png&quot; width&#x3D;&quot;41&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Subscribe to FedViews&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
 &lt;/a&gt;
 &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;share&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/icon-share.png&quot; width&#x3D;&quot;37&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Share&quot;&gt;
+  &lt;img src&#x3D;&quot;../assets/images/icon-share.png&quot; width&#x3D;&quot;37&quot; height&#x3D;&quot;30&quot; alt&#x3D;&quot;Share&quot;&gt;
 &lt;/a&gt;
 &lt;/p&gt;</pre>
 
@@ -2163,20 +2165,20 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="landing-follow-section-ed desktop">
-	<a href="#"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
-	<a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
-	<a href="#"><img src="../assets/images/icon-pinterest.png" width="44" height="44" alt="Pinterest"></a>
-	<a href="#"><img src="../assets/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
-	<a href="#"><img border="0" src="../assets/images/icon-edublog.png" alt="Edublog"></a>
-	<a href="#"><img border="0" src="../assets/images/icon-email.png" alt="Newsletter"></a>
+  <a href="#"><img src="../assets/images/icon-twitter.png" width="44" height="44" alt="Twitter"></a>
+  <a href="#"><img src="../assets/images/icon-facebook.png" width="44" height="44" alt="Facebook"></a>
+  <a href="#"><img src="../assets/images/icon-pinterest.png" width="44" height="44" alt="Pinterest"></a>
+  <a href="#"><img src="../assets/images/icon-youtube.png" width="44" height="44" alt="Youtube"></a>
+  <a href="#"><img border="0" src="../assets/images/icon-edublog.png" alt="Edublog"></a>
+  <a href="#"><img border="0" src="../assets/images/icon-email.png" alt="Newsletter"></a>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;landing-follow-section-ed desktop&quot;&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Twitter&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Facebook&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-pinterest.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Pinterest&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-youtube.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Youtube&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../assets/images/icon-edublog.png&quot; alt&#x3D;&quot;Edublog&quot;&gt;&lt;/a&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../assets/images/icon-email.png&quot; alt&#x3D;&quot;Newsletter&quot;&gt;&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-twitter.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Twitter&quot;&gt;&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-facebook.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Facebook&quot;&gt;&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-pinterest.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Pinterest&quot;&gt;&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-youtube.png&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Youtube&quot;&gt;&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../assets/images/icon-edublog.png&quot; alt&#x3D;&quot;Edublog&quot;&gt;&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot;&gt;&lt;img border&#x3D;&quot;0&quot; src&#x3D;&quot;../assets/images/icon-email.png&quot; alt&#x3D;&quot;Newsletter&quot;&gt;&lt;/a&gt;
 &lt;/div&gt;</pre>
 
 
@@ -2234,12 +2236,12 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="landing-events">
-	<img src="../assets/images/icon-event-calendar.png" width="40" height="44" alt="Upcoming Events" class="eventicon">
-	<h3><a href="/education/events/">Upcoming Events</a></h3>
+  <img src="../assets/images/icon-event-calendar.png" width="40" height="44" alt="Upcoming Events" class="eventicon">
+  <h3><a href="/education/events/">Upcoming Events</a></h3>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;landing-events&quot;&gt;
-	&lt;img src&#x3D;&quot;../assets/images/icon-event-calendar.png&quot; width&#x3D;&quot;40&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Upcoming Events&quot; class&#x3D;&quot;eventicon&quot;&gt;
-	&lt;h3&gt;&lt;a href&#x3D;&quot;/education/events/&quot;&gt;Upcoming Events&lt;/a&gt;&lt;/h3&gt;
+  &lt;img src&#x3D;&quot;../assets/images/icon-event-calendar.png&quot; width&#x3D;&quot;40&quot; height&#x3D;&quot;44&quot; alt&#x3D;&quot;Upcoming Events&quot; class&#x3D;&quot;eventicon&quot;&gt;
+  &lt;h3&gt;&lt;a href&#x3D;&quot;/education/events/&quot;&gt;Upcoming Events&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;</pre>
 
 
@@ -2333,11 +2335,11 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="ur-text m-all t-4of12 d-4of12" style="background:#516e5c">
-	<p style="text-align: center"><img src="../assets/images/icon-left-arrow.png" alt"left="" arrow"="" title="Read more"></p>
+  <p style="text-align: center"><img src="../assets/images/icon-left-arrow.png" alt"left="" arrow"="" title="Read more"></p>
 </div>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;ur-text m-all t-4of12 d-4of12&quot; style&#x3D;&quot;background:#516e5c&quot;&gt;
-	&lt;p style&#x3D;&quot;text-align: center&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-left-arrow.png&quot; alt&quot;left&#x3D;&quot;&quot; arrow&quot;&#x3D;&quot;&quot; title&#x3D;&quot;Read more&quot;&gt;&lt;/p&gt;
+  &lt;p style&#x3D;&quot;text-align: center&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/icon-left-arrow.png&quot; alt&quot;left&#x3D;&quot;&quot; arrow&quot;&#x3D;&quot;&quot; title&#x3D;&quot;Read more&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -2354,23 +2356,23 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><article role="article" class="m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12">
-	<section class="entry-content cf">
-		<div class="clearfix">
-			<div class="m-all t-5of12 d-5of12 recent-pres-btn sand-btn aligncenter">
-				<p><a href="#">Recent President</a></p>
-			</div>
-		</div>
-	</section>
+  <section class="entry-content cf">
+    <div class="clearfix">
+      <div class="m-all t-5of12 d-5of12 recent-pres-btn sand-btn aligncenter">
+        <p><a href="#">Recent President</a></p>
+      </div>
+    </div>
+  </section>
 </article>
 <p class="cf"></p></div>
               <pre class="prettyprint lang-html">&lt;article role&#x3D;&quot;article&quot; class&#x3D;&quot;m-all t-10of12 d-10of12 t-o-1of12 d-o-1of12&quot;&gt;
-	&lt;section class&#x3D;&quot;entry-content cf&quot;&gt;
-		&lt;div class&#x3D;&quot;clearfix&quot;&gt;
-			&lt;div class&#x3D;&quot;m-all t-5of12 d-5of12 recent-pres-btn sand-btn aligncenter&quot;&gt;
-				&lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Recent President&lt;/a&gt;&lt;/p&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/section&gt;
+  &lt;section class&#x3D;&quot;entry-content cf&quot;&gt;
+    &lt;div class&#x3D;&quot;clearfix&quot;&gt;
+      &lt;div class&#x3D;&quot;m-all t-5of12 d-5of12 recent-pres-btn sand-btn aligncenter&quot;&gt;
+        &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Recent President&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
 &lt;/article&gt;
 &lt;p class&#x3D;&quot;cf&quot;&gt;&lt;/p&gt;</pre>
 
@@ -2477,14 +2479,26 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
             </section>
               <section class="kss-depth-3 m-10of12 m-o-1of12">
                 <h3 class="kss-title" id="1-5.4">
-                  <span class="kss-ref badge pull-right">1-5.4</span> Blog image
+                  <span class="kss-ref badge pull-right">1-5.4</span> Blog image and video
                 </h3>
 
-                <div class="kss-box"><p>SF Fed blog image on landing and individual post. Add from page as Featured Image.</p>
+                <div class="kss-box"><p>SF Fed blog image or featured video on landing and individual post. For image, add from page as Featured Image; it will appear in landing and post. For video, add as Featured Video embed, but also add Featured Image; image will apear in landing, video in individual post.</p>
 </div>
 
-              <div class="kss-example"><img src="https://placehold.it/670x268" alt="blog image" class="blog-hero"></div>
-              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;https://placehold.it/670x268&quot; alt&#x3D;&quot;blog image&quot; class&#x3D;&quot;blog-hero&quot;&gt;</pre>
+              <div class="kss-example">
+                <img src="https://placehold.it/670x268" alt="blog image" class="blog-hero">
+
+                <div class="responsive-embed" style="padding-bottom:56.25%;"><iframe title="vimeo-player" src="https://player.vimeo.com/video/336812660" width="640" height="360" frameborder="0" allowfullscreen></iframe><script type="text/javascript" defer="defer" src="https://extend.vimeocdn.com/ga/72174276.js"></script></div>
+<p class="cf"></p>
+              </div>
+              <pre class="prettyprint lang-html">&lt;img src&#x3D;&quot;https://placehold.it/670x268&quot; alt&#x3D;&quot;blog image&quot; class&#x3D;&quot;blog-hero&quot;&gt;
+
+&lt;div class&#x3D;&quot;responsive-embed&quot; style&#x3D;&quot;padding-bottom:56.25%;&quot;&gt;
+    &lt;iframe src&#x3D;&quot;https://player.vimeo.com/video/336812660&quot; allowfullscreen&#x3D;&quot;&quot; width&#x3D;&quot;640&quot; height&#x3D;&quot;360&quot; frameborder&#x3D;&quot;0&quot;&gt;&lt;/iframe&gt;
+    &lt;script type&#x3D;&quot;text/javascript&quot; defer&#x3D;&quot;defer&quot; src&#x3D;&quot;https://extend.vimeocdn.com/ga/72174276.js&quot;&gt;
+    &lt;/script&gt;
+&lt;/div&gt;
+              </pre>
 
 
               <hr />
@@ -2499,13 +2513,13 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><div class="bio-image" style="border-radius: 0%"><img src="https://placehold.it/138x138" alt="..." width="138" height="138"></div>
-	<div class="bio-text">
+  <div class="bio-text">
         <p><strong>Name</strong>
         <br><strong>Title</strong>
         <br>bio</p>
     </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;bio-image&quot; style&#x3D;&quot;border-radius: 0%&quot;&gt;&lt;img src&#x3D;&quot;https://placehold.it/138x138&quot; alt&#x3D;&quot;...&quot; width&#x3D;&quot;138&quot; height&#x3D;&quot;138&quot;&gt;&lt;/div&gt;
-	&lt;div class&#x3D;&quot;bio-text&quot;&gt;
+  &lt;div class&#x3D;&quot;bio-text&quot;&gt;
         &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;
         &lt;br&gt;&lt;strong&gt;Title&lt;/strong&gt;
         &lt;br&gt;bio&lt;/p&gt;
@@ -2541,13 +2555,13 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 </div>
 
               <div class="kss-example"><article class="cf">
-	<div class="m-all t-5of12 d-4of12 padding-bottom-add">
-	    <div class="landing-hero-data">
-	        <img class="banner" src="https://placehold.it/375x205">
-	        <p>Title</p>
-	    </div>
-	</div>
-	<div class="m-all t-7of12 d-8of12 padding-bottom-add">
+  <div class="m-all t-5of12 d-4of12 padding-bottom-add">
+      <div class="landing-hero-data">
+          <img class="banner" src="https://placehold.it/375x205">
+          <p>Title</p>
+      </div>
+  </div>
+  <div class="m-all t-7of12 d-8of12 padding-bottom-add">
             <h1 class="banner-title">Page Title</h1>
             <p>This is a description of the section.</p>
     </div>
@@ -2557,13 +2571,13 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
    <h2 class="section-title">Section Title</h2>
 </div></div>
               <pre class="prettyprint lang-html">&lt;article class&#x3D;&quot;cf&quot;&gt;
-	&lt;div class&#x3D;&quot;m-all t-5of12 d-4of12 padding-bottom-add&quot;&gt;
-	    &lt;div class&#x3D;&quot;landing-hero-data&quot;&gt;
-	        &lt;img class&#x3D;&quot;banner&quot; src&#x3D;&quot;https://placehold.it/375x205&quot;&gt;
-	        &lt;p&gt;Title&lt;/p&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;m-all t-7of12 d-8of12 padding-bottom-add&quot;&gt;
+  &lt;div class&#x3D;&quot;m-all t-5of12 d-4of12 padding-bottom-add&quot;&gt;
+      &lt;div class&#x3D;&quot;landing-hero-data&quot;&gt;
+          &lt;img class&#x3D;&quot;banner&quot; src&#x3D;&quot;https://placehold.it/375x205&quot;&gt;
+          &lt;p&gt;Title&lt;/p&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;m-all t-7of12 d-8of12 padding-bottom-add&quot;&gt;
             &lt;h1 class&#x3D;&quot;banner-title&quot;&gt;Page Title&lt;/h1&gt;
             &lt;p&gt;This is a description of the section.&lt;/p&gt;
     &lt;/div&gt;
@@ -2579,7 +2593,30 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
             </section>
               <section class="kss-depth-3 m-10of12 m-o-1of12">
                 <h3 class="kss-title" id="1-5.8">
-                  <span class="kss-ref badge pull-right">1-5.8</span> Page not found sloth
+                  <span class="kss-ref badge pull-right">1-5.8</span> Image with text wrap
+                </h3>
+
+                <div class="kss-box"><p>Use <code>alignleft</code> class on an element, such as an image, to make text wrap around it.</p>
+</div>
+
+              <div class="kss-example"><p>
+    <img src="https://placehold.it/160x219" class="alignleft alt="placeholder" width="160" height="219" /><strong>De Finibus Bonorum et Malorum</strong
+</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<br><br>
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p></div>
+              <pre class="prettyprint lang-html">&lt;p&gt;
+    &lt;img src&#x3D;&quot;https://placehold.it/160x219&quot; class&#x3D;&quot;alignleft alt&#x3D;&quot;placeholder&quot; width&#x3D;&quot;160&quot; height&#x3D;&quot;219&quot; /&gt;&lt;strong&gt;De Finibus Bonorum et Malorum&lt;/strong
+&lt;/p&gt;
+&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&lt;br&gt;&lt;br&gt;
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.&lt;/p&gt;</pre>
+
+
+              <hr />
+
+            </section>
+              <section class="kss-depth-3 m-10of12 m-o-1of12">
+                <h3 class="kss-title" id="1-5.9">
+                  <span class="kss-ref badge pull-right">1-5.9</span> Page not found sloth
                 </h3>
 
                 <div class="kss-box"><p>The 404 Search Sloth.</p>
@@ -2593,8 +2630,8 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
             </section>
               <section class="kss-depth-3 m-10of12 m-o-1of12">
-                <h3 class="kss-title" id="1-5.9">
-                  <span class="kss-ref badge pull-right">1-5.9</span> Easter egg rock chick
+                <h3 class="kss-title" id="1-5.10">
+                  <span class="kss-ref badge pull-right">1-5.10</span> Easter egg rock chick
                 </h3>
 
                 <div class="kss-box"><p>Easter egg animated gif from President&#39;s Speech Easter Eggs game.</p>
@@ -2608,8 +2645,8 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
             </section>
               <section class="kss-depth-3 m-10of12 m-o-1of12">
-                <h3 class="kss-title" id="1-5.10">
-                  <span class="kss-ref badge pull-right">1-5.10</span> SF Fed Blog and In the Media image (from landing page)
+                <h3 class="kss-title" id="1-5.11">
+                  <span class="kss-ref badge pull-right">1-5.11</span> SF Fed Blog and In the Media image (from landing page)
                 </h3>
 
                 <div class="kss-box"><p>The SF Fed Blog and In the Media image links from <a href="http://www.frbsf.org/our-district/">Our District</a> landing page. Two-column responsive layout stacks on mobile.</p>
@@ -2655,8 +2692,8 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
             </section>
               <section class="kss-depth-3 m-10of12 m-o-1of12">
-                <h3 class="kss-title" id="1-5.11">
-                  <span class="kss-ref badge pull-right">1-5.11</span> Inline image
+                <h3 class="kss-title" id="1-5.12">
+                  <span class="kss-ref badge pull-right">1-5.12</span> Inline image
                 </h3>
 
                 <div class="kss-box"><p>Use <code>figure</code> to display inline blog images and charts, and <code>figcaption</code> for accompanying captions or notes.</p>
@@ -2680,15 +2717,15 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
 
             </section>
               <section class="kss-depth-3 m-10of12 m-o-1of12">
-                <h3 class="kss-title" id="1-5.12">
-                  <span class="kss-ref badge pull-right">1-5.12</span> CPBS logo
+                <h3 class="kss-title" id="1-5.13">
+                  <span class="kss-ref badge pull-right">1-5.13</span> CPBS logo
                 </h3>
 
                 <div class="kss-box"><p>Used in CTA box on landing page</p>
 </div>
 
               <div class="kss-example"><div class="landing-did-you-know">
-    <p><img src="http://www.frbsf.org/economic-research/wp-content/themes/sf_fed_rebrand_2015/library/images/cpbs-logo.png" class="fullwidth"></p>
+    <p><img src="https://www.frbsf.org/economic-research/wp-content/themes/sf_fed_rebrand_2015/library/images/cpbs-logo.png" class="fullwidth"></p>
 </div></div>
               <pre class="prettyprint lang-html">&lt;div class&#x3D;&quot;landing-did-you-know&quot;&gt;
     &lt;p&gt;&lt;img src&#x3D;&quot;http://www.frbsf.org/economic-research/wp-content/themes/sf_fed_rebrand_2015/library/images/cpbs-logo.png&quot; class&#x3D;&quot;fullwidth&quot;&gt;&lt;/p&gt;
@@ -2784,7 +2821,7 @@ five watched experts—amaze the judge.&lt;/p&gt;</pre>
     </div>
 
 
-    <!-- <script src="http://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/.js"></script> -->
+    <!-- <script src="https://www.frbsf.org/wp-content/themes/sf_fed_rebrand_2015/library/js/.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="public/kss.js"></script>
     <script src="public/prettify.js"></script>
